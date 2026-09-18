@@ -1,7 +1,7 @@
 # /// script
 # dependencies = ["playwright==1.55.0"]
 # ///
-"""Screenshot a page after the lunch was picked; FORCE=k pins Math.random so item k of N is chosen."""
+"""Generated with Claude Code: screenshot a page with an optionally fixed lunch choice."""
 import sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright

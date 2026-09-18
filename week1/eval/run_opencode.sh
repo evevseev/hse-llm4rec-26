@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Generated with Claude Code for this assignment; the workflow and outputs were reviewed.
 # Send a prompt file to an LLM via opencode (from an empty dir, so it only sees the prompt)
 # and save the ```html block it returns.  Usage: eval/run_opencode.sh PROMPT.md OUT.html
 set -euo pipefail

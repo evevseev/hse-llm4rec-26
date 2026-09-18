@@ -2,7 +2,7 @@
 # requires-python = ">=3.11"
 # dependencies = ["playwright==1.55.0"]
 # ///
-"""Show every dish of the starter app once and check that its picture is actually drawn.
+"""Generated with Claude Code to show every dish and check that its picture is drawn.
 
 For dish k of N we pin Math.random() to (k + 0.5) / N, so Math.floor(Math.random() * N) == k,
 click "Generate Lunch!", wait for the 500 ms "Thinking..." delay, then read the result card:
