@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Lunch Menu</title>
+  <style>
+    :root {
+      --cream: #fff8ed;
+      --paper: #fffdf8;
+      --ink: #25231f;
+      --muted: #756f66;
+      --orange: #ef704d;
+      --yellow: #f7c948;
+      --green: #6b9b68;
+      --line: #eadfce;
+      --shadow: 0 24px 70px rgba(86, 58, 28, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(247, 201, 72, 0.3), transparent 26rem),
+        radial-gradient(circle at 90% 90%, rgba(107, 155, 104, 0.2), transparent 28rem),
+        var(--cream);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .page {
+      width: min(100% - 32px, 980px);
+      margin: 0 auto;
+      padding: 42px 0 34px;
+    }
+
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--orange);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 620px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.8rem, 8vw, 5.7rem);
+      font-weight: 500;
+      letter-spacing: -0.07em;
+      line-height: 0.92;
+    }
+
+    .header-note {
+      max-width: 220px;
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+      line-height: 1.5;
+      text-align: right;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .controls {
+      padding: clamp(24px, 5vw, 46px);
+      border-right: 1px solid var(--line);
+      background: linear-gradient(145deg, #fffdf8, #fff5e8);
+    }
+
+    .controls h2,
+    .history h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+
+    .controls > p {
+      margin: 9px 0 27px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    fieldset {
+      margin: 0 0 25px;
+      padding: 0;
+      border: 0;
+    }
+
+    legend {
+      margin-bottom: 11px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter {
+      position: relative;
+    }
+
+    .filter input {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .filter label {
+      display: block;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 0.88rem;
+      transition: 160ms ease;
+    }
+
+    .filter label:hover {
+      border-color: var(--orange);
+      color: var(--orange);
+    }
+
+    .filter input:checked + label {
+      border-color: var(--ink);
+      background: var(--ink);
+      color: white;
+    }
+
+    .generate {
+      width: 100%;
+      padding: 16px 20px;
+      border: 0;
+      border-radius: 15px;
+      color: white;
+      background: var(--orange);
+      box-shadow: 0 10px 20px rgba(239, 112, 77, 0.24);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 800;
+      transition: transform 160ms ease, background 160ms ease;
+    }
+
+    .generate:hover {
+      background: #dc5d3c;
+      transform: translateY(-2px);
+    }
+
+    .generate:active {
+      transform: translateY(0);
+    }
+
+    .result {
+      display: flex;
+      min-height: 430px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: clamp(28px, 6vw, 60px);
+      text-align: center;
+      background:
+        linear-gradient(rgba(255, 253, 248, 0.88), rgba(255, 253, 248, 0.88)),
+        radial-gradient(circle at 50% 30%, #f7c948 0 2px, transparent 3px);
+      background-size: auto, 21px 21px;
+    }
+
+    .dish-emoji {
+      min-height: 150px;
+      font-size: clamp(7rem, 18vw, 11rem);
+      line-height: 1;
+      filter: drop-shadow(0 16px 12px rgba(72, 47, 22, 0.12));
+      transform: rotate(-4deg);
+      user-select: none;
+    }
+
+    .result.is-new .dish-emoji {
+      animation: pop 420ms cubic-bezier(.2, .8, .2, 1);
+    }
+
+    .meal-type {
+      margin: 25px 0 7px;
+      color: var(--green);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .dish-name {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 500;
+      letter-spacing: -0.05em;
+    }
+
+    .dish-description {
+      max-width: 430px;
+      margin: 13px 0 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 21px;
+    }
+
+    .detail {
+      padding: 7px 11px;
+      border-radius: 8px;
+      background: #f7efe2;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .history {
+      margin-top: 25px;
+      padding: 25px 28px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 253, 248, 0.76);
+    }
+
+    .history-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 17px;
+    }
+
+    .clear {
+      border: 0;
+      padding: 0;
+      color: var(--orange);
+      background: transparent;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .history-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      min-height: 29px;
+    }
+
+    .history-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: white;
+      color: var(--muted);
+      font-size: 0.83rem;
+    }
+
+    .empty-history {
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    footer {
+      margin-top: 23px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    @keyframes pop {
+      0% { opacity: 0; transform: translateY(16px) rotate(-12deg) scale(0.82); }
+      70% { transform: translateY(-6px) rotate(3deg) scale(1.05); }
+      100% { opacity: 1; transform: translateY(0) rotate(-4deg) scale(1); }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        padding-top: 25px;
+      }
+
+      header {
+        display: block;
+      }
+
+      .header-note {
+        max-width: 360px;
+        margin-top: 17px;
+        text-align: left;
+      }
+
+      .app {
+        grid-template-columns: 1fr;
+      }
+
+      .controls {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .result {
+        min-height: 390px;
+      }
+
+      .history {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div>
+        <p class="eyebrow">A tiny decision engine</p>
+        <h1>What should we eat for lunch?</h1>
+      </div>
+      <p class="header-note">
+        Pick a mood, press the button, and let lunch take care of itself.
+      </p>
+    </header>
+
+    <section class="app" aria-label="Random lunch recommendation app">
+      <aside class="controls">
+        <h2>Set the mood</h2>
+        <p>Choose a category or keep it wide open. Every recommendation is ready for one satisfying lunch.</p>
+
+        <fieldset>
+          <legend>Menu type</legend>
+          <div class="filters">
+            <div class="filter">
+              <input id="all" name="category" type="radio" value="all" checked />
+              <label for="all">Anything</label>
+            </div>
+            <div class="filter">
+              <input id="comfort" name="category" type="radio" value="Comfort" />
+              <label for="comfort">Comfort</label>
+            </div>
+            <div class="filter">
+              <input id="fresh" name="category" type="radio" value="Fresh" />
+              <label for="fresh">Fresh</label>
+            </div>
+            <div class="filter">
+              <input id="quick" name="category" type="radio" value="Quick" />
+              <label for="quick">Quick</label>
+            </div>
+            <div class="filter">
+              <input id="world" name="category" type="radio" value="Around the world" />
+              <label for="world">Around the world</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button class="generate" id="generate" type="button">Surprise me</button>
+      </aside>
+
+      <section class="result" id="result" aria-live="polite">
+        <div class="dish-emoji" id="dishEmoji" role="img" aria-label="Plate of food">🍽️</div>
+        <p class="meal-type" id="mealType">Your lunch awaits</p>
+        <h2 class="dish-name" id="dishName">Make a choice</h2>
+        <p class="dish-description" id="dishDescription">
+          One click stands between you and a deliciously random lunch.
+        </p>
+        <div class="details" id="details"></div>
+      </section>
+    </section>
+
+    <section class="history" aria-labelledby="historyTitle">
+      <div class="history-heading">
+        <h2 id="historyTitle">Recent picks</h2>
+        <button class="clear" id="clearHistory" type="button">Clear history</button>
+      </div>
+      <div class="history-list" id="historyList">
+        <span class="empty-history">Your recommendations will appear here.</span>
+      </div>
+    </section>
+
+    <footer>Made for indecisive lunches and excellent leftovers.</footer>
+  </main>
+
+  <script>
+    const dishes = [
+      {
+        name: "Margherita Pizza",
+        emoji: "🍕",
+        category: "Comfort",
+        description: "A thin, crisp base with tomato, mozzarella, and fresh basil.",
+        time: "25 min",
+        style: "Vegetarian"
+      },
+      {
+        name: "Cheeseburger",
+        emoji: "🍔",
+        category: "Comfort",
+        description: "A juicy burger with melted cheese, lettuce, tomato, and pickles.",
+        time: "20 min",
+        style: "Classic"
+      },
+      {
+        name: "Hot Dog",
+        emoji: "🌭",
+        category: "Quick",
+        description: "A toasted bun, a sizzling sausage, and your favorite toppings.",
+        time: "10 min",
+        style: "Easy"
+      },
+      {
+        name: "Taco Plate",
+        emoji: "🌮",
+        category: "Around the world",
+        description: "Soft tortillas filled with seasoned beans, avocado, salsa, and lime.",
+        time: "20 min",
+        style: "Spicy"
+      },
+      {
+        name: "Burrito",
+        emoji: "🌯",
+        category: "Around the world",
+        description: "A hearty wrap packed with rice, beans, vegetables, and smoky sauce.",
+        time: "20 min",
+        style: "Filling"
+      },
+      {
+        name: "Sushi Roll",
+        emoji: "🍣",
+        category: "Fresh",
+        description: "Neat rolls of seasoned rice, vegetables, and your choice of filling.",
+        time: "30 min",
+        style: "Japanese"
+      },
+      {
+        name: "Ramen",
+        emoji: "🍜",
+        category: "Comfort",
+        description: "A warm bowl of noodles, rich broth, mushrooms, and spring onion.",
+        time: "25 min",
+        style: "Japanese"
+      },
+      {
+        name: "Spaghetti",
+        emoji: "🍝",
+        category: "Comfort",
+        description: "Twirlable pasta with tomato sauce, parmesan, and fresh herbs.",
+        time: "20 min",
+        style: "Italian"
+      },
+      {
+        name: "Curry",
+        emoji: "🍛",
+        category: "Around the world",
+        description: "A fragrant bowl of curry served with fluffy rice and fresh coriander.",
+        time: "30 min",
+        style: "Aromatic"
+      },
+      {
+        name: "Falafel Pita",
+        emoji: "🧆",
+        category: "Fresh",
+        description: "Crispy falafel in warm pita with salad, tahini, and herbs.",
+        time: "15 min",
+        style: "Vegetarian"
+      },
+      {
+        name: "Green Salad",
+        emoji: "🥗",
+        category: "Fresh",
+        description: "A bright bowl of leafy greens, crunchy vegetables, and lemon dressing.",
+        time: "10 min",
+        style: "Light"
+      },
+      {
+        name: "Sandwich",
+        emoji: "🥪",
+        category: "Quick",
+        description: "Toasted bread layered with cheese, greens, tomato, and a savory filling.",
+        time: "10 min",
+        style: "Flexible"
+      },
+      {
+        name: "Baked Potato",
+        emoji: "🥔",
+        category: "Comfort",
+        description: "A fluffy baked potato loaded with cheese, herbs, and sour cream.",
+        time: "35 min",
+        style: "Vegetarian"
+      },
+      {
+        name: "Fried Rice",
+        emoji: "🍚",
+        category: "Quick",
+        description: "Steamed rice stir-fried with vegetables, egg, and savory seasonings.",
+        time: "15 min",
+        style: "Fast"
+      },
+      {
+        name: "Paella",
+        emoji: "🥘",
+        category: "Around the world",
+        description: "Saffron rice cooked with peppers, peas, and a generous mix of toppings.",
+        time: "40 min",
+        style: "Spanish"
+      },
+      {
+        name: "Pancakes",
+        emoji: "🥞",
+        category: "Comfort",
+        description: "A stack of golden pancakes with berries and a drizzle of maple syrup.",
+        time: "20 min",
+        style: "Sweet lunch"
+      }
+    ];
+
+    const result = document.getElementById("result");
+    const dishEmoji = document.getElementById("dishEmoji");
+    const mealType = document.getElementById("mealType");
+    const dishName = document.getElementById("dishName");
+    const dishDescription = document.getElementById("dishDescription");
+    const details = document.getElementById("details");
+    const historyList = document.getElementById("historyList");
+    const generateButton = document.getElementById("generate");
+    const clearHistoryButton = document.getElementById("clearHistory");
+
+    let history = [];
+
+    try {
+      history = JSON.parse(localStorage.getItem("lunch-history")) || [];
+    } catch {
+      history = [];
+    }
+
+    function saveHistory() {
+      localStorage.setItem("lunch-history", JSON.stringify(history));
+    }
+
+    function renderHistory() {
+      historyList.innerHTML = "";
+
+      if (history.length === 0) {
+        historyList.innerHTML = '<span class="empty-history">Your recommendations will appear here.</span>';
+        return;
+      }
+
+      history.forEach((dish) => {
+        const item = document.createElement("span");
+        item.className = "history-item";
+        item.innerHTML = `<span aria-hidden="true">${dish.emoji}</span>${dish.name}`;
+        historyList.appendChild(item);
+      });
+    }
+
+    function getSelectedCategory() {
+      return document.querySelector('input[name="category"]:checked').value;
+    }
+
+    function pickDish() {
+      const category = getSelectedCategory();
+      const available = category === "all"
+        ? dishes
+        : dishes.filter((dish) => dish.category === category);
+
+      const choices = available.length > 1
+        ? available.filter((dish) => dish.name !== history[0]?.name)
+        : available;
+
+      const selected = choices[Math.floor(Math.random() * choices.length)];
+
+      dishEmoji.textContent = selected.emoji;
+      dishEmoji.setAttribute("aria-label", selected.name);
+      mealType.textContent = selected.category;
+      dishName.textContent = selected.name;
+      dishDescription.textContent = selected.description;
+      details.innerHTML = `
+        <span class="detail">${selected.time}</span>
+        <span class="detail">${selected.style}</span>
+      `;
+
+      result.classList.remove("is-new");
+      void result.offsetWidth;
+      result.classList.add("is-new");
+
+      history = [
+        selected,
+        ...history.filter((dish) => dish.name !== selected.name)
+      ].slice(0, 5);
+
+      saveHistory();
+      renderHistory();
+    }
+
+    generateButton.addEventListener("click", pickDish);
+
+    clearHistoryButton.addEventListener("click", () => {
+      history = [];
+      saveHistory();
+      renderHistory();
+    });
+
+    renderHistory();
+  </script>
+</body>
+</html>

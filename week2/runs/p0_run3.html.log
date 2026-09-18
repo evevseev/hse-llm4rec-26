@@ -1,0 +1,609 @@
+[0m
+> build · gpt-5.6-luna
+[0m
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A playful random lunch menu generator." />
+  <title>Random Lunch Generator</title>
+  <style>
+    :root {
+      --ink: #172018;
+      --muted: #667267;
+      --cream: #fffaf0;
+      --paper: #fffef9;
+      --orange: #f26b38;
+      --yellow: #ffd166;
+      --green: #3f8065;
+      --line: #e7dfcf;
+      --shadow: 0 24px 60px rgba(56, 47, 30, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 8%, rgba(255, 209, 102, 0.38), transparent 28rem),
+        radial-gradient(circle at 95% 85%, rgba(63, 128, 101, 0.18), transparent 30rem),
+        var(--cream);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 42px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 52px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--orange);
+      box-shadow: 5px 5px 0 var(--yellow);
+      font-size: 22px;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 0.83rem;
+      font-weight: 700;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #55a56d;
+      box-shadow: 0 0 0 4px rgba(85, 165, 109, 0.14);
+    }
+
+    .hero {
+      max-width: 700px;
+      margin: 0 auto 44px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 16px;
+      color: var(--orange);
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.3rem, 10vw, 6.8rem);
+      line-height: 0.88;
+      letter-spacing: -0.075em;
+    }
+
+    .hero p {
+      max-width: 510px;
+      margin: 24px auto 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.65;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .card {
+      border: 1px solid rgba(231, 223, 207, 0.95);
+      border-radius: 28px;
+      background: rgba(255, 254, 249, 0.86);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .generator {
+      position: relative;
+      display: flex;
+      min-height: 490px;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: clamp(28px, 5vw, 54px);
+    }
+
+    .generator::before {
+      position: absolute;
+      top: -110px;
+      right: -90px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      background: rgba(255, 209, 102, 0.3);
+      content: "";
+    }
+
+    .result-label {
+      position: relative;
+      z-index: 1;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .result {
+      position: relative;
+      z-index: 1;
+      margin: auto 0;
+      padding: 34px 0;
+      text-align: center;
+    }
+
+    .food-icon {
+      display: grid;
+      width: 112px;
+      height: 112px;
+      margin: 0 auto 24px;
+      place-items: center;
+      border-radius: 34px;
+      background: var(--yellow);
+      font-size: 58px;
+      box-shadow: 8px 8px 0 rgba(242, 107, 56, 0.18);
+      transition: transform 0.35s ease;
+    }
+
+    .result h2 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.4rem, 6vw, 4.3rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .result p {
+      max-width: 440px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+
+    .generate-button {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 18px 24px;
+      border: 0;
+      border-radius: 16px;
+      color: #fff;
+      background: var(--orange);
+      cursor: pointer;
+      font: inherit;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      box-shadow: 0 8px 0 #c65027;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .generate-button:hover {
+      background: #e95f2e;
+    }
+
+    .generate-button:active {
+      transform: translateY(5px);
+      box-shadow: 0 3px 0 #c65027;
+    }
+
+    .generate-button:focus-visible,
+    .filter select:focus-visible {
+      outline: 4px solid rgba(63, 128, 101, 0.3);
+      outline-offset: 3px;
+    }
+
+    .side-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .filter {
+      padding: 28px;
+    }
+
+    .card-heading {
+      margin: 0 0 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.8rem;
+      letter-spacing: -0.045em;
+    }
+
+    .filter label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    select {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--ink);
+      background: #fff;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .tip {
+      flex: 1;
+      padding: 28px;
+      color: #fff;
+      background: var(--green);
+    }
+
+    .tip .card-heading {
+      color: var(--yellow);
+    }
+
+    .tip p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.82);
+      line-height: 1.65;
+    }
+
+    .tip strong {
+      color: #fff;
+    }
+
+    .history {
+      margin-top: 22px;
+      padding: 28px;
+    }
+
+    .history-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .history-heading span {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .history-list {
+      display: flex;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow-x: auto;
+    }
+
+    .history-list li {
+      flex: 0 0 auto;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    .pop {
+      animation: pop 0.42s ease both;
+    }
+
+    @keyframes pop {
+      0% { opacity: 0; transform: translateY(12px) scale(0.96); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @media (max-width: 760px) {
+      header {
+        margin-bottom: 38px;
+      }
+
+      .status {
+        display: none;
+      }
+
+      .app-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .generator {
+        min-height: 440px;
+      }
+
+      .side-panel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .page {
+        width: min(100% - 22px, 1080px);
+        padding-top: 18px;
+      }
+
+      .brand {
+        font-size: 0.9rem;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        font-size: 19px;
+      }
+
+      .hero {
+        margin-bottom: 30px;
+      }
+
+      .hero p {
+        font-size: 0.95rem;
+      }
+
+      .generator,
+      .filter,
+      .tip,
+      .history {
+        padding: 23px;
+      }
+
+      .side-panel {
+        display: flex;
+      }
+
+      .food-icon {
+        width: 92px;
+        height: 92px;
+        font-size: 46px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">🍴</div>
+        <span>Lunch, decided.</span>
+      </div>
+      <div class="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        No sign-up required
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Your daily lunch oracle</p>
+      <h1 id="page-title">What are we<br /><em>eating?</em></h1>
+      <p>Skip the group chat debate. Choose a preference, press the button, and let a little randomness make the decision for you.</p>
+    </section>
+
+    <section class="app-grid" aria-label="Lunch recommendation tool">
+      <article class="card generator">
+        <div class="result-label">Today's recommendation</div>
+
+        <div class="result" id="result" aria-live="polite">
+          <div class="food-icon" id="foodIcon" aria-hidden="true">🥢</div>
+          <h2 id="foodName">Surprise me</h2>
+          <p id="foodDescription">Your next delicious lunch is one click away.</p>
+        </div>
+
+        <button class="generate-button" id="generateButton" type="button">
+          Generate lunch <span aria-hidden="true">→</span>
+        </button>
+      </article>
+
+      <aside class="side-panel">
+        <section class="card filter">
+          <h2 class="card-heading">Set the mood</h2>
+          <label for="preference">I feel like eating...</label>
+          <select id="preference">
+            <option value="any">Anything delicious</option>
+            <option value="quick">Something quick</option>
+            <option value="healthy">Something fresh</option>
+            <option value="comfort">Comfort food</option>
+            <option value="vegetarian">Vegetarian</option>
+          </select>
+        </section>
+
+        <section class="card tip">
+          <h2 class="card-heading">A small tip</h2>
+          <p><strong>Still unsure?</strong> Generate twice. If you prefer the first result, that's your answer. If you prefer the second, that's also your answer.</p>
+        </section>
+      </aside>
+    </section>
+
+    <section class="card history" aria-labelledby="history-title">
+      <div class="history-heading">
+        <h2 class="card-heading" id="history-title">Recent picks</h2>
+        <span id="historyCount">0 picks</span>
+      </div>
+      <ul class="history-list" id="historyList">
+        <li>Your recommendations will appear here</li>
+      </ul>
+    </section>
+
+    <footer>
+      Made for indecisive lunches. Hosted anywhere static files work.
+    </footer>
+  </main>
+
+  <script>
+    const lunches = [
+      {
+        name: "Spicy Ramen",
+        icon: "🍜",
+        description: "A warm bowl of noodles, rich broth, and just enough chili to wake up your afternoon.",
+        tags: ["comfort", "quick"]
+      },
+      {
+        name: "Rainbow Poke Bowl",
+        icon: "🥗",
+        description: "Fresh fish, crunchy vegetables, rice, and a bright sesame dressing in every bite.",
+        tags: ["healthy", "quick"]
+      },
+      {
+        name: "Margherita Pizza",
+        icon: "🍕",
+        description: "Simple, classic, and impossible to regret: tomato, mozzarella, basil, and a crisp crust.",
+        tags: ["comfort", "vegetarian"]
+      },
+      {
+        name: "Falafel Pita",
+        icon: "🥙",
+        description: "Golden falafel, creamy hummus, fresh salad, and tangy pickles tucked into warm pita.",
+        tags: ["vegetarian", "quick", "healthy"]
+      },
+      {
+        name: "Chicken Tacos",
+        icon: "🌮",
+        description: "Three soft tacos loaded with seasoned chicken, lime, salsa, and plenty of fresh toppings.",
+        tags: ["quick", "comfort"]
+      },
+      {
+        name: "Sushi Set",
+        icon: "🍣",
+        description: "A colorful selection of rolls and nigiri for a lunch that feels lighter but still special.",
+        tags: ["healthy", "quick"]
+      },
+      {
+        name: "Grilled Cheese & Soup",
+        icon: "🥪",
+        description: "Golden, melty, nostalgic comfort paired with a warm bowl of tomato soup.",
+        tags: ["comfort", "vegetarian"]
+      },
+      {
+        name: "Green Goddess Salad",
+        icon: "🥬",
+        description: "Crisp greens, avocado, grains, herbs, and a zesty dressing that keeps things interesting.",
+        tags: ["healthy", "vegetarian"]
+      },
+      {
+        name: "Bibimbap",
+        icon: "🍚",
+        description: "Rice, vegetables, a fried egg, and gochujang mixed together into a deeply satisfying bowl.",
+        tags: ["healthy", "comfort"]
+      },
+      {
+        name: "Loaded Burrito",
+        icon: "🌯",
+        description: "Beans, rice, cheese, salsa, and your favorite fillings wrapped up for maximum convenience.",
+        tags: ["comfort", "quick", "vegetarian"]
+      }
+    ];
+
+    const preference = document.getElementById("preference");
+    const generateButton = document.getElementById("generateButton");
+    const result = document.getElementById("result");
+    const foodIcon = document.getElementById("foodIcon");
+    const foodName = document.getElementById("foodName");
+    const foodDescription = document.getElementById("foodDescription");
+    const historyList = document.getElementById("historyList");
+    const historyCount = document.getElementById("historyCount");
+
+    let history = [];
+
+    function getRecommendations() {
+      const selected = preference.value;
+
+      if (selected === "any") {
+        return lunches;
+      }
+
+      const filtered = lunches.filter((lunch) => lunch.tags.includes(selected));
+      return filtered.length ? filtered : lunches;
+    }
+
+    function generateLunch() {
+      const recommendations = getRecommendations();
+      const currentName = foodName.textContent;
+      let options = recommendations.filter((lunch) => lunch.name !== currentName);
+
+      if (!options.length) {
+        options = recommendations;
+      }
+
+      const lunch = options[Math.floor(Math.random() * options.length)];
+
+      result.classList.remove("pop");
+      void result.offsetWidth;
+      result.classList.add("pop");
+
+      foodIcon.textContent = lunch.icon;
+      foodName.textContent = lunch.name;
+      foodDescription.textContent = lunch.description;
+
+      history = [lunch, ...history.filter((item) => item.name !== lunch.name)].slice(0, 5);
+      renderHistory();
+    }
+
+    function renderHistory() {
+      historyCount.textContent = `${history.length} ${history.length === 1 ? "pick" : "picks"}`;
+
+      if (!history.length) {
+        historyList.innerHTML = "<li>Your recommendations will appear here</li>";
+        return;
+      }
+
+      historyList.innerHTML = history
+        .map((lunch) => `<li>${lunch.icon} ${lunch.name}</li>`)
+        .join("");
+    }
+
+    generateButton.addEventListener("click", generateLunch);
+    preference.addEventListener("change", generateLunch);
+  </script>
+</body>
+</html>
+```
