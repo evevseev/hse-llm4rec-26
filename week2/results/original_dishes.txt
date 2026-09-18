@@ -1,0 +1,14 @@
+ 0 Pizza      OK      width= 64px  <i class="fas fa-pizza-slice"></i>
+ 1 Sushi      OK      width= 72px  <i class="fas fa-fish"></i>
+ 2 Burger     OK      width= 64px  <i class="fas fa-hamburger"></i>
+ 3 Salad      OK      width= 64px  <i class="fas fa-leaf"></i>
+ 4 Tacos      OK      width= 64px  <i class="fas fa-utensil-spoon"></i>
+ 5 Ramen      MISSING width=  0px  <i class="fas fa-bowl-hot"></i>
+ 6 Sandwich   OK      width= 64px  <i class="fas fa-bread-slice"></i>
+ 7 Pasta      MISSING width=  0px  <i class="fas fa-pasta"></i>
+ 8 Curry      OK      width= 64px  <i class="fas fa-mortar-pestle"></i>
+ 9 Steak      OK      width= 64px  <i class="fas fa-drumstick-bite"></i>
+10 Soup       MISSING width=  0px  <i class="fas fa-bowl"></i>
+11 BBQ        OK      width= 56px  <i class="fas fa-fire"></i>
+
+9/12 dishes show a picture; console errors: 0

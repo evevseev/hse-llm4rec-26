@@ -1,3 +1,42 @@
+[0m
+> build · gpt-5.6-luna
+[0m
+I’ll verify the candidate dish icons against the exact Font Awesome 6.4.0 CSS, then return the corrected HTML with only the menu entries changed.
+[0m% [0mWebFetch https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+[0m✗ [0mGrep "\.fa-(pizza-slice|burger|hotdog|french-fries|apple-whole|carrot|corn|egg|cookie|cake-candles|fish|shrimp):before" failed[90m in /Users/evgeny.evseev/.local/share/opencode/tool-output[0m
+[91m[1mError: [0mRipgrep JSON record exceeded 65536 bytes
+[0m✗ [0mGrep "\.fa-(utensils|question|random|spinner):before" failed[90m in /Users/evgeny.evseev/.local/share/opencode/tool-output[0m
+[91m[1mError: [0mRipgrep JSON record exceeded 65536 bytes
+[0m
+[0m$ [0mrg -o '\.fa-(pizza-slice|burger|hotdog|french-fries|apple-whole|carrot|corn|egg|cookie|cake-candles|fish|shrimp):before' "/Users/evgeny.evseev/.local/share/opencode/tool-output/tool_0b508fccc001Yqi6i4sOeP4CEk"
+.fa-egg:before
+.fa-pizza-slice:before
+.fa-apple-whole:before
+.fa-burger:before
+.fa-cake-candles:before
+.fa-cookie:before
+.fa-hotdog:before
+.fa-shrimp:before
+.fa-fish:before
+.fa-carrot:before
+[0m
+[0m$ [0mrg -o '\.fa-(bacon|cheese|drumstick-bite|pepper-hot|wheat-awn|bowl-food|bread-slice|mortar-pestle):before' "/Users/evgeny.evseev/.local/share/opencode/tool-output/tool_0b508fccc001Yqi6i4sOeP4CEk"
+.fa-wheat-awn:before
+.fa-mortar-pestle:before
+.fa-bacon:before
+.fa-pepper-hot:before
+.fa-bowl-food:before
+.fa-bread-slice:before
+.fa-drumstick-bite:before
+.fa-cheese:before
+[0m
+[0m$ [0mrg -o '\.fa-(utensils|question|random|spinner):before' "/Users/evgeny.evseev/.local/share/opencode/tool-output/tool_0b508fccc001Yqi6i4sOeP4CEk"
+.fa-random:before
+.fa-question:before
+.fa-utensils:before
+.fa-spinner:before
+[0m
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,17 +194,17 @@
             // Array of lunch options with corresponding Font Awesome icons
             const lunchMenu = [
                 { name: "Pizza", icon: "fas fa-pizza-slice" },
-                { name: "Sushi", icon: "fas fa-fish" },
-                { name: "Burger", icon: "fas fa-hamburger" },
-                { name: "Salad", icon: "fas fa-leaf" },
-                { name: "Tacos", icon: "fas fa-pepper-hot" },
-                { name: "Ramen", icon: "fas fa-bowl-food" },
-                { name: "Sandwich", icon: "fas fa-bread-slice" },
-                { name: "Pasta", icon: "fas fa-plate-wheat" },
-                { name: "Curry", icon: "fas fa-mortar-pestle" },
-                { name: "Steak", icon: "fas fa-drumstick-bite" },
-                { name: "Soup", icon: "fas fa-bowl-food" },
-                { name: "BBQ", icon: "fas fa-fire" }
+                { name: "Burger", icon: "fas fa-burger" },
+                { name: "Hot Dog", icon: "fas fa-hotdog" },
+                { name: "Bacon", icon: "fas fa-bacon" },
+                { name: "Cheese", icon: "fas fa-cheese" },
+                { name: "Egg", icon: "fas fa-egg" },
+                { name: "Fish", icon: "fas fa-fish" },
+                { name: "Shrimp", icon: "fas fa-shrimp" },
+                { name: "Apple", icon: "fas fa-apple-whole" },
+                { name: "Carrot", icon: "fas fa-carrot" },
+                { name: "Cookie", icon: "fas fa-cookie" },
+                { name: "Cake", icon: "fas fa-cake-candles" }
             ];
             
             // Function to generate random lunch
@@ -200,3 +239,20 @@
     </script>
 </body>
 </html>
+```
+
+Checked against the Font Awesome 6.4.0 stylesheet:
+
+- `fa-pizza-slice` valid, depicts pizza.
+- `fa-burger` valid, depicts a burger.
+- `fa-hotdog` valid, depicts a hot dog.
+- `fa-bacon` valid, depicts bacon.
+- `fa-cheese` valid, depicts cheese.
+- `fa-egg` valid, depicts an egg.
+- `fa-fish` valid, depicts fish.
+- `fa-shrimp` valid, depicts shrimp.
+- `fa-apple-whole` valid, depicts an apple.
+- `fa-carrot` valid, depicts a carrot.
+- `fa-cookie` valid, depicts a cookie.
+- `fa-cake-candles` valid, depicts cake.
+- Existing interface icons `fa-utensils`, `fa-question`, `fa-random`, and `fa-spinner` are also valid.

@@ -1,23 +1,27 @@
-# A01 — Random Lunch Generator: fixing the images
+# A01 — Random Lunch Generator: find and fix the broken images
 
-Teacher's version ([original/](original)) shows **no picture** for 3 of 12 dishes (Ramen, Pasta, Soup):
-it uses Font Awesome icons `fa-bowl-hot`, `fa-pasta`, `fa-bowl`, which do not exist in Font Awesome Free 6.4.0.
-The browser fails silently — no error in the console, just an empty space.
+Starter code and prompt from the course: [original/](original) ([dryjins/RecSys-LLMs/week1](https://github.com/dryjins/RecSys-LLMs/tree/main/week1)).
 
-Fix: change the prompt ([prompts/p1_emoji.md](prompts/p1_emoji.md)) so the model draws every dish with a standard
-Unicode emoji instead of an icon font, and must replace a dish if there is no emoji for it.
+**Error.** 3 of 12 dishes (Ramen, Pasta, Soup) show no picture: their Font Awesome names `fa-bowl-hot`, `fa-pasta`,
+`fa-bowl` do not exist in Font Awesome Free 6.4.0, which the page loads. No console error — just an empty space.
+**Cause in the prompt.** The README in the prompt only says "Icons provided by Font Awesome" — no version, no Free/Pro,
+no rule that names must exist, so the model wrote names from memory. (The prompt's README also lists
+`style.css`/`script.js`/`assets/`, while the code is a single file.)
 
-| Page | Model | Images | Broken |
-|---|---|---|---|
-| original/index.html (teacher) | unknown | 16 FA icons | **3** |
-| runs/p0_run1..3 (original prompt) | gpt-5.6-luna via opencode | 11–12 emoji | 0 |
-| runs/p1_run1..3 (fixed prompt) | gpt-5.6-luna via opencode | 16–17 emoji | 0 |
+**Fix.** [fixed/prompt.md](fixed/prompt.md) (diff vs original: `diff original/prompt.md fixed/prompt.md`) requires
+Font Awesome Free 6.4.0 and checking every name against its stylesheet. The starter `index.html` + fixed prompt were
+sent to GPT-5.6 Luna through opencode; the agent downloaded the CSS and grepped each name (see `fixed/iter1/*.log`).
+Result [index.html](index.html) = `fixed/iter1/run3.html`, a 4-line change of the starter code.
 
-`index.html` = `runs/p1_run1.html` (unchanged model output).
+| Page | Dishes with a picture |
+|---|---|
+| original/index.html | 9 / 12 |
+| fixed, iteration 1 (runs 1–3) | 12 / 12 in every run |
+| fixed, iteration 2 (runs 1–3, "different icon per dish, dishes may change") | 12 / 12, but menu drifts to Cookie/Cake/Egg |
 
 ## Reproduce
-
 ```bash
-eval/run_opencode.sh prompts/p1_emoji.md runs/new.html          # generate (needs opencode)
-uv run eval/check_images.py original/index.html runs/*.html --out results/check.jsonl   # check images in Chrome
+eval/run_opencode.sh fixed/iter1/full_prompt.md out.html      # needs opencode
+uv run eval/check_all_dishes.py original/index.html           # shows each of the 12 dishes in Chrome
+uv run eval/check_all_dishes.py index.html
 ```

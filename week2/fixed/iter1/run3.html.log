@@ -1,3 +1,43 @@
+[0m
+> build · gpt-5.6-luna
+[0m
+[0m% [0mWebFetch https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+[0m
+[0m$ [0mcurl -fsSL "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" | rg -o '\.fa-(utensils|question|random|pizza-slice|fish|hamburger|leaf|utensil-spoon|bowl-hot|bread-slice|pasta|mortar-pestle|drumstick-bite|bowl|fire|spinner):before'
+.fa-utensil-spoon:before
+.fa-mortar-pestle:before
+.fa-pizza-slice:before
+.fa-random:before
+.fa-fire:before
+.fa-bread-slice:before
+.fa-question:before
+.fa-leaf:before
+.fa-hamburger:before
+.fa-utensils:before
+.fa-fish:before
+.fa-drumstick-bite:before
+.fa-spinner:before
+[0m
+[0m$ [0mcurl -fsSL "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" | rg -o '\.fa-(bowl-food|bowl-rice|bowl|plate-wheat|pepper-hot|carrot|burger|hotdog|egg|cheese|cookie|apple-whole|shrimp|fish|utensils|spoon|plate-wheat|seedling|wheat-awn):before'
+.fa-spoon:before
+.fa-wheat-awn:before
+.fa-egg:before
+.fa-pepper-hot:before
+.fa-plate-wheat:before
+.fa-seedling:before
+.fa-bowl-food:before
+.fa-apple-whole:before
+.fa-burger:before
+.fa-cookie:before
+.fa-utensils:before
+.fa-bowl-rice:before
+.fa-hotdog:before
+.fa-shrimp:before
+.fa-fish:before
+.fa-carrot:before
+.fa-cheese:before
+[0m
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -200,3 +240,9 @@
     </script>
 </body>
 </html>
+```
+
+Checked every icon against the Font Awesome 6.4.0 stylesheet using the required `.fa-<name>:before` rule:
+
+- Kept valid: `utensils`, `question`, `random`, `pizza-slice`, `fish`, `hamburger`, `leaf`, `bread-slice`, `mortar-pestle`, `drumstick-bite`, `fire`, `spinner`
+- Replaced invalid or unsuitable names: `utensil-spoon` → `pepper-hot`, `bowl-hot` → `bowl-food`, `pasta` → `plate-wheat`, `bowl` → `bowl-food`

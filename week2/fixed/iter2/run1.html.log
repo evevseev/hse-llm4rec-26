@@ -1,3 +1,38 @@
+[0m
+> build · gpt-5.6-luna
+[0m
+I’ll verify the candidate icon selectors against the exact Font Awesome 6.4.0 stylesheet, then return the minimally changed HTML with 12 unique, dish-matching entries.
+[0m% [0mWebFetch https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+[0m✗ [0mGrep "\.fa-(pizza-slice|fish|burger|carrot|hotdog|bowl-hot|bread-slice|cheese|drumstick-bite|bowl-food|fire|utensils|question|random|spinner):before" failed[90m in /Users/evgeny.evseev/.local/share/opencode/tool-output[0m
+[91m[1mError: [0mRipgrep JSON record exceeded 65536 bytes
+[0m
+[0m$ [0mcurl -fsSL "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" | perl -0777 -ne 'for my $n (qw(pizza-slice fish burger carrot hotdog bowl-hot bread-slice cheese drumstick-bite bowl-food bacon)) { print "$n: ", (/\.fa-\Q$n\E:before/ ? "present" : "missing"), "\n" }'
+pizza-slice: present
+fish: present
+burger: present
+carrot: present
+hotdog: present
+bowl-hot: missing
+bread-slice: present
+cheese: present
+drumstick-bite: present
+bowl-food: present
+bacon: present
+[0m
+[0m$ [0mcurl -fsSL "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" | perl -0777 -ne 'for my $n (qw(bowl-rice bowl-food noodles soup mug-hot hotdog french-fries egg apple-whole cookie-bite utensils)) { print "$n: ", (/\.fa-\Q$n\E:before/ ? "present" : "missing"), "\n" }'
+bowl-rice: present
+bowl-food: present
+noodles: missing
+soup: missing
+mug-hot: present
+hotdog: present
+french-fries: missing
+egg: present
+apple-whole: present
+cookie-bite: present
+utensils: present
+[0m
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,17 +190,17 @@
             // Array of lunch options with corresponding Font Awesome icons
             const lunchMenu = [
                 { name: "Pizza", icon: "fas fa-pizza-slice" },
-                { name: "Sushi", icon: "fas fa-fish" },
-                { name: "Burger", icon: "fas fa-hamburger" },
-                { name: "Salad", icon: "fas fa-leaf" },
-                { name: "Tacos", icon: "fas fa-pepper-hot" },
-                { name: "Ramen", icon: "fas fa-bowl-food" },
-                { name: "Sandwich", icon: "fas fa-bread-slice" },
-                { name: "Pasta", icon: "fas fa-plate-wheat" },
-                { name: "Curry", icon: "fas fa-mortar-pestle" },
-                { name: "Steak", icon: "fas fa-drumstick-bite" },
+                { name: "Fish", icon: "fas fa-fish" },
+                { name: "Burger", icon: "fas fa-burger" },
+                { name: "Carrot", icon: "fas fa-carrot" },
+                { name: "Hot Dog", icon: "fas fa-hotdog" },
+                { name: "Ramen", icon: "fas fa-bowl-rice" },
+                { name: "Bread", icon: "fas fa-bread-slice" },
+                { name: "Cheese", icon: "fas fa-cheese" },
+                { name: "Chicken", icon: "fas fa-drumstick-bite" },
                 { name: "Soup", icon: "fas fa-bowl-food" },
-                { name: "BBQ", icon: "fas fa-fire" }
+                { name: "Bacon", icon: "fas fa-bacon" },
+                { name: "Egg", icon: "fas fa-egg" }
             ];
             
             // Function to generate random lunch
@@ -200,3 +235,21 @@
     </script>
 </body>
 </html>
+```
+
+Checked against the Font Awesome 6.4.0 stylesheet:
+
+- `fa-pizza-slice` present, depicts pizza
+- `fa-fish` present, depicts fish
+- `fa-burger` present, depicts burger
+- `fa-carrot` present, depicts carrot
+- `fa-hotdog` present, depicts hot dog
+- `fa-bowl-rice` present, depicts a rice/ramen bowl
+- `fa-bread-slice` present, depicts bread
+- `fa-cheese` present, depicts cheese
+- `fa-drumstick-bite` present, depicts chicken
+- `fa-bowl-food` present, depicts soup
+- `fa-bacon` present, depicts bacon
+- `fa-egg` present, depicts egg
+
+The original dishes without a matching or clearly depicting icon were replaced while keeping 12 menu options.
