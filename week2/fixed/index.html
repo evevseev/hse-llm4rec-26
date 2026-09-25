@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content-Based Movie Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Content-Based Movie Recommender</h1>
+        <p>Choose up to three movies you like. We'll recommend movies that match their combined genre profile.</p>
+        
+        <div class="controls">
+            <div class="movie-choice">
+                <label for="movie-select-1">Movie 1 (required)</label>
+                <select class="movie-select" id="movie-select-1">
+                    <option value="" selected>Choose a movie</option>
+                </select>
+            </div>
+            <div class="movie-choice">
+                <label for="movie-select-2">Movie 2 (optional)</label>
+                <select class="movie-select" id="movie-select-2">
+                    <option value="" selected>Choose another movie (optional)</option>
+                </select>
+            </div>
+            <div class="movie-choice">
+                <label for="movie-select-3">Movie 3 (optional)</label>
+                <select class="movie-select" id="movie-select-3">
+                    <option value="" selected>Choose another movie (optional)</option>
+                </select>
+            </div>
+            <button id="recommend-btn" onclick="getRecommendations()">Get Recommendations</button>
+        </div>
+        
+        <div id="result-box">
+            <p id="result">Please wait, loading data...</p>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
