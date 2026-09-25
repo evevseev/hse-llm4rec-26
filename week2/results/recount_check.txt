@@ -1,0 +1,27 @@
+Top-5 changed (with order): 108
+Top-5 changed (as a set): 100
+
+Top-5 for Toy Story:
+  Aladdin and the King of Thieves (1996)  cosine=1.000000  raters=26
+  Aladdin (1992)  cosine=0.866025  raters=219
+  Goofy Movie, A (1995)  cosine=0.866025  raters=20
+  George of the Jungle (1997)  cosine=0.816497  raters=162
+  Beavis and Butt-head Do America (1996)  cosine=0.816497  raters=156
+
+Top-5 for Toy Story + Star Wars + Fargo:
+  Empire Strikes Back, The (1980)  cosine=0.738549  raters=367
+  Transformers: The Movie, The (1986)  cosine=0.738549  raters=32
+  Return of the Jedi (1983)  cosine=0.674200  raters=507
+  Kid in King Arthur's Court, A (1995)  cosine=0.615457  raters=22
+  Princess Bride, The (1987)  cosine=0.603023  raters=324
+
+Selected movies vs their own profile:
+  Toy Story (1995)  cosine=0.522233
+  Star Wars (1977)  cosine=0.674200
+  Fargo (1996)  cosine=0.522233
+
+All 1662 item-to-item queries, cosine: mean genres per recommendation = 1.70
+
+All 1662 item-to-item queries, dot product: mean genres per recommendation = 2.99
+
+Titles with non-ASCII bytes: 9

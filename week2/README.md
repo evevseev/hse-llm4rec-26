@@ -30,6 +30,8 @@ Run these commands from this directory:
 node eval/compare-recommendations.js
 node eval/verify-cosine-recommendations.js
 node eval/analyze-recommendations.js
+python3 eval/recount_check.py > results/recount_check.txt
 ```
 
 The first checks the genre parser and compares the old Jaccard results with `fixed/`. The second verifies a cosine score by hand, checks duplicate handling, and checks accented-title decoding. The analysis script compares item-to-item and profile recommendations, then writes `results/recommendation-analysis.md`.
+The Python script recounts the key numbers independently of the JavaScript code.
