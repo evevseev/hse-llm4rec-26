@@ -12,7 +12,7 @@ const context = vm.createContext({ console, window: {} });
 
 const dataSource = fs.readFileSync(path.join(fixedDir, 'data.js'), 'utf8');
 const scriptSource = fs.readFileSync(path.join(fixedDir, 'script.js'), 'utf8');
-const itemText = fs.readFileSync(path.join(fixedDir, 'u.item'), 'utf8');
+const itemText = new TextDecoder('iso-8859-1').decode(fs.readFileSync(path.join(fixedDir, 'u.item')));
 const ratingText = fs.readFileSync(path.join(fixedDir, 'u.data'), 'utf8');
 
 vm.runInContext(dataSource, context, { filename: 'fixed/data.js' });
@@ -132,6 +132,11 @@ const fargo = findEntity('Fargo (1996)');
 const toyTop = rank([toyStory], 'cosine');
 const profileSeeds = [toyStory, starWars, fargo];
 const profileTop = rank(profileSeeds, 'cosine');
+const profileVector = createProfile(profileSeeds);
+const profileSeedScores = profileSeeds.map(movie => ({
+    title: movie.title,
+    score: cosineSimilarity(profileVector, movie.vector)
+}));
 assertMatchesApp([toyStory], toyTop);
 assertMatchesApp(profileSeeds, profileTop);
 
@@ -163,6 +168,22 @@ for (const [userId, likes] of likedByUser) {
         b.rating - a.rating || a.movie.title.localeCompare(b.movie.title) || a.movie.id - b.movie.id
     ).slice(0, 3).map(entry => entry.movie);
     if (topLiked.length === 3) userQueries.push({ userId, single: [topLiked[0]], profile: topLiked });
+}
+
+let usersWithSelectedMoviesInTop5 = 0;
+let selectedMovieLeakSlots = 0;
+for (const query of userQueries) {
+    const selectedKeys = new Set(query.profile.map(movie => movie.key));
+    const recommendations = appRecommendations(query.profile);
+    const leakedMovies = recommendations.filter(movie => {
+        const entity = movieById.get(movie.id);
+        return entity && selectedKeys.has(entity.key);
+    });
+    if (leakedMovies.length > 0) usersWithSelectedMoviesInTop5 += 1;
+    selectedMovieLeakSlots += leakedMovies.length;
+}
+if (selectedMovieLeakSlots > 0) {
+    throw new Error(`Selected movies appeared in Top-5 for ${usersWithSelectedMoviesInTop5} user profiles.`);
 }
 
 function evaluate(queries, selection, metric, tieBreak = 'popularity') {
@@ -279,6 +300,14 @@ function genreCountTable(rows) {
     ].join('\n');
 }
 
+function profileSeedTable(rows) {
+    return [
+        '| Selected profile movie | Cosine similarity to the profile |',
+        '|---|---:|',
+        ...rows.map(row => `| ${row.title} | ${formatNumber(row.score, 6)} |`)
+    ].join('\n');
+}
+
 function longTailTieTable(rows) {
     return [
         '| Query type | Tie-break for equal scores | Long-tail slots / total slots | Long-tail share | Unique Long-tail movies |',
@@ -315,6 +344,14 @@ ${topTable(toyTop)}
 ### Profile: Toy Story + Star Wars + Fargo
 
 ${topTable(profileTop)}
+
+Cosine similarity of each selected movie to the averaged profile, shown beside the Top-5 scores above:
+
+${profileSeedTable(profileSeedScores)}
+
+## Selected-movie exclusion check
+
+The current app recommendation function was run for all ${userQueries.length} three-movie user profiles. Selected-title appearances in their Top-5: **${selectedMovieLeakSlots}** (affected profiles: ${usersWithSelectedMoviesInTop5}).
 
 ## Genre count and catalog popularity
 
@@ -370,3 +407,4 @@ console.log(`Candidate movies after duplicate merging: ${entities.length}.`);
 console.log(`Three-movie user profiles: ${userQueries.length}.`);
 console.log(`Long-tail threshold: ${thresholds.lowPopularity} unique raters; popular threshold: ${thresholds.popular}.`);
 console.log(`Overlap between the example Top-5 lists: ${overlap}.`);
+console.log(`Selected-title leaks in Top-5 across ${userQueries.length} user profiles: ${selectedMovieLeakSlots}.`);

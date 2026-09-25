@@ -8,8 +8,30 @@ const fixedDir = path.resolve(__dirname, '..', 'fixed');
 const context = vm.createContext({ console, window: {} });
 const dataSource = fs.readFileSync(path.join(fixedDir, 'data.js'), 'utf8');
 const scriptSource = fs.readFileSync(path.join(fixedDir, 'script.js'), 'utf8');
-const itemText = fs.readFileSync(path.join(fixedDir, 'u.item'), 'utf8');
+const itemBytes = fs.readFileSync(path.join(fixedDir, 'u.item'));
+const itemText = new TextDecoder('iso-8859-1').decode(itemBytes);
 const ratingText = fs.readFileSync(path.join(fixedDir, 'u.data'), 'utf8');
+
+const loaderCheck = (async () => {
+    const itemArrayBuffer = itemBytes.buffer.slice(itemBytes.byteOffset, itemBytes.byteOffset + itemBytes.byteLength);
+    const loaderContext = vm.createContext({
+        console,
+        TextDecoder,
+        document: { getElementById: () => null },
+        fetch: async resource => resource === 'u.item'
+            ? { ok: true, arrayBuffer: async () => itemArrayBuffer }
+            : { ok: true, text: async () => ratingText }
+    });
+    vm.runInContext(dataSource, loaderContext, { filename: 'fixed/data.js' });
+    await vm.runInContext('loadData()', loaderContext);
+
+    const loadedMovies = Array.from(vm.runInContext('movies', loaderContext));
+    const decodedTitle = 'Misérables, Les (1995)';
+    if (!loadedMovies.some(movie => movie.title === decodedTitle)) {
+        throw new Error(`The fixed data loader did not correctly decode ${decodedTitle}.`);
+    }
+    return decodedTitle;
+})();
 
 vm.runInContext(dataSource, context, { filename: 'fixed/data.js' });
 context.itemText = itemText;
@@ -97,4 +119,10 @@ if (duplicateRecords.length > 1) {
     console.log('\nDuplicate check: the second Desperate Measures record is not recommended and does not double the profile.');
 }
 
-console.log('\nChecks passed: code cosine matches the manual calculation; Top-5 excludes selected movies and duplicates.');
+loaderCheck.then(decodedTitle => {
+    console.log(`ISO-8859-1 loader check: ${decodedTitle}`);
+    console.log('\nChecks passed: cosine matches the manual calculation, the loader preserves accented titles, and Top-5 excludes selected movies and duplicates.');
+}).catch(error => {
+    console.error('Loader check failed:', error);
+    process.exitCode = 1;
+});

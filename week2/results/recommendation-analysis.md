@@ -37,6 +37,18 @@ Single movie: **Toy Story (1995)**. Profile: **Toy Story (1995), Star Wars (1977
 | 4 | Kid in King Arthur's Court, A (1995) | 0.615457 | 6 | 22 | no |
 | 5 | Princess Bride, The (1987) | 0.603023 | 4 | 324 | no |
 
+Cosine similarity of each selected movie to the averaged profile, shown beside the Top-5 scores above:
+
+| Selected profile movie | Cosine similarity to the profile |
+|---|---:|
+| Toy Story (1995) | 0.522233 |
+| Star Wars (1977) | 0.674200 |
+| Fargo (1996) | 0.522233 |
+
+## Selected-movie exclusion check
+
+The current app recommendation function was run for all 942 three-movie user profiles. Selected-title appearances in their Top-5: **0** (affected profiles: 0).
+
 ## Genre count and catalog popularity
 
 Each movie is counted once after duplicate titles are merged. Average raters is the mean number of unique raters per movie in each group.

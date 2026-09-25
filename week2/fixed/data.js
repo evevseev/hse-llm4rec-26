@@ -18,7 +18,8 @@ async function loadData() {
         if (!moviesResponse.ok) {
             throw new Error(`Failed to load movie data: ${moviesResponse.status}`);
         }
-        const moviesText = await moviesResponse.text();
+        const moviesBuffer = await moviesResponse.arrayBuffer();
+        const moviesText = new TextDecoder('iso-8859-1').decode(moviesBuffer);
         parseItemData(moviesText);
 
         // Load and parse rating data

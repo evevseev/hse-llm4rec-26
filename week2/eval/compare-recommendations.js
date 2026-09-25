@@ -15,7 +15,7 @@ const genreNames = [
 function loadMovies(folder) {
     const folderPath = path.join(projectDir, folder);
     const source = fs.readFileSync(path.join(folderPath, 'data.js'), 'utf8');
-    const itemText = fs.readFileSync(path.join(folderPath, 'u.item'), 'utf8');
+    const itemText = new TextDecoder('iso-8859-1').decode(fs.readFileSync(path.join(folderPath, 'u.item')));
     const context = vm.createContext({ console });
 
     // Run the folder's data.js unchanged, then parse its actual u.item file.
