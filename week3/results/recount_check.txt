@@ -1,0 +1,29 @@
+== Matrix ==
+users 943, movies 1682, ratings 100000, filled 6.30%
+
+== Co-rated movies between user pairs ==
+pairs 444153, median 10, share <=2: 14.29%, zero: 15043
+
+== Similarity work (pairs x vector length) ==
+user-user 747,065,346  item-item 1,333,138,903  ratio 1.78
+
+== User-Based over all users ==
+raw cosine, 1 supporter: all Top-5 = 5.000 for 942/943; majority of neighbors share <=2 movies for 751/943
+weighted cosine, 1 supporter: all Top-5 = 5.000 for 943/943; majority of neighbors share <=2 movies for 0/943
+weighted cosine, 3 supporters: all Top-5 = 5.000 for 145/943; majority of neighbors share <=2 movies for 0/943
+
+== Hand check: user 1, final User-Based ==
+  Trainspotting (1996)  5.000  (3 neighbors)
+  Casablanca (1942)  5.000  (3 neighbors)
+  Chinatown (1974)  5.000  (3 neighbors)
+  Schindler's List (1993)  4.800  (5 neighbors)
+  L.A. Confidential (1997)  4.601  (5 neighbors)
+  Schindler's List: 0.9949*5 + 0.9847*5 + 0.9834*4 + 0.9824*5 + 0.9821*5 = 23.6543; / 4.9275 = 4.800
+
+== Item-Based for one user: why the overlap weight cancels ==
+  Very Natural Thing, A (1974): raters 1, raw 4.500, weighted 4.500
+  Walk in the Sun, A (1945): raters 1, raw 4.500, weighted 4.500
+
+== Final Item-Based (weighted cosine, >=3 supporting users, title dedup) ==
+user 1 (mean own rating 3.61): A Chef in Love (1996) 4.068; Rendezvous in Paris (Rendez-vous de Paris, Les) (1995) 4.047; Last Summer in the Hamptons (1995) 4.041; Bitter Sugar (Azucar Amargo) (1996) 4.038; Wonderful, Horrible Life of Leni Riefenstahl, The (1993) 4.029
+user 405 (mean own rating 1.83): Chairman of the Board (1998) 2.929; City of Industry (1997) 2.881; Gone Fishin' (1997) 2.817; Legal Deceit (1997) 2.804; Twin Town (1997) 2.796
