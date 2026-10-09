@@ -1,0 +1,12 @@
+HW4 association-rule benchmark
+Dataset: 17,080 baskets; one Apriori run per minimum support.
+Rule tables written below contain only rules with lift > 1 for analysis.
+Support 1% / confidence 30%: 1219 frequent itemsets (1-item: 691, 2-item: 413, 3-item: 109, 4-item: 6); 950 rules, 950 with lift > 1, 0 removed; 2.195 s total (2.192 s mining, 0.002 s rules/filter).
+Support 1% / confidence 60%: 1219 frequent itemsets (1-item: 691, 2-item: 413, 3-item: 109, 4-item: 6); 238 rules, 238 with lift > 1, 0 removed; 2.194 s total (2.192 s mining, 0.001 s rules/filter).
+Support 2% / confidence 30%: 294 frequent itemsets (1-item: 242, 2-item: 51, 3-item: 1); 96 rules, 96 with lift > 1, 0 removed; 0.535 s total (0.535 s mining, 0.000 s rules/filter).
+Support 2% / confidence 60%: 294 frequent itemsets (1-item: 242, 2-item: 51, 3-item: 1); 20 rules, 20 with lift > 1, 0 removed; 0.535 s total (0.535 s mining, 0.000 s rules/filter).
+Support 3% / confidence 30%: 115 frequent itemsets (1-item: 109, 2-item: 6); 12 rules, 12 with lift > 1, 0 removed; 0.201 s total (0.201 s mining, 0.000 s rules/filter).
+Support 3% / confidence 60%: 115 frequent itemsets (1-item: 109, 2-item: 6); 5 rules, 5 with lift > 1, 0 removed; 0.201 s total (0.201 s mining, 0.000 s rules/filter).
+Softest slider setting: support 0.5% / confidence 10%.
+Softest setting: 5255 frequent itemsets (1-item: 1320, 2-item: 2206, 3-item: 1161, 4-item: 474, 5-item: 88, 6-item: 6); 19058 rules, 19056 with lift > 1, 2 removed; 5.421 s computation.
+Softest-setting HTML string: 8,382,677 bytes for 19,058 rule rows; string construction 0.049 s. This does not include browser HTML parsing or event handling.

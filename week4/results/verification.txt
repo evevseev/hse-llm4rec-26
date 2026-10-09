@@ -1,0 +1,26 @@
+HW4 self-checks — pass 11, fail 0, pending 0 (of 11)
+
+PASS    fixture: item counts match the hand-computed values — all five item counts correct
+PASS    fixture: bread -> milk has lift exactly 1 — support=0.6000 confidence=0.6000 lift=1.0000
+PASS    fixture: milk -> jam has lift greater than 1 — lift=1.1111 (> 1)
+PASS    fixture: jam -> eggs has lift less than 1 — lift=0.8333 (0 < lift < 1)
+PASS    fixture: reversed confidence differs (jam <-> eggs) — jam->eggs=0.3333 vs eggs->jam=0.5000
+PASS    duplicate items in a raw basket are counted once — dedupeBasket removed repeats; counting is per basket
+PASS    empty rule set renders an empty-state note — empty state rendered
+PASS    invalid thresholds are rejected — valid accepted, invalid rejected
+PASS    zero-denominator guards return undefined metrics — zero denominators return defined=false
+PASS    findFrequentItemsets reproduces the fixture's frequent itemsets — 9 itemsets
+PASS    generateRules reproduces the fixture's rules — 38 rules
+Exhaustive fixture check: all 9 frequent itemsets and 38 rules match, including directions and confidence filtering.
+UI rendering checks: {"sortedRows":["bread->milk","milk->jam","bread->ham","jam->eggs"],"reversal":"bread -> milk: 60%; milk -> bread: 100%; lift = 1","zeroAntecedent":"confidence/lift = n/a with inline note","zeroConsequent":"confidence = 0%; lift = n/a with inline note","zeroBaskets":"support = n/a with inline note"}
+Direct raw-basket metrics:
+Lift bound: most frequent item 85123A occurs in 1959 baskets (11.4696%); at confidence >= 30%, lift >= 2.6156.
+Regency teacup collection candidate: joint=390, count(A)=541, count(B)=551, support=2.2834%, confidence=72.0887%, reverse confidence=70.7804%, lift=22.3462.
+Red to green Bakelike alarm clock: joint=530, count(A)=877, count(B)=784, support=3.1030%, confidence=60.4333%, reverse confidence=67.6020%, lift=13.1658.
+Herb marker top-lift example: joint=176, count(A)=186, count(B)=190, support=1.0304%, confidence=94.6237%, reverse confidence=92.6316%, lift=85.0617.
+Weak alarm-to-t-light example: joint=89, count(A)=784, count(B)=1959, support=0.5211%, confidence=11.3520%, reverse confidence=4.5431%, lift=0.9898.
+Final table: 20 rules across 7 variant families; 390 observed minimum joint baskets (support threshold count 342).
+Large-basket sensitivity: 215 baskets have at least 100 items; 154/3309 matching baskets are large; 18/20 rules still pass after excluding them; maximum per-rule large-basket share is 10.94%.
+Without large baskets, 22629 -> 22630 has confidence 59.70% and 394 joint baskets.
+Without large baskets, 23301 -> 23300 has confidence 59.77% and 413 joint baskets.
+Variant-family rule counts: {"Regency teacups":9,"Lunch boxes":2,"Garden kneeling pads":2,"Bakelike alarm clocks":3,"Paper chain kits":1,"Jumbo bags":2,"Hanging heart T-light holders":1}

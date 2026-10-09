@@ -1,0 +1,51 @@
+== Dataset ==
+baskets 17080, items 3653, median basket size 16.0, max 540, baskets with >=100 items 215
+most frequent item 85123A WHITE HANGING HEART T-LIGHT HOLDER: 1959 baskets = 11.47%
+lowest possible lift at confidence 30%: 2.62, at 60%: 5.23
+
+== Thresholds ==
+support 0.5% confidence 10%: itemsets 5255 {1: 1320, 2: 2206, 3: 1161, 4: 474, 5: 88, 6: 6}, rules 19058, removed by lift > 1: 2
+support 1.0% confidence 30%: itemsets 1219 {1: 691, 2: 413, 3: 109, 4: 6}, rules 950, removed by lift > 1: 0
+support 1.0% confidence 60%: itemsets 1219 {1: 691, 2: 413, 3: 109, 4: 6}, rules 238, removed by lift > 1: 0
+support 2.0% confidence 30%: itemsets 294 {1: 242, 2: 51, 3: 1}, rules 96, removed by lift > 1: 0
+support 2.0% confidence 60%: itemsets 294 {1: 242, 2: 51, 3: 1}, rules 20, removed by lift > 1: 0
+support 3.0% confidence 30%: itemsets 115 {1: 109, 2: 6}, rules 12, removed by lift > 1: 0
+support 3.0% confidence 60%: itemsets 115 {1: 109, 2: 6}, rules 5, removed by lift > 1: 0
+
+== Rules cited in the report ==
+JUMBO BAG WOODLAND ANIMALS -> JUMBO STORAGE BAG SUKI: count(AuB) 179, count(A) 491, count(B) 774, support 1.05%, confidence 36.46%, lift 8.04
+JUMBO STORAGE BAG SUKI -> JUMBO BAG WOODLAND ANIMALS: count(AuB) 179, count(A) 774, count(B) 491, support 1.05%, confidence 23.13%, lift 8.04
+ROSES REGENCY TEACUP AND SAUCER + GREEN REGENCY TEACUP AND SAUCER -> PINK REGENCY TEACUP AND SAUCER: count(AuB) 390, count(A) 541, count(B) 551, support 2.28%, confidence 72.09%, lift 22.35
+PINK REGENCY TEACUP AND SAUCER -> ROSES REGENCY TEACUP AND SAUCER + GREEN REGENCY TEACUP AND SAUCER: count(AuB) 390, count(A) 551, count(B) 541, support 2.28%, confidence 70.78%, lift 22.35
+ALARM CLOCK BAKELIKE RED -> ALARM CLOCK BAKELIKE GREEN: count(AuB) 530, count(A) 877, count(B) 784, support 3.10%, confidence 60.43%, lift 13.17
+ALARM CLOCK BAKELIKE GREEN -> ALARM CLOCK BAKELIKE RED: count(AuB) 530, count(A) 784, count(B) 877, support 3.10%, confidence 67.60%, lift 13.17
+HERB MARKER THYME -> HERB MARKER ROSEMARY: count(AuB) 176, count(A) 186, count(B) 190, support 1.03%, confidence 94.62%, lift 85.06
+ALARM CLOCK BAKELIKE GREEN -> WHITE HANGING HEART T-LIGHT HOLDER: count(AuB) 89, count(A) 784, count(B) 1959, support 0.52%, confidence 11.35%, lift 0.99
+
+== Final table: support 2%, confidence 60% ==
+  JUMBO BAG PINK POLKADOT -> JUMBO BAG RED RETROSPOT: count(AuB) 546, count(A) 869, count(B) 1584, support 3.20%, confidence 62.83%, lift 6.77
+  ROSES REGENCY TEACUP AND SAUCER -> GREEN REGENCY TEACUP AND SAUCER: count(AuB) 541, count(A) 780, count(B) 691, support 3.17%, confidence 69.36%, lift 17.14
+  GREEN REGENCY TEACUP AND SAUCER -> ROSES REGENCY TEACUP AND SAUCER: count(AuB) 541, count(A) 691, count(B) 780, support 3.17%, confidence 78.29%, lift 17.14
+  ALARM CLOCK BAKELIKE RED -> ALARM CLOCK BAKELIKE GREEN: count(AuB) 530, count(A) 877, count(B) 784, support 3.10%, confidence 60.43%, lift 13.17
+  ALARM CLOCK BAKELIKE GREEN -> ALARM CLOCK BAKELIKE RED: count(AuB) 530, count(A) 784, count(B) 877, support 3.10%, confidence 67.60%, lift 13.17
+  GARDENERS KNEELING PAD KEEP CALM -> GARDENERS KNEELING PAD CUP OF TEA: count(AuB) 463, count(A) 755, count(B) 634, support 2.71%, confidence 61.32%, lift 16.52
+  GARDENERS KNEELING PAD CUP OF TEA -> GARDENERS KNEELING PAD KEEP CALM: count(AuB) 463, count(A) 634, count(B) 755, support 2.71%, confidence 73.03%, lift 16.52
+  PINK REGENCY TEACUP AND SAUCER -> GREEN REGENCY TEACUP AND SAUCER: count(AuB) 460, count(A) 551, count(B) 691, support 2.69%, confidence 83.48%, lift 20.64
+  GREEN REGENCY TEACUP AND SAUCER -> PINK REGENCY TEACUP AND SAUCER: count(AuB) 460, count(A) 691, count(B) 551, support 2.69%, confidence 66.57%, lift 20.64
+  RED HANGING HEART T-LIGHT HOLDER -> WHITE HANGING HEART T-LIGHT HOLDER: count(AuB) 457, count(A) 677, count(B) 1959, support 2.68%, confidence 67.50%, lift 5.89
+  PAPER CHAIN KIT VINTAGE CHRISTMAS -> PAPER CHAIN KIT 50'S CHRISTMAS: count(AuB) 451, count(A) 693, count(B) 973, support 2.64%, confidence 65.08%, lift 11.42
+  PINK REGENCY TEACUP AND SAUCER -> ROSES REGENCY TEACUP AND SAUCER: count(AuB) 436, count(A) 551, count(B) 780, support 2.55%, confidence 79.13%, lift 17.33
+  SPACEBOY LUNCH BOX -> DOLLY GIRL LUNCH BOX: count(AuB) 424, count(A) 704, count(B) 616, support 2.48%, confidence 60.23%, lift 16.70
+  DOLLY GIRL LUNCH BOX -> SPACEBOY LUNCH BOX: count(AuB) 424, count(A) 616, count(B) 704, support 2.48%, confidence 68.83%, lift 16.70
+  JUMBO BAG STRAWBERRY -> JUMBO BAG RED RETROSPOT: count(AuB) 414, count(A) 654, count(B) 1584, support 2.42%, confidence 63.30%, lift 6.83
+  ALARM CLOCK BAKELIKE PINK -> ALARM CLOCK BAKELIKE RED: count(AuB) 396, count(A) 613, count(B) 877, support 2.32%, confidence 64.60%, lift 12.58
+  PINK REGENCY TEACUP AND SAUCER -> ROSES REGENCY TEACUP AND SAUCER + GREEN REGENCY TEACUP AND SAUCER: count(AuB) 390, count(A) 551, count(B) 541, support 2.28%, confidence 70.78%, lift 22.35
+  ROSES REGENCY TEACUP AND SAUCER + GREEN REGENCY TEACUP AND SAUCER -> PINK REGENCY TEACUP AND SAUCER: count(AuB) 390, count(A) 541, count(B) 551, support 2.28%, confidence 72.09%, lift 22.35
+  ROSES REGENCY TEACUP AND SAUCER + PINK REGENCY TEACUP AND SAUCER -> GREEN REGENCY TEACUP AND SAUCER: count(AuB) 390, count(A) 436, count(B) 691, support 2.28%, confidence 89.45%, lift 22.11
+  GREEN REGENCY TEACUP AND SAUCER + PINK REGENCY TEACUP AND SAUCER -> ROSES REGENCY TEACUP AND SAUCER: count(AuB) 390, count(A) 460, count(B) 780, support 2.28%, confidence 84.78%, lift 18.57
+rules 20, smallest count(AuB) 390, threshold count 341.6
+
+== Same table without baskets of 100+ items ==
+  drops: GARDENERS KNEELING PAD KEEP CALM -> GARDENERS KNEELING PAD CUP OF TEA, confidence 59.77%
+  drops: SPACEBOY LUNCH BOX -> DOLLY GIRL LUNCH BOX, confidence 59.70%
+baskets left 16865, rules still passing 18 of 20
