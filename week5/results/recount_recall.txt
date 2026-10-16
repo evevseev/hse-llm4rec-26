@@ -1,0 +1,6 @@
+users with train-known relevant targets: mine 861 saved rows 861
+same user set: True
+denominators equal for every user: True
+sum of denominators: 5142
+total hits 79 | macro recall from my denominators 0.014312 | saved macro 0.014312
+hand example: user 1 has 19 relevant test movies in the train pool and 1 hits, so recall = 1/19 = 0.0526
