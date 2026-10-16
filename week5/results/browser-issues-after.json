@@ -1,0 +1,145 @@
+{
+  "users": 943,
+  "movies": 1682,
+  "ratings": 100000,
+  "matrixCells": 1586126,
+  "observedCells": 100000,
+  "matrixDensityPercent": 6.304669364224532,
+  "correctedDecodedTitle": "Misérables, Les (1995)",
+  "recommendationMinTrainRatings": 20,
+  "n1Recommendations": [
+    {
+      "movieId": 1122,
+      "title": "They Made Me a Criminal (1939)",
+      "score": 5,
+      "trainRatings": 1
+    },
+    {
+      "movieId": 1021,
+      "title": "8 1/2 (1963)",
+      "score": 4.99036979675293,
+      "trainRatings": 29
+    },
+    {
+      "movieId": 1268,
+      "title": "Bitter Moon (1992)",
+      "score": 4.8967180252075195,
+      "trainRatings": 6
+    },
+    {
+      "movieId": 512,
+      "title": "Wings of Desire (1987)",
+      "score": 4.886465072631836,
+      "trainRatings": 44
+    },
+    {
+      "movieId": 169,
+      "title": "Wrong Trousers, The (1993)",
+      "score": 4.857687950134277,
+      "trainRatings": 101
+    },
+    {
+      "movieId": 513,
+      "title": "Third Man, The (1949)",
+      "score": 4.8016252517700195,
+      "trainRatings": 69
+    },
+    {
+      "movieId": 835,
+      "title": "Gay Divorcee, The (1934)",
+      "score": 4.759391784667969,
+      "trainRatings": 12
+    },
+    {
+      "movieId": 1463,
+      "title": "Boys, Les (1997)",
+      "score": 4.754234790802002,
+      "trainRatings": 3
+    },
+    {
+      "movieId": 1524,
+      "title": "Kaspar Hauser (1993)",
+      "score": 4.710378170013428,
+      "trainRatings": 8
+    },
+    {
+      "movieId": 1172,
+      "title": "Women, The (1939)",
+      "score": 4.665524005889893,
+      "trainRatings": 12
+    }
+  ],
+  "n20Recommendations": [
+    {
+      "movieId": 1021,
+      "title": "8 1/2 (1963)",
+      "score": 4.99036979675293,
+      "trainRatings": 29
+    },
+    {
+      "movieId": 512,
+      "title": "Wings of Desire (1987)",
+      "score": 4.886465072631836,
+      "trainRatings": 44
+    },
+    {
+      "movieId": 169,
+      "title": "Wrong Trousers, The (1993)",
+      "score": 4.857687950134277,
+      "trainRatings": 101
+    },
+    {
+      "movieId": 513,
+      "title": "Third Man, The (1949)",
+      "score": 4.8016252517700195,
+      "trainRatings": 69
+    },
+    {
+      "movieId": 178,
+      "title": "12 Angry Men (1957)",
+      "score": 4.652337074279785,
+      "trainRatings": 108
+    },
+    {
+      "movieId": 492,
+      "title": "East of Eden (1955)",
+      "score": 4.64822244644165,
+      "trainRatings": 54
+    },
+    {
+      "movieId": 474,
+      "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)",
+      "score": 4.618949890136719,
+      "trainRatings": 170
+    },
+    {
+      "movieId": 657,
+      "title": "Manchurian Candidate, The (1962)",
+      "score": 4.606435298919678,
+      "trainRatings": 112
+    },
+    {
+      "movieId": 525,
+      "title": "Big Sleep, The (1946)",
+      "score": 4.599747657775879,
+      "trainRatings": 62
+    },
+    {
+      "movieId": 520,
+      "title": "Great Escape, The (1963)",
+      "score": 4.599541187286377,
+      "trainRatings": 105
+    }
+  ],
+  "n20AllMeetThreshold": true,
+  "bestCheckpoint": {
+    "epoch": 3,
+    "trainRMSE": 0.7619422389112999,
+    "valRMSE": 1.007781213082521
+  },
+  "modelTestRMSE": 1.0612364155469423,
+  "baselineTestRMSE": 1.2289001371836759,
+  "uiPassesThreshold": true,
+  "uiRendersTestRMSE": true,
+  "uiRendersMatrixDensity": true
+}

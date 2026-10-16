@@ -1,0 +1,19 @@
+{
+  "name": "week5-matrix-factorization-eval",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Node runner for the fixed Week 5 matrix factorization assignment",
+  "scripts": {
+    "run": "node run.js",
+    "test": "node self-checks.js",
+    "support": "node support-filter.js",
+    "verify-ui": "node verify-browser-fixes.js",
+    "audit-recall": "node audit-recall-semantics.js",
+    "discovery": "node analyze-discovery.js",
+    "discovery-all": "node measure-discovery.js"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-backend-wasm": "^4.22.0"
+  }
+}

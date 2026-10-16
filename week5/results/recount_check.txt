@@ -1,0 +1,10 @@
+ratings 100000 users 943 movies in u.item 1682
+matrix fill 6.3047%
+split 79619 9596 10785
+train mean 3.5806, baseline RMSE val 1.1830 test 1.2289
+relevant test ratings 5155 unseen movie ids 13
+evaluable users 861 users without relevant 82
+relevant test targets (train-known) 5142
+duplicate user-movie pairs 0
+relevant test pairs already in the same user's train/val 0
+popularity Recall@10 macro 0.0843, hits 431

@@ -1,0 +1,41 @@
+{
+  "data": {
+    "users": 943,
+    "movies": 1682,
+    "ratings": 100000,
+    "train": 79619,
+    "validation": 9596,
+    "test": 10785,
+    "uniqueRatedPairs": 100000,
+    "validMatrixCells": 1586126,
+    "matrixDensity": 0.06304669364224531
+  },
+  "recommendations": {
+    "uiCallUsesDefaultSupport": true,
+    "functionHasDefaultN1": true,
+    "chosenN": 20,
+    "itemSupport": [
+      {
+        "title": "Bitter Moon (1992)",
+        "movieId": 1268,
+        "trainRatings": 6
+      },
+      {
+        "title": "Aparajito (1956)",
+        "movieId": 1558,
+        "trainRatings": 5
+      }
+    ]
+  },
+  "encoding": {
+    "rawTitleBytesHex": "3534337c4d6973e97261626c65732c204c6573202831393935297c30312d4a616e2d313939357c7c687474703a2f2f75732e696d64622e636f6d2f4d2f7469746c652d65786163743f4d69732545397261626c65732532432532304c6573253230253238313939352532397c307c307c307c307c307c307c307c307c317c307c307c307c317c307c307c307c307c307c30",
+    "correctWindows1252Title": "Misérables, Les (1995)",
+    "displayAfterUtf8Decoding": "Mis�rables, Les (1995)",
+    "loadUsesResponseTextUtf8Default": true
+  },
+  "uiMetrics": {
+    "datasetRendererMentionsDensity": false,
+    "trainingPipelineComputesTestRMSE": false,
+    "splitSummaryShowsTestBaseline": true
+  }
+}

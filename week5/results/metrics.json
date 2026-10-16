@@ -1,0 +1,4662 @@
+{
+  "backend": "wasm",
+  "parameters": {
+    "epochs": 20,
+    "lr": 0.01,
+    "reg": 0.05,
+    "batchSize": 64
+  },
+  "dataset": {
+    "users": 943,
+    "movies": 1682,
+    "ratings": 100000,
+    "train": 79619,
+    "validation": 9596,
+    "test": 10785,
+    "excludedUsers": 0
+  },
+  "trainingSeconds": 57.697,
+  "tests": {
+    "passed": 11,
+    "failed": 0,
+    "pending": 0
+  },
+  "recommendationExclusionCheck": [
+    {
+      "userId": 1,
+      "overlaps": []
+    },
+    {
+      "userId": 2,
+      "overlaps": []
+    }
+  ],
+  "recallCandidateBehavior": "Rank all catalog movies; count relevant test movies only when their IDs occur in train.",
+  "bestCheckpoint": {
+    "epoch": 2,
+    "trainRMSE": 0.8011059358673311,
+    "valRMSE": 1.015595068857332
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "trainRMSE": 0.8842051164270663,
+      "valRMSE": 1.0248764638191243
+    },
+    {
+      "epoch": 2,
+      "trainRMSE": 0.8011059358673311,
+      "valRMSE": 1.015595068857332
+    },
+    {
+      "epoch": 3,
+      "trainRMSE": 0.7615444668656801,
+      "valRMSE": 1.019718021517065
+    },
+    {
+      "epoch": 4,
+      "trainRMSE": 0.7414414923022691,
+      "valRMSE": 1.0231211515527865
+    },
+    {
+      "epoch": 5,
+      "trainRMSE": 0.7293554379570168,
+      "valRMSE": 1.0205926741218811
+    },
+    {
+      "epoch": 6,
+      "trainRMSE": 0.7242747148372936,
+      "valRMSE": 1.0278160836982824
+    },
+    {
+      "epoch": 7,
+      "trainRMSE": 0.7213188373897772,
+      "valRMSE": 1.0302841981443387
+    },
+    {
+      "epoch": 8,
+      "trainRMSE": 0.7158746425520529,
+      "valRMSE": 1.0340363976880962
+    },
+    {
+      "epoch": 9,
+      "trainRMSE": 0.7130301979031433,
+      "valRMSE": 1.0284697885002987
+    },
+    {
+      "epoch": 10,
+      "trainRMSE": 0.7101379341810271,
+      "valRMSE": 1.0344358420557802
+    },
+    {
+      "epoch": 11,
+      "trainRMSE": 0.7101754516422867,
+      "valRMSE": 1.0316477499805725
+    },
+    {
+      "epoch": 12,
+      "trainRMSE": 0.7096102975488445,
+      "valRMSE": 1.0297507745638474
+    },
+    {
+      "epoch": 13,
+      "trainRMSE": 0.7079979205262632,
+      "valRMSE": 1.0286015690160537
+    },
+    {
+      "epoch": 14,
+      "trainRMSE": 0.7077692300736823,
+      "valRMSE": 1.0274254944048447
+    },
+    {
+      "epoch": 15,
+      "trainRMSE": 0.7046010947700547,
+      "valRMSE": 1.0299364451827708
+    },
+    {
+      "epoch": 16,
+      "trainRMSE": 0.7039544828869757,
+      "valRMSE": 1.0303267189458607
+    },
+    {
+      "epoch": 17,
+      "trainRMSE": 0.7056167109419019,
+      "valRMSE": 1.0326821179987633
+    },
+    {
+      "epoch": 18,
+      "trainRMSE": 0.7040732241786107,
+      "valRMSE": 1.0264610298440824
+    },
+    {
+      "epoch": 19,
+      "trainRMSE": 0.7048611505212966,
+      "valRMSE": 1.033868759141972
+    },
+    {
+      "epoch": 20,
+      "trainRMSE": 0.7067154447759525,
+      "valRMSE": 1.0251973869257685
+    }
+  ],
+  "baselineTestRMSE": 1.2289001371836759,
+  "validationRMSE": 1.015595068857332,
+  "testRMSE": 1.0498019054287264,
+  "recommendations": [
+    [
+      {
+        "movieId": 408,
+        "title": "Close Shave, A (1995)",
+        "score": 5
+      },
+      {
+        "movieId": 483,
+        "title": "Casablanca (1942)",
+        "score": 5
+      },
+      {
+        "movieId": 1449,
+        "title": "Pather Panchali (1955)",
+        "score": 5
+      },
+      {
+        "movieId": 1500,
+        "title": "Santa with Muscles (1996)",
+        "score": 5
+      },
+      {
+        "movieId": 1628,
+        "title": "Lamerica (1994)",
+        "score": 4.996562480926514
+      },
+      {
+        "movieId": 1142,
+        "title": "When We Were Kings (1996)",
+        "score": 4.97984504699707
+      },
+      {
+        "movieId": 169,
+        "title": "Wrong Trousers, The (1993)",
+        "score": 4.941717624664307
+      },
+      {
+        "movieId": 613,
+        "title": "My Man Godfrey (1936)",
+        "score": 4.938361644744873
+      },
+      {
+        "movieId": 480,
+        "title": "North by Northwest (1959)",
+        "score": 4.922815322875977
+      },
+      {
+        "movieId": 657,
+        "title": "Manchurian Candidate, The (1962)",
+        "score": 4.904425621032715
+      }
+    ],
+    [
+      {
+        "movieId": 853,
+        "title": "Braindead (1992)",
+        "score": 4.900411605834961
+      },
+      {
+        "movieId": 854,
+        "title": "Bad Taste (1987)",
+        "score": 4.863258361816406
+      },
+      {
+        "movieId": 648,
+        "title": "Quiet Man, The (1952)",
+        "score": 4.77691650390625
+      },
+      {
+        "movieId": 1275,
+        "title": "Killer (Bulletproof Heart) (1994)",
+        "score": 4.772845268249512
+      },
+      {
+        "movieId": 1435,
+        "title": "Steal Big, Steal Little (1995)",
+        "score": 4.768290042877197
+      },
+      {
+        "movieId": 119,
+        "title": "Maya Lin: A Strong Clear Vision (1994)",
+        "score": 4.692366600036621
+      },
+      {
+        "movieId": 1474,
+        "title": "Nina Takes a Lover (1994)",
+        "score": 4.680650234222412
+      },
+      {
+        "movieId": 645,
+        "title": "Paris Is Burning (1990)",
+        "score": 4.677044868469238
+      },
+      {
+        "movieId": 813,
+        "title": "Celluloid Closet, The (1995)",
+        "score": 4.672711372375488
+      },
+      {
+        "movieId": 1111,
+        "title": "Double Happiness (1994)",
+        "score": 4.665917873382568
+      }
+    ]
+  ],
+  "recallAt10": {
+    "overallRecall": 0.015681603713191824,
+    "perUser": [
+      {
+        "userId": 196,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 186,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 22,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 244,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 166,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 298,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 115,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 253,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 305,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 6,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 62,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 286,
+        "relevant": 13,
+        "hit": 1
+      },
+      {
+        "userId": 200,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 210,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 224,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 303,
+        "relevant": 12,
+        "hit": 1
+      },
+      {
+        "userId": 122,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 194,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 291,
+        "relevant": 22,
+        "hit": 0
+      },
+      {
+        "userId": 234,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 119,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 167,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 299,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 308,
+        "relevant": 22,
+        "hit": 0
+      },
+      {
+        "userId": 95,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 38,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 63,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 160,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 50,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 301,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 225,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 290,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 97,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 157,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 181,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 278,
+        "relevant": 3,
+        "hit": 1
+      },
+      {
+        "userId": 276,
+        "relevant": 37,
+        "hit": 1
+      },
+      {
+        "userId": 7,
+        "relevant": 26,
+        "hit": 1
+      },
+      {
+        "userId": 10,
+        "relevant": 17,
+        "hit": 0
+      },
+      {
+        "userId": 201,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 287,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 246,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 242,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 249,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 99,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 178,
+        "relevant": 11,
+        "hit": 1
+      },
+      {
+        "userId": 251,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 81,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 260,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 25,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 59,
+        "relevant": 23,
+        "hit": 0
+      },
+      {
+        "userId": 72,
+        "relevant": 14,
+        "hit": 1
+      },
+      {
+        "userId": 87,
+        "relevant": 15,
+        "hit": 1
+      },
+      {
+        "userId": 42,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 292,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 20,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 13,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 138,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 60,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 57,
+        "relevant": 11,
+        "hit": 1
+      },
+      {
+        "userId": 223,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 189,
+        "relevant": 15,
+        "hit": 0
+      },
+      {
+        "userId": 243,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 92,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 254,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 127,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 222,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 267,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 11,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 8,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 162,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 279,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 145,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 28,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 135,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 32,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 90,
+        "relevant": 20,
+        "hit": 0
+      },
+      {
+        "userId": 216,
+        "relevant": 11,
+        "hit": 1
+      },
+      {
+        "userId": 250,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 271,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 265,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 198,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 168,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 58,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 237,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 94,
+        "relevant": 27,
+        "hit": 0
+      },
+      {
+        "userId": 128,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 44,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 264,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 41,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 262,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 174,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 43,
+        "relevant": 8,
+        "hit": 2
+      },
+      {
+        "userId": 84,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 269,
+        "relevant": 18,
+        "hit": 0
+      },
+      {
+        "userId": 259,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 85,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 213,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 121,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 49,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 68,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 172,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 19,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 268,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 5,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 80,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 66,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 18,
+        "relevant": 15,
+        "hit": 0
+      },
+      {
+        "userId": 26,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 130,
+        "relevant": 24,
+        "hit": 0
+      },
+      {
+        "userId": 256,
+        "relevant": 20,
+        "hit": 0
+      },
+      {
+        "userId": 1,
+        "relevant": 19,
+        "hit": 1
+      },
+      {
+        "userId": 56,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 15,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 207,
+        "relevant": 10,
+        "hit": 1
+      },
+      {
+        "userId": 232,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 52,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 148,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 125,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 83,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 272,
+        "relevant": 5,
+        "hit": 1
+      },
+      {
+        "userId": 151,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 54,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 16,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 91,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 294,
+        "relevant": 5,
+        "hit": 2
+      },
+      {
+        "userId": 229,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 36,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 70,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 14,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 295,
+        "relevant": 21,
+        "hit": 0
+      },
+      {
+        "userId": 233,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 214,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 192,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 100,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 307,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 297,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 193,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 113,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 275,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 219,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 218,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 123,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 158,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 23,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 296,
+        "relevant": 15,
+        "hit": 1
+      },
+      {
+        "userId": 33,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 154,
+        "relevant": 5,
+        "hit": 1
+      },
+      {
+        "userId": 77,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 270,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 187,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 170,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 101,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 184,
+        "relevant": 15,
+        "hit": 1
+      },
+      {
+        "userId": 112,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 133,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 215,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 69,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 104,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 144,
+        "relevant": 13,
+        "hit": 1
+      },
+      {
+        "userId": 191,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 142,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 177,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 203,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 21,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 197,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 134,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 180,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 236,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 263,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 109,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 64,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 114,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 239,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 117,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 65,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 137,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 257,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 285,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 96,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 116,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 73,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 221,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 235,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 164,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 182,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 45,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 131,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 230,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 126,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 231,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 280,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 288,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 152,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 217,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 79,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 75,
+        "relevant": 8,
+        "hit": 1
+      },
+      {
+        "userId": 245,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 282,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 78,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 118,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 283,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 171,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 226,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 306,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 173,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 185,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 150,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 274,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 188,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 48,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 311,
+        "relevant": 22,
+        "hit": 0
+      },
+      {
+        "userId": 165,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 208,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 2,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 205,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 248,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 159,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 146,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 29,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 156,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 37,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 141,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 195,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 47,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 255,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 89,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 140,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 190,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 24,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 17,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 313,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 53,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 124,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 176,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 106,
+        "relevant": 5,
+        "hit": 1
+      },
+      {
+        "userId": 312,
+        "relevant": 19,
+        "hit": 0
+      },
+      {
+        "userId": 175,
+        "relevant": 4,
+        "hit": 1
+      },
+      {
+        "userId": 153,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 220,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 143,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 199,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 277,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 206,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 314,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 136,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 179,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 4,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 304,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 3,
+        "relevant": 5,
+        "hit": 1
+      },
+      {
+        "userId": 227,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 252,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 212,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 310,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 35,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 147,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 34,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 71,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 51,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 204,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 315,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 31,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 316,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 103,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 318,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 30,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 46,
+        "relevant": 4,
+        "hit": 1
+      },
+      {
+        "userId": 261,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 88,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 9,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 247,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 321,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 266,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 74,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 319,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 323,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 67,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 211,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 98,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 12,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 40,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 258,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 325,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 320,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 326,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 327,
+        "relevant": 20,
+        "hit": 0
+      },
+      {
+        "userId": 183,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 328,
+        "relevant": 11,
+        "hit": 1
+      },
+      {
+        "userId": 322,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 330,
+        "relevant": 12,
+        "hit": 1
+      },
+      {
+        "userId": 27,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 331,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 332,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 329,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 86,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 139,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 300,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 163,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 333,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 334,
+        "relevant": 18,
+        "hit": 0
+      },
+      {
+        "userId": 39,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 324,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 132,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 336,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 335,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 169,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 338,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 339,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 342,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 340,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 317,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 341,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 343,
+        "relevant": 20,
+        "hit": 0
+      },
+      {
+        "userId": 344,
+        "relevant": 13,
+        "hit": 2
+      },
+      {
+        "userId": 345,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 346,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 347,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 273,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 55,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 349,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 348,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 354,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 351,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 358,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 352,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 360,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 363,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 355,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 357,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 356,
+        "relevant": 3,
+        "hit": 1
+      },
+      {
+        "userId": 361,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 365,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 350,
+        "relevant": 5,
+        "hit": 2
+      },
+      {
+        "userId": 367,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 368,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 371,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 373,
+        "relevant": 7,
+        "hit": 1
+      },
+      {
+        "userId": 370,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 374,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 372,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 337,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 378,
+        "relevant": 19,
+        "hit": 2
+      },
+      {
+        "userId": 366,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 377,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 375,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 359,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 379,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 381,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 385,
+        "relevant": 19,
+        "hit": 0
+      },
+      {
+        "userId": 382,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 387,
+        "relevant": 18,
+        "hit": 2
+      },
+      {
+        "userId": 364,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 369,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 388,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 389,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 383,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 390,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 393,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 392,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 376,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 394,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 391,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 398,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 397,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 396,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 401,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 402,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 384,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 353,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 403,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 400,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 406,
+        "relevant": 18,
+        "hit": 0
+      },
+      {
+        "userId": 407,
+        "relevant": 18,
+        "hit": 1
+      },
+      {
+        "userId": 409,
+        "relevant": 15,
+        "hit": 0
+      },
+      {
+        "userId": 404,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 413,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 416,
+        "relevant": 50,
+        "hit": 2
+      },
+      {
+        "userId": 408,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 410,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 411,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 417,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 412,
+        "relevant": 4,
+        "hit": 1
+      },
+      {
+        "userId": 420,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 422,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 425,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 419,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 415,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 423,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 429,
+        "relevant": 22,
+        "hit": 2
+      },
+      {
+        "userId": 428,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 427,
+        "relevant": 4,
+        "hit": 1
+      },
+      {
+        "userId": 418,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 424,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 432,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 421,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 435,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 433,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 426,
+        "relevant": 6,
+        "hit": 1
+      },
+      {
+        "userId": 436,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 430,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 434,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 437,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 438,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 431,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 442,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 440,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 445,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 447,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 449,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 450,
+        "relevant": 32,
+        "hit": 1
+      },
+      {
+        "userId": 439,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 451,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 452,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 454,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 414,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 455,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 448,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 457,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 456,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 458,
+        "relevant": 11,
+        "hit": 1
+      },
+      {
+        "userId": 462,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 459,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 460,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 461,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 467,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 468,
+        "relevant": 12,
+        "hit": 1
+      },
+      {
+        "userId": 466,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 472,
+        "relevant": 27,
+        "hit": 0
+      },
+      {
+        "userId": 463,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 471,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 474,
+        "relevant": 26,
+        "hit": 0
+      },
+      {
+        "userId": 469,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 464,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 476,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 478,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 473,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 470,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 480,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 479,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 484,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 486,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 487,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 482,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 481,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 492,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 493,
+        "relevant": 10,
+        "hit": 1
+      },
+      {
+        "userId": 490,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 489,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 483,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 496,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 494,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 495,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 477,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 497,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 488,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 498,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 499,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 491,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 500,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 503,
+        "relevant": 11,
+        "hit": 1
+      },
+      {
+        "userId": 504,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 505,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 506,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 507,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 514,
+        "relevant": 7,
+        "hit": 1
+      },
+      {
+        "userId": 508,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 511,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 512,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 513,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 475,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 518,
+        "relevant": 1,
+        "hit": 1
+      },
+      {
+        "userId": 509,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 516,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 524,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 501,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 525,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 521,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 520,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 519,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 528,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 532,
+        "relevant": 28,
+        "hit": 1
+      },
+      {
+        "userId": 530,
+        "relevant": 3,
+        "hit": 1
+      },
+      {
+        "userId": 531,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 529,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 517,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 527,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 485,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 533,
+        "relevant": 18,
+        "hit": 0
+      },
+      {
+        "userId": 535,
+        "relevant": 16,
+        "hit": 1
+      },
+      {
+        "userId": 536,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 526,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 537,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 534,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 541,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 538,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 542,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 545,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 539,
+        "relevant": 6,
+        "hit": 1
+      },
+      {
+        "userId": 547,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 543,
+        "relevant": 6,
+        "hit": 1
+      },
+      {
+        "userId": 548,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 546,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 522,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 551,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 553,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 552,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 540,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 554,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 556,
+        "relevant": 5,
+        "hit": 1
+      },
+      {
+        "userId": 559,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 560,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 561,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 563,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 566,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 557,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 558,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 564,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 565,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 573,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 567,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 569,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 562,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 576,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 577,
+        "relevant": 12,
+        "hit": 1
+      },
+      {
+        "userId": 579,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 574,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 555,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 575,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 588,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 568,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 586,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 585,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 582,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 591,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 581,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 592,
+        "relevant": 31,
+        "hit": 0
+      },
+      {
+        "userId": 590,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 593,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 583,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 570,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 599,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 589,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 594,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 597,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 601,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 602,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 600,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 605,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 603,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 595,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 606,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 608,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 607,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 610,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 611,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 617,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 618,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 614,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 609,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 615,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 616,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 620,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 571,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 619,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 613,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 622,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 621,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 604,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 624,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 612,
+        "relevant": 3,
+        "hit": 1
+      },
+      {
+        "userId": 627,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 623,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 628,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 625,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 629,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 633,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 632,
+        "relevant": 12,
+        "hit": 1
+      },
+      {
+        "userId": 634,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 639,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 630,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 642,
+        "relevant": 19,
+        "hit": 0
+      },
+      {
+        "userId": 637,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 640,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 626,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 643,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 598,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 638,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 635,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 644,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 636,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 645,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 648,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 650,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 654,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 653,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 655,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 649,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 658,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 660,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 659,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 663,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 664,
+        "relevant": 12,
+        "hit": 2
+      },
+      {
+        "userId": 657,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 665,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 666,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 661,
+        "relevant": 9,
+        "hit": 1
+      },
+      {
+        "userId": 662,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 667,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 641,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 668,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 673,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 671,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 669,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 676,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 674,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 652,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 677,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 682,
+        "relevant": 20,
+        "hit": 1
+      },
+      {
+        "userId": 679,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 684,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 683,
+        "relevant": 5,
+        "hit": 1
+      },
+      {
+        "userId": 691,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 672,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 692,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 690,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 689,
+        "relevant": 2,
+        "hit": 1
+      },
+      {
+        "userId": 686,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 693,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 688,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 697,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 670,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 694,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 680,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 705,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 701,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 699,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 704,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 707,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 700,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 687,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 695,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 708,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 709,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 711,
+        "relevant": 20,
+        "hit": 1
+      },
+      {
+        "userId": 710,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 712,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 715,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 713,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 716,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 681,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 678,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 719,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 702,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 721,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 714,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 717,
+        "relevant": 7,
+        "hit": 1
+      },
+      {
+        "userId": 718,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 696,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 727,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 725,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 706,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 720,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 729,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 726,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 728,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 703,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 738,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 736,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 734,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 730,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 743,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 742,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 737,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 745,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 740,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 735,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 747,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 739,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 749,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 748,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 746,
+        "relevant": 4,
+        "hit": 1
+      },
+      {
+        "userId": 731,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 741,
+        "relevant": 2,
+        "hit": 1
+      },
+      {
+        "userId": 751,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 756,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 757,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 752,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 758,
+        "relevant": 27,
+        "hit": 0
+      },
+      {
+        "userId": 762,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 744,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 753,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 763,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 764,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 767,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 755,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 771,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 768,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 773,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 765,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 772,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 766,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 760,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 761,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 777,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 759,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 776,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 780,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 779,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 778,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 786,
+        "relevant": 12,
+        "hit": 0
+      },
+      {
+        "userId": 784,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 770,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 788,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 789,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 790,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 787,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 783,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 785,
+        "relevant": 2,
+        "hit": 1
+      },
+      {
+        "userId": 794,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 781,
+        "relevant": 5,
+        "hit": 1
+      },
+      {
+        "userId": 796,
+        "relevant": 18,
+        "hit": 1
+      },
+      {
+        "userId": 795,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 793,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 798,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 791,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 802,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 800,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 804,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 803,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 775,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 792,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 799,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 805,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 806,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 807,
+        "relevant": 15,
+        "hit": 0
+      },
+      {
+        "userId": 797,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 801,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 815,
+        "relevant": 8,
+        "hit": 1
+      },
+      {
+        "userId": 817,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 821,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 818,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 812,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 823,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 825,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 829,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 811,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 830,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 826,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 831,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 819,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 828,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 808,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 835,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 833,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 836,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 816,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 838,
+        "relevant": 10,
+        "hit": 1
+      },
+      {
+        "userId": 839,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 840,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 832,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 810,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 844,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 843,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 834,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 846,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 837,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 813,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 842,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 847,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 848,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 852,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 851,
+        "relevant": 15,
+        "hit": 1
+      },
+      {
+        "userId": 849,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 854,
+        "relevant": 17,
+        "hit": 0
+      },
+      {
+        "userId": 850,
+        "relevant": 6,
+        "hit": 4
+      },
+      {
+        "userId": 858,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 853,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 855,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 845,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 841,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 859,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 862,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 820,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 863,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 860,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 857,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 864,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 865,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 868,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 867,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 861,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 870,
+        "relevant": 20,
+        "hit": 2
+      },
+      {
+        "userId": 871,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 875,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 876,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 872,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 866,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 877,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 880,
+        "relevant": 29,
+        "hit": 0
+      },
+      {
+        "userId": 878,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 869,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 881,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 879,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 883,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 882,
+        "relevant": 10,
+        "hit": 0
+      },
+      {
+        "userId": 884,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 886,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 885,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 889,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 874,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 892,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 890,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 893,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 887,
+        "relevant": 16,
+        "hit": 0
+      },
+      {
+        "userId": 891,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 894,
+        "relevant": 10,
+        "hit": 1
+      },
+      {
+        "userId": 896,
+        "relevant": 13,
+        "hit": 2
+      },
+      {
+        "userId": 897,
+        "relevant": 13,
+        "hit": 0
+      },
+      {
+        "userId": 901,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 899,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 903,
+        "relevant": 14,
+        "hit": 0
+      },
+      {
+        "userId": 904,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 907,
+        "relevant": 15,
+        "hit": 0
+      },
+      {
+        "userId": 905,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 902,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 898,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 895,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 906,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 900,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 908,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 916,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 911,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 912,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 914,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 918,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 919,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 921,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 910,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 913,
+        "relevant": 6,
+        "hit": 0
+      },
+      {
+        "userId": 915,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 922,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 923,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 928,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 927,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 924,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 929,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 931,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 917,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 932,
+        "relevant": 8,
+        "hit": 0
+      },
+      {
+        "userId": 934,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 935,
+        "relevant": 4,
+        "hit": 0
+      },
+      {
+        "userId": 938,
+        "relevant": 3,
+        "hit": 0
+      },
+      {
+        "userId": 940,
+        "relevant": 7,
+        "hit": 0
+      },
+      {
+        "userId": 888,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 942,
+        "relevant": 9,
+        "hit": 0
+      },
+      {
+        "userId": 937,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 943,
+        "relevant": 5,
+        "hit": 0
+      },
+      {
+        "userId": 939,
+        "relevant": 2,
+        "hit": 0
+      },
+      {
+        "userId": 936,
+        "relevant": 11,
+        "hit": 0
+      },
+      {
+        "userId": 920,
+        "relevant": 1,
+        "hit": 0
+      },
+      {
+        "userId": 941,
+        "relevant": 3,
+        "hit": 0
+      }
+    ],
+    "excluded": {
+      "unseenIds": [
+        913,
+        1106,
+        1130,
+        1458,
+        1498,
+        1525,
+        1613,
+        1625,
+        1645,
+        1646,
+        1650,
+        1651,
+        1674
+      ],
+      "usersWithoutRelevant": [
+        61,
+        76,
+        82,
+        93,
+        102,
+        105,
+        107,
+        108,
+        110,
+        111,
+        120,
+        129,
+        149,
+        155,
+        161,
+        202,
+        209,
+        228,
+        238,
+        240,
+        241,
+        281,
+        284,
+        289,
+        293,
+        302,
+        309,
+        362,
+        380,
+        386,
+        395,
+        399,
+        405,
+        441,
+        443,
+        444,
+        446,
+        453,
+        465,
+        502,
+        510,
+        515,
+        523,
+        544,
+        549,
+        550,
+        572,
+        578,
+        580,
+        584,
+        587,
+        596,
+        631,
+        646,
+        647,
+        651,
+        656,
+        675,
+        685,
+        698,
+        722,
+        723,
+        724,
+        732,
+        733,
+        750,
+        754,
+        769,
+        774,
+        782,
+        809,
+        814,
+        822,
+        824,
+        827,
+        856,
+        873,
+        909,
+        925,
+        926,
+        930,
+        933
+      ]
+    }
+  }
+}

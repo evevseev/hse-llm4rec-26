@@ -1,0 +1,12 @@
+user 1 history ratings 244 genres in history 18
+  top-10 titles already in train/val history: 0
+  train-rating counts match saved file: True | smallest count in list: 29
+  titles with a genre absent from history: []
+  list titles that user rated in the test split: [('Wrong Trousers, The (1993)', 5), ('12 Angry Men (1957)', 5)]
+user 2 history ratings 55 genres in history 14
+  top-10 titles already in train/val history: 0
+  train-rating counts match saved file: True | smallest count in list: 25
+  titles with a genre absent from history: ['Paris Is Burning (1990)']
+  list titles that user rated in the test split: []
+top-20 most shown movies fill 2372 of 9430 slots = 25.15%
+most shown: Wallace & Gromit: The Best of Aardman Animation (1996) to 199 of 943 users

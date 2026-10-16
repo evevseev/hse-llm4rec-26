@@ -1,0 +1,362 @@
+{
+  "source": "MovieLens 100k files and the saved evaluation metrics",
+  "split": {
+    "train": 79619,
+    "validation": 9596,
+    "test": 10785
+  },
+  "metricBreakdown": {
+    "reportedMacroRecallAt10": 0.015681603713191824,
+    "macroRecallRecomputed": 0.015681603713191824,
+    "microRecallAt10": 0.018280824581874758,
+    "hits": 94,
+    "relevantTargetsInCandidatePool": 5142,
+    "evaluableUsers": 861,
+    "usersWithAtLeastOneHit": 80,
+    "usersWithZeroHits": 781,
+    "testUsers": 943,
+    "usersWithoutRelevantCandidate": 82,
+    "unseenRelevantMovieIds": 13,
+    "relevantTestRatingsTotal": 5155,
+    "randomExpectedMacroRecallAllCatalog": 0.0063359874855906
+  },
+  "popularityBaseline": {
+    "allCatalog": {
+      "macroRecallAt10": 0.08474103063998914,
+      "microRecallAt10": 0.08420847919097628,
+      "hits": 433,
+      "relevantTargets": 5142,
+      "evaluableUsers": 861,
+      "candidatePoolSize": 1682
+    },
+    "trainMoviePool": {
+      "macroRecallAt10": 0.08474103063998914,
+      "microRecallAt10": 0.08420847919097628,
+      "hits": 433,
+      "relevantTargets": 5142,
+      "evaluableUsers": 861,
+      "candidatePoolSize": 1611
+    }
+  },
+  "candidatePoolSizes": {
+    "fullCatalog": 1682,
+    "trainMovies": 1611
+  },
+  "user1": {
+    "historyRatingsTrainAndValidation": 244,
+    "meanHistoryRating": 3.5778688524590163,
+    "distinctHistoryMovies": 244,
+    "topGenresByHistoryCount": [
+      {
+        "genre": "Drama",
+        "ratingCount": 93,
+        "meanRating": 3.913978494623656
+      },
+      {
+        "genre": "Comedy",
+        "ratingCount": 81,
+        "meanRating": 3.419753086419753
+      },
+      {
+        "genre": "Action",
+        "ratingCount": 69,
+        "meanRating": 3.4057971014492754
+      },
+      {
+        "genre": "Thriller",
+        "ratingCount": 47,
+        "meanRating": 3.574468085106383
+      },
+      {
+        "genre": "Romance",
+        "ratingCount": 39,
+        "meanRating": 3.923076923076923
+      },
+      {
+        "genre": "Adventure",
+        "ratingCount": 38,
+        "meanRating": 2.9210526315789473
+      },
+      {
+        "genre": "Sci-Fi",
+        "ratingCount": 37,
+        "meanRating": 3.945945945945946
+      },
+      {
+        "genre": "War",
+        "ratingCount": 24,
+        "meanRating": 3.75
+      }
+    ],
+    "recommendations": [
+      {
+        "movieId": 408,
+        "title": "Close Shave, A (1995)",
+        "score": 5,
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Thriller"
+        ],
+        "trainRatingCount": 96,
+        "trainMeanRating": 4.489583333333333,
+        "trainPopularityRank": 280,
+        "allUsersRatingCount": 112,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 483,
+        "title": "Casablanca (1942)",
+        "score": 5,
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "trainRatingCount": 222,
+        "trainMeanRating": 4.454954954954955,
+        "trainPopularityRank": 61,
+        "allUsersRatingCount": 243,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 1449,
+        "title": "Pather Panchali (1955)",
+        "score": 5,
+        "genres": [
+          "Drama"
+        ],
+        "trainRatingCount": 7,
+        "trainMeanRating": 4.714285714285714,
+        "trainPopularityRank": 1087,
+        "allUsersRatingCount": 8,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 1500,
+        "title": "Santa with Muscles (1996)",
+        "score": 5,
+        "genres": [
+          "Comedy"
+        ],
+        "trainRatingCount": 2,
+        "trainMeanRating": 5,
+        "trainPopularityRank": 1390,
+        "allUsersRatingCount": 2,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 1628,
+        "title": "Lamerica (1994)",
+        "score": 4.996562480926514,
+        "genres": [
+          "Drama"
+        ],
+        "trainRatingCount": 1,
+        "trainMeanRating": 5,
+        "trainPopularityRank": 1488,
+        "allUsersRatingCount": 4,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 1142,
+        "title": "When We Were Kings (1996)",
+        "score": 4.97984504699707,
+        "genres": [
+          "Documentary"
+        ],
+        "trainRatingCount": 34,
+        "trainMeanRating": 4.147058823529412,
+        "trainPopularityRank": 614,
+        "allUsersRatingCount": 44,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 169,
+        "title": "Wrong Trousers, The (1993)",
+        "score": 4.941717624664307,
+        "genres": [
+          "Animation",
+          "Comedy"
+        ],
+        "trainRatingCount": 101,
+        "trainMeanRating": 4.514851485148514,
+        "trainPopularityRank": 260,
+        "allUsersRatingCount": 118,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": 5
+      },
+      {
+        "movieId": 613,
+        "title": "My Man Godfrey (1936)",
+        "score": 4.938361644744873,
+        "genres": [
+          "Comedy"
+        ],
+        "trainRatingCount": 20,
+        "trainMeanRating": 4.2,
+        "trainPopularityRank": 787,
+        "allUsersRatingCount": 27,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 480,
+        "title": "North by Northwest (1959)",
+        "score": 4.922815322875977,
+        "genres": [
+          "Comedy",
+          "Thriller"
+        ],
+        "trainRatingCount": 151,
+        "trainMeanRating": 4.251655629139073,
+        "trainPopularityRank": 146,
+        "allUsersRatingCount": 179,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      },
+      {
+        "movieId": 657,
+        "title": "Manchurian Candidate, The (1962)",
+        "score": 4.904425621032715,
+        "genres": [
+          "Film-Noir",
+          "Thriller"
+        ],
+        "trainRatingCount": 112,
+        "trainMeanRating": 4.267857142857143,
+        "trainPopularityRank": 223,
+        "allUsersRatingCount": 131,
+        "ratedByUser1InTrainOrValidation": false,
+        "user1TestRating": null
+      }
+    ],
+    "noveltySummary": [
+      {
+        "movieId": 408,
+        "title": "Close Shave, A (1995)",
+        "genreOverlapWithUserHistory": [
+          "Animation",
+          "Comedy",
+          "Thriller"
+        ],
+        "trainRatingCount": 96,
+        "trainPopularityRank": 280,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 483,
+        "title": "Casablanca (1942)",
+        "genreOverlapWithUserHistory": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "trainRatingCount": 222,
+        "trainPopularityRank": 61,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 1449,
+        "title": "Pather Panchali (1955)",
+        "genreOverlapWithUserHistory": [
+          "Drama"
+        ],
+        "trainRatingCount": 7,
+        "trainPopularityRank": 1087,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 1500,
+        "title": "Santa with Muscles (1996)",
+        "genreOverlapWithUserHistory": [
+          "Comedy"
+        ],
+        "trainRatingCount": 2,
+        "trainPopularityRank": 1390,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 1628,
+        "title": "Lamerica (1994)",
+        "genreOverlapWithUserHistory": [
+          "Drama"
+        ],
+        "trainRatingCount": 1,
+        "trainPopularityRank": 1488,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 1142,
+        "title": "When We Were Kings (1996)",
+        "genreOverlapWithUserHistory": [
+          "Documentary"
+        ],
+        "trainRatingCount": 34,
+        "trainPopularityRank": 614,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 169,
+        "title": "Wrong Trousers, The (1993)",
+        "genreOverlapWithUserHistory": [
+          "Animation",
+          "Comedy"
+        ],
+        "trainRatingCount": 101,
+        "trainPopularityRank": 260,
+        "testRatingForUser1": 5,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 613,
+        "title": "My Man Godfrey (1936)",
+        "genreOverlapWithUserHistory": [
+          "Comedy"
+        ],
+        "trainRatingCount": 20,
+        "trainPopularityRank": 787,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 480,
+        "title": "North by Northwest (1959)",
+        "genreOverlapWithUserHistory": [
+          "Comedy",
+          "Thriller"
+        ],
+        "trainRatingCount": 151,
+        "trainPopularityRank": 146,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      },
+      {
+        "movieId": 657,
+        "title": "Manchurian Candidate, The (1962)",
+        "genreOverlapWithUserHistory": [
+          "Film-Noir",
+          "Thriller"
+        ],
+        "trainRatingCount": 112,
+        "trainPopularityRank": 223,
+        "testRatingForUser1": null,
+        "inPastUserHistory": false
+      }
+    ],
+    "recommendationItemsAlreadyInTrainOrValidation": 0,
+    "recommendationItemsAlsoRatedInTest": 1
+  }
+}

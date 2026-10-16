@@ -1,0 +1,45 @@
+{
+  "backend": "wasm",
+  "parameters": {
+    "epochs": 20,
+    "lr": 0.01,
+    "reg": 0.05,
+    "batchSize": 64
+  },
+  "bestCheckpoint": {
+    "epoch": 3,
+    "trainRMSE": 0.7601568788563087,
+    "valRMSE": 1.010433662245397
+  },
+  "candidatePools": {
+    "fullCatalog": 1682,
+    "trainMovies": 1611
+  },
+  "evaluableUsers": 861,
+  "relevantTargets": 5142,
+  "currentClippedTopK": {
+    "macroRecallAt10": 0.010101056393560803,
+    "microRecallAt10": 0.011863088292493194,
+    "hits": 61,
+    "topSlots": 8610,
+    "scoresClampedTo5": 3377,
+    "shareOfSlotsClampedTo5": 0.3922183507549361
+  },
+  "rawScoreRanking": {
+    "fullCatalog": {
+      "macroRecallAt10": 0.008888742716371327,
+      "microRecallAt10": 0.010307273434461299,
+      "hits": 53,
+      "relevantTargets": 5142,
+      "evaluableUsers": 861
+    },
+    "trainMoviePool": {
+      "macroRecallAt10": 0.008888742716371327,
+      "microRecallAt10": 0.010307273434461299,
+      "hits": 53,
+      "relevantTargets": 5142,
+      "evaluableUsers": 861
+    }
+  },
+  "note": "This is one fresh default-parameter training run; raw-score rankings keep the same fitted factors and differ only in ranking/clipping and candidate pool."
+}

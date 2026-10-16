@@ -1,0 +1,496 @@
+{
+  "seed": 1,
+  "backend": "wasm",
+  "parameters": {
+    "factors": 16,
+    "epochs": 20,
+    "lr": 0.01,
+    "reg": 0.05,
+    "batchSize": 64
+  },
+  "candidateMinTrainRatings": 20,
+  "historyDefinition": "Movies rated by the user in train or validation; no test ratings are read or used.",
+  "testSetAccessed": false,
+  "trainRatings": 79619,
+  "validationRatings": 9596,
+  "bestCheckpoint": {
+    "epoch": 3,
+    "trainRMSE": 0.7619422389112999,
+    "valRMSE": 1.007781213082521
+  },
+  "users": {
+    "1": {
+      "historyRatings": 244,
+      "uniquePreviouslyRatedMovies": 244,
+      "historyMeanRating": 3.5778688524590163,
+      "favoredGenresRule": "at least 5 genre-tagged past ratings and mean rating >= 4.0",
+      "favoredGenres": [],
+      "topGenresByHistoryCount": [
+        {
+          "genre": "Drama",
+          "ratingCount": 93,
+          "meanRating": 3.913978494623656
+        },
+        {
+          "genre": "Comedy",
+          "ratingCount": 81,
+          "meanRating": 3.419753086419753
+        },
+        {
+          "genre": "Action",
+          "ratingCount": 69,
+          "meanRating": 3.4057971014492754
+        },
+        {
+          "genre": "Thriller",
+          "ratingCount": 47,
+          "meanRating": 3.574468085106383
+        },
+        {
+          "genre": "Romance",
+          "ratingCount": 39,
+          "meanRating": 3.923076923076923
+        },
+        {
+          "genre": "Adventure",
+          "ratingCount": 38,
+          "meanRating": 2.9210526315789473
+        },
+        {
+          "genre": "Sci-Fi",
+          "ratingCount": 37,
+          "meanRating": 3.945945945945946
+        },
+        {
+          "genre": "War",
+          "ratingCount": 24,
+          "meanRating": 3.75
+        }
+      ],
+      "recommendations": [
+        {
+          "movieId": 1021,
+          "title": "8 1/2 (1963)",
+          "score": 4.99036979675293,
+          "trainRatings": 29,
+          "genres": [
+            "Drama"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Drama"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 512,
+          "title": "Wings of Desire (1987)",
+          "score": 4.886465072631836,
+          "trainRatings": 44,
+          "genres": [
+            "Comedy",
+            "Drama",
+            "Romance"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Comedy",
+            "Drama",
+            "Romance"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 169,
+          "title": "Wrong Trousers, The (1993)",
+          "score": 4.857687950134277,
+          "trainRatings": 101,
+          "genres": [
+            "Animation",
+            "Comedy"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Animation",
+            "Comedy"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 513,
+          "title": "Third Man, The (1949)",
+          "score": 4.8016252517700195,
+          "trainRatings": 69,
+          "genres": [
+            "Mystery",
+            "Thriller"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Mystery",
+            "Thriller"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 178,
+          "title": "12 Angry Men (1957)",
+          "score": 4.652337074279785,
+          "trainRatings": 108,
+          "genres": [
+            "Drama"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Drama"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 492,
+          "title": "East of Eden (1955)",
+          "score": 4.64822244644165,
+          "trainRatings": 54,
+          "genres": [
+            "Drama"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Drama"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 474,
+          "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)",
+          "score": 4.618949890136719,
+          "trainRatings": 170,
+          "genres": [
+            "Sci-Fi",
+            "War"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Sci-Fi",
+            "War"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 657,
+          "title": "Manchurian Candidate, The (1962)",
+          "score": 4.606435298919678,
+          "trainRatings": 112,
+          "genres": [
+            "Film-Noir",
+            "Thriller"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Film-Noir",
+            "Thriller"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 525,
+          "title": "Big Sleep, The (1946)",
+          "score": 4.599747657775879,
+          "trainRatings": 62,
+          "genres": [
+            "Film-Noir",
+            "Mystery"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Film-Noir",
+            "Mystery"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 520,
+          "title": "Great Escape, The (1963)",
+          "score": 4.599541187286377,
+          "trainRatings": 105,
+          "genres": [
+            "Adventure",
+            "War"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Adventure",
+            "War"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        }
+      ],
+      "summary": {
+        "top10": 10,
+        "knownTitles": 0,
+        "newTitles": 10,
+        "newTitlesWithAnyPastGenre": 10,
+        "newTitlesWithFavoredGenre": 0,
+        "titlesWithOnlyUnseenGenres": 0
+      }
+    },
+    "2": {
+      "historyRatings": 55,
+      "uniquePreviouslyRatedMovies": 55,
+      "historyMeanRating": 3.8181818181818183,
+      "favoredGenresRule": "at least 5 genre-tagged past ratings and mean rating >= 4.0",
+      "favoredGenres": [
+        "Romance",
+        "Crime",
+        "Action"
+      ],
+      "topGenresByHistoryCount": [
+        {
+          "genre": "Drama",
+          "ratingCount": 32,
+          "meanRating": 3.84375
+        },
+        {
+          "genre": "Romance",
+          "ratingCount": 16,
+          "meanRating": 4.125
+        },
+        {
+          "genre": "Comedy",
+          "ratingCount": 15,
+          "meanRating": 3.7333333333333334
+        },
+        {
+          "genre": "Thriller",
+          "ratingCount": 11,
+          "meanRating": 3.6363636363636362
+        },
+        {
+          "genre": "Action",
+          "ratingCount": 8,
+          "meanRating": 4.25
+        },
+        {
+          "genre": "Crime",
+          "ratingCount": 8,
+          "meanRating": 4.125
+        },
+        {
+          "genre": "Sci-Fi",
+          "ratingCount": 4,
+          "meanRating": 3.75
+        },
+        {
+          "genre": "Mystery",
+          "ratingCount": 4,
+          "meanRating": 3.5
+        }
+      ],
+      "recommendations": [
+        {
+          "movieId": 187,
+          "title": "Godfather: Part II, The (1974)",
+          "score": 4.811516761779785,
+          "trainRatings": 182,
+          "genres": [
+            "Action",
+            "Crime",
+            "Drama"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Action",
+            "Crime",
+            "Drama"
+          ],
+          "favoredGenreOverlap": [
+            "Action",
+            "Crime"
+          ],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 1126,
+          "title": "Old Man and the Sea, The (1958)",
+          "score": 4.809268474578857,
+          "trainRatings": 25,
+          "genres": [
+            "Adventure",
+            "Drama"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Adventure",
+            "Drama"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 645,
+          "title": "Paris Is Burning (1990)",
+          "score": 4.773159980773926,
+          "trainRatings": 27,
+          "genres": [
+            "Documentary"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": [
+            "Documentary"
+          ]
+        },
+        {
+          "movieId": 408,
+          "title": "Close Shave, A (1995)",
+          "score": 4.72826623916626,
+          "trainRatings": 96,
+          "genres": [
+            "Animation",
+            "Comedy",
+            "Thriller"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Animation",
+            "Comedy",
+            "Thriller"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 191,
+          "title": "Amadeus (1984)",
+          "score": 4.704773426055908,
+          "trainRatings": 236,
+          "genres": [
+            "Drama",
+            "Mystery"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Drama",
+            "Mystery"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 180,
+          "title": "Apocalypse Now (1979)",
+          "score": 4.676205158233643,
+          "trainRatings": 201,
+          "genres": [
+            "Drama",
+            "War"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Drama",
+            "War"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 483,
+          "title": "Casablanca (1942)",
+          "score": 4.6700263023376465,
+          "trainRatings": 222,
+          "genres": [
+            "Drama",
+            "Romance",
+            "War"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Drama",
+            "Romance",
+            "War"
+          ],
+          "favoredGenreOverlap": [
+            "Romance"
+          ],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 478,
+          "title": "Philadelphia Story, The (1940)",
+          "score": 4.660547256469727,
+          "trainRatings": 85,
+          "genres": [
+            "Comedy",
+            "Romance"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Comedy",
+            "Romance"
+          ],
+          "favoredGenreOverlap": [
+            "Romance"
+          ],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 656,
+          "title": "M (1931)",
+          "score": 4.650572299957275,
+          "trainRatings": 39,
+          "genres": [
+            "Crime",
+            "Film-Noir",
+            "Thriller"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Crime",
+            "Film-Noir",
+            "Thriller"
+          ],
+          "favoredGenreOverlap": [
+            "Crime"
+          ],
+          "entirelyNewGenres": []
+        },
+        {
+          "movieId": 657,
+          "title": "Manchurian Candidate, The (1962)",
+          "score": 4.624138355255127,
+          "trainRatings": 112,
+          "genres": [
+            "Film-Noir",
+            "Thriller"
+          ],
+          "previouslyRatedByUser": false,
+          "sharedPastGenres": [
+            "Film-Noir",
+            "Thriller"
+          ],
+          "favoredGenreOverlap": [],
+          "entirelyNewGenres": []
+        }
+      ],
+      "summary": {
+        "top10": 10,
+        "knownTitles": 0,
+        "newTitles": 10,
+        "newTitlesWithAnyPastGenre": 9,
+        "newTitlesWithFavoredGenre": 4,
+        "titlesWithOnlyUnseenGenres": 1
+      }
+    }
+  }
+}
