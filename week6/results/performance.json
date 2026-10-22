@@ -1,0 +1,36 @@
+{
+  "propagationBackend": "wasm",
+  "wasmThreadsPerProcess": 1,
+  "mfBackend": "tensorflow",
+  "workers": 8,
+  "logicalCpus": 12,
+  "workerStartupMs": 790.25475,
+  "alphaSweepMs": [
+    {
+      "alpha": 0.5,
+      "elapsedMs": 8450.28975
+    },
+    {
+      "alpha": 0.7,
+      "elapsedMs": 15431.253417
+    },
+    {
+      "alpha": 0.85,
+      "elapsedMs": 32946.468625
+    },
+    {
+      "alpha": 0.95,
+      "elapsedMs": 84933.79625
+    }
+  ],
+  "alphaSweepTotalMs": 141761.808042,
+  "convergenceMs": 28.265959,
+  "mfTrainingMs": 4420.163292,
+  "testEvaluationMs": {
+    "popularity": 1625.763708,
+    "pagerank": 2262.551041,
+    "ppr": 4760.78125,
+    "mf": 1705.298792
+  },
+  "totalMs": 157498.138959
+}

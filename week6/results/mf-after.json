@@ -1,0 +1,393 @@
+{
+  "trainCount": 79619,
+  "validationCount": 9596,
+  "globalMean": 3.5806026199776437,
+  "meanOnlyValidationRMSE": 1.1829947710600353,
+  "checkpoint": 3,
+  "validationRMSE": 0.9822882377481063,
+  "history": [
+    {
+      "epoch": 1,
+      "trainRMSE": 0.9674065719265332,
+      "valRMSE": 1.0816372591340337
+    },
+    {
+      "epoch": 2,
+      "trainRMSE": 0.8378725916915946,
+      "valRMSE": 0.988815314092454
+    },
+    {
+      "epoch": 3,
+      "trainRMSE": 0.780804430739835,
+      "valRMSE": 0.9822882377481063
+    },
+    {
+      "epoch": 4,
+      "trainRMSE": 0.7383570960105249,
+      "valRMSE": 0.9865944682159714
+    },
+    {
+      "epoch": 5,
+      "trainRMSE": 0.7099713897985102,
+      "valRMSE": 0.9934457925100618
+    },
+    {
+      "epoch": 6,
+      "trainRMSE": 0.6917038831886111,
+      "valRMSE": 0.9976506949249923
+    },
+    {
+      "epoch": 7,
+      "trainRMSE": 0.6781663864444851,
+      "valRMSE": 1.0027701038255996
+    },
+    {
+      "epoch": 8,
+      "trainRMSE": 0.6686730269225929,
+      "valRMSE": 1.00757956954972
+    },
+    {
+      "epoch": 9,
+      "trainRMSE": 0.6617592304913263,
+      "valRMSE": 1.008867111214914
+    },
+    {
+      "epoch": 10,
+      "trainRMSE": 0.655954339773095,
+      "valRMSE": 1.0140309662463922
+    },
+    {
+      "epoch": 11,
+      "trainRMSE": 0.652112520090802,
+      "valRMSE": 1.013991347815865
+    },
+    {
+      "epoch": 12,
+      "trainRMSE": 0.649010990653705,
+      "valRMSE": 1.0162310625965236
+    },
+    {
+      "epoch": 13,
+      "trainRMSE": 0.6448460359304076,
+      "valRMSE": 1.0181022363299252
+    },
+    {
+      "epoch": 14,
+      "trainRMSE": 0.6438074614054841,
+      "valRMSE": 1.0181600184591721
+    },
+    {
+      "epoch": 15,
+      "trainRMSE": 0.6426501943876596,
+      "valRMSE": 1.0223957030026933
+    },
+    {
+      "epoch": 16,
+      "trainRMSE": 0.6398966533322995,
+      "valRMSE": 1.0233178687609792
+    },
+    {
+      "epoch": 17,
+      "trainRMSE": 0.6386994988769935,
+      "valRMSE": 1.023682484898218
+    },
+    {
+      "epoch": 18,
+      "trainRMSE": 0.6372704251496625,
+      "valRMSE": 1.025987781846019
+    },
+    {
+      "epoch": 19,
+      "trainRMSE": 0.635596802197617,
+      "valRMSE": 1.026382634911406
+    },
+    {
+      "epoch": 20,
+      "trainRMSE": 0.6347667048518459,
+      "valRMSE": 1.0251650026142836
+    },
+    {
+      "epoch": 21,
+      "trainRMSE": 0.6339928250974812,
+      "valRMSE": 1.0267889461111066
+    },
+    {
+      "epoch": 22,
+      "trainRMSE": 0.6333094870528498,
+      "valRMSE": 1.0280446029813075
+    },
+    {
+      "epoch": 23,
+      "trainRMSE": 0.6319122975828174,
+      "valRMSE": 1.028788258152872
+    },
+    {
+      "epoch": 24,
+      "trainRMSE": 0.6321066935134304,
+      "valRMSE": 1.0302312037774308
+    },
+    {
+      "epoch": 25,
+      "trainRMSE": 0.6307686424554565,
+      "valRMSE": 1.028493607600871
+    },
+    {
+      "epoch": 26,
+      "trainRMSE": 0.6299308107999122,
+      "valRMSE": 1.029311351927663
+    },
+    {
+      "epoch": 27,
+      "trainRMSE": 0.6303291572786837,
+      "valRMSE": 1.0284809736940845
+    },
+    {
+      "epoch": 28,
+      "trainRMSE": 0.6294809878374145,
+      "valRMSE": 1.030282115447754
+    },
+    {
+      "epoch": 29,
+      "trainRMSE": 0.629034183355687,
+      "valRMSE": 1.0302222939764523
+    },
+    {
+      "epoch": 30,
+      "trainRMSE": 0.6288621543447331,
+      "valRMSE": 1.0320053224389385
+    }
+  ],
+  "userFactorStats": {
+    "values": 15104,
+    "rms": 0.2992465432484939,
+    "maxAbs": 1.4249308109283447
+  },
+  "itemFactorStats": {
+    "values": 26928,
+    "rms": 0.29115782412224517,
+    "maxAbs": 1.1643741130828857
+  },
+  "scoreStatsUser1": {
+    "candidateCount": 1611,
+    "uniqueScoreCount": 1611,
+    "min": 1.1747832298278809,
+    "max": 5.114006996154785,
+    "range": 3.9392237663269043
+  },
+  "scoreStatsUser2": {
+    "candidateCount": 1611,
+    "uniqueScoreCount": 1611,
+    "min": 2.4464540481567383,
+    "max": 4.544320583343506,
+    "range": 2.0978665351867676
+  },
+  "testRecallAt10": 0.020627376817148407,
+  "top10": {
+    "user1": [
+      {
+        "movieId": 483,
+        "title": "Casablanca (1942)",
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "score": 5.071996688842773,
+        "popularity": 197
+      },
+      {
+        "movieId": 169,
+        "title": "Wrong Trousers, The (1993)",
+        "genres": [
+          "Animation",
+          "Comedy"
+        ],
+        "score": 5.070607662200928,
+        "popularity": 90
+      },
+      {
+        "movieId": 408,
+        "title": "Close Shave, A (1995)",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Thriller"
+        ],
+        "score": 5.046439170837402,
+        "popularity": 85
+      },
+      {
+        "movieId": 511,
+        "title": "Lawrence of Arabia (1962)",
+        "genres": [
+          "Adventure",
+          "War"
+        ],
+        "score": 5.01748514175415,
+        "popularity": 134
+      },
+      {
+        "movieId": 657,
+        "title": "Manchurian Candidate, The (1962)",
+        "genres": [
+          "Film-Noir",
+          "Thriller"
+        ],
+        "score": 4.976018905639648,
+        "popularity": 96
+      },
+      {
+        "movieId": 1628,
+        "title": "Lamerica (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 4.798633575439453,
+        "popularity": 1
+      },
+      {
+        "movieId": 1021,
+        "title": "8 1/2 (1963)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 4.749403476715088,
+        "popularity": 21
+      },
+      {
+        "movieId": 427,
+        "title": "To Kill a Mockingbird (1962)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 4.744840621948242,
+        "popularity": 166
+      },
+      {
+        "movieId": 966,
+        "title": "Affair to Remember, An (1957)",
+        "genres": [
+          "Romance"
+        ],
+        "score": 4.740418910980225,
+        "popularity": 17
+      },
+      {
+        "movieId": 513,
+        "title": "Third Man, The (1949)",
+        "genres": [
+          "Mystery",
+          "Thriller"
+        ],
+        "score": 4.728297233581543,
+        "popularity": 63
+      }
+    ],
+    "user2": [
+      {
+        "movieId": 511,
+        "title": "Lawrence of Arabia (1962)",
+        "genres": [
+          "Adventure",
+          "War"
+        ],
+        "score": 4.544320583343506,
+        "popularity": 134
+      },
+      {
+        "movieId": 694,
+        "title": "Persuasion (1995)",
+        "genres": [
+          "Romance"
+        ],
+        "score": 4.528646469116211,
+        "popularity": 28
+      },
+      {
+        "movieId": 513,
+        "title": "Third Man, The (1949)",
+        "genres": [
+          "Mystery",
+          "Thriller"
+        ],
+        "score": 4.492482662200928,
+        "popularity": 63
+      },
+      {
+        "movieId": 483,
+        "title": "Casablanca (1942)",
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "score": 4.470323085784912,
+        "popularity": 197
+      },
+      {
+        "movieId": 656,
+        "title": "M (1931)",
+        "genres": [
+          "Crime",
+          "Film-Noir",
+          "Thriller"
+        ],
+        "score": 4.444591999053955,
+        "popularity": 31
+      },
+      {
+        "movieId": 525,
+        "title": "Big Sleep, The (1946)",
+        "genres": [
+          "Film-Noir",
+          "Mystery"
+        ],
+        "score": 4.438229084014893,
+        "popularity": 46
+      },
+      {
+        "movieId": 199,
+        "title": "Bridge on the River Kwai, The (1957)",
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "score": 4.423234939575195,
+        "popularity": 117
+      },
+      {
+        "movieId": 653,
+        "title": "Touch of Evil (1958)",
+        "genres": [
+          "Crime",
+          "Film-Noir",
+          "Thriller"
+        ],
+        "score": 4.39984130859375,
+        "popularity": 20
+      },
+      {
+        "movieId": 510,
+        "title": "Magnificent Seven, The (1954)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Western"
+        ],
+        "score": 4.399502754211426,
+        "popularity": 70
+      },
+      {
+        "movieId": 515,
+        "title": "Boot, Das (1981)",
+        "genres": [
+          "Action",
+          "Drama",
+          "War"
+        ],
+        "score": 4.396188735961914,
+        "popularity": 153
+      }
+    ]
+  }
+}

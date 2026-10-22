@@ -1,0 +1,5 @@
+method,split,alpha,selectedPprAlpha,alphaSelection,recallAt10,candidateUsers,cohortSize,excludedNoPositiveEdge,excludedUnseen,excludedNoEligible,mfCheckpoint,mfValidationRMSE,backend
+popularity,test,,0.5,,0.07602291343770759,943,861,1,13,82,,,javascript
+pagerank,test,0.5,0.5,validation Recall@10,0.07969324149418144,943,861,1,13,82,,,wasm
+ppr,test,0.5,0.5,validation Recall@10,0.11218853219486066,943,861,1,13,82,,,wasm
+mf,test,,0.5,,0.020627376817148407,943,861,1,13,82,3,0.9822882377481063,tensorflow

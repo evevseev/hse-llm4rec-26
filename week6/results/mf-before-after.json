@@ -1,0 +1,228 @@
+{
+  "before": {
+    "testRecallAt10": 0.021137488852036153,
+    "checkpoint": 1,
+    "validationRMSE": 1.18299447679238,
+    "user1UniqueScores": 1,
+    "user2UniqueScores": 1
+  },
+  "after": {
+    "testRecallAt10": 0.020627376817148407,
+    "checkpoint": 3,
+    "validationRMSE": 0.9822882377481063,
+    "user1UniqueScores": 1611,
+    "user2UniqueScores": 1611
+  },
+  "delta": {
+    "testRecallAt10": -0.0005101120348877455,
+    "validationRMSE": -0.20070623904427365
+  },
+  "afterTop10": {
+    "user1": [
+      {
+        "movieId": 483,
+        "title": "Casablanca (1942)",
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "score": 5.071996688842773,
+        "popularity": 197
+      },
+      {
+        "movieId": 169,
+        "title": "Wrong Trousers, The (1993)",
+        "genres": [
+          "Animation",
+          "Comedy"
+        ],
+        "score": 5.070607662200928,
+        "popularity": 90
+      },
+      {
+        "movieId": 408,
+        "title": "Close Shave, A (1995)",
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Thriller"
+        ],
+        "score": 5.046439170837402,
+        "popularity": 85
+      },
+      {
+        "movieId": 511,
+        "title": "Lawrence of Arabia (1962)",
+        "genres": [
+          "Adventure",
+          "War"
+        ],
+        "score": 5.01748514175415,
+        "popularity": 134
+      },
+      {
+        "movieId": 657,
+        "title": "Manchurian Candidate, The (1962)",
+        "genres": [
+          "Film-Noir",
+          "Thriller"
+        ],
+        "score": 4.976018905639648,
+        "popularity": 96
+      },
+      {
+        "movieId": 1628,
+        "title": "Lamerica (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 4.798633575439453,
+        "popularity": 1
+      },
+      {
+        "movieId": 1021,
+        "title": "8 1/2 (1963)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 4.749403476715088,
+        "popularity": 21
+      },
+      {
+        "movieId": 427,
+        "title": "To Kill a Mockingbird (1962)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 4.744840621948242,
+        "popularity": 166
+      },
+      {
+        "movieId": 966,
+        "title": "Affair to Remember, An (1957)",
+        "genres": [
+          "Romance"
+        ],
+        "score": 4.740418910980225,
+        "popularity": 17
+      },
+      {
+        "movieId": 513,
+        "title": "Third Man, The (1949)",
+        "genres": [
+          "Mystery",
+          "Thriller"
+        ],
+        "score": 4.728297233581543,
+        "popularity": 63
+      }
+    ],
+    "user2": [
+      {
+        "movieId": 511,
+        "title": "Lawrence of Arabia (1962)",
+        "genres": [
+          "Adventure",
+          "War"
+        ],
+        "score": 4.544320583343506,
+        "popularity": 134
+      },
+      {
+        "movieId": 694,
+        "title": "Persuasion (1995)",
+        "genres": [
+          "Romance"
+        ],
+        "score": 4.528646469116211,
+        "popularity": 28
+      },
+      {
+        "movieId": 513,
+        "title": "Third Man, The (1949)",
+        "genres": [
+          "Mystery",
+          "Thriller"
+        ],
+        "score": 4.492482662200928,
+        "popularity": 63
+      },
+      {
+        "movieId": 483,
+        "title": "Casablanca (1942)",
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "score": 4.470323085784912,
+        "popularity": 197
+      },
+      {
+        "movieId": 656,
+        "title": "M (1931)",
+        "genres": [
+          "Crime",
+          "Film-Noir",
+          "Thriller"
+        ],
+        "score": 4.444591999053955,
+        "popularity": 31
+      },
+      {
+        "movieId": 525,
+        "title": "Big Sleep, The (1946)",
+        "genres": [
+          "Film-Noir",
+          "Mystery"
+        ],
+        "score": 4.438229084014893,
+        "popularity": 46
+      },
+      {
+        "movieId": 199,
+        "title": "Bridge on the River Kwai, The (1957)",
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "score": 4.423234939575195,
+        "popularity": 117
+      },
+      {
+        "movieId": 653,
+        "title": "Touch of Evil (1958)",
+        "genres": [
+          "Crime",
+          "Film-Noir",
+          "Thriller"
+        ],
+        "score": 4.39984130859375,
+        "popularity": 20
+      },
+      {
+        "movieId": 510,
+        "title": "Magnificent Seven, The (1954)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Western"
+        ],
+        "score": 4.399502754211426,
+        "popularity": 70
+      },
+      {
+        "movieId": 515,
+        "title": "Boot, Das (1981)",
+        "genres": [
+          "Action",
+          "Drama",
+          "War"
+        ],
+        "score": 4.396188735961914,
+        "popularity": 153
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "week6-ppr-evaluation",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Node harness for the fixed Week 6 assignment",
+  "dependencies": {
+    "@tensorflow/tfjs": "4.22.0",
+    "@tensorflow/tfjs-backend-wasm": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.22.0"
+  }
+}

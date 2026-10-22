@@ -1,0 +1,316 @@
+{
+  "userId": 1,
+  "alpha": 0.5,
+  "splitCounts": {
+    "train": 79619,
+    "val": 9596,
+    "test": 10785
+  },
+  "graph": {
+    "users": 943,
+    "movies": 1611,
+    "nodeCount": 2554,
+    "userNodeIndex": 0,
+    "userNodeLabel": "user 1",
+    "userPositiveDegree": 131,
+    "userPositiveMovieIds": [
+      1,
+      3,
+      7,
+      13,
+      14,
+      15,
+      19,
+      22,
+      23,
+      25,
+      28,
+      33,
+      39,
+      42,
+      43,
+      45,
+      46,
+      47,
+      48,
+      50,
+      52,
+      55,
+      56,
+      57,
+      59,
+      60,
+      61,
+      64,
+      65,
+      68,
+      72,
+      77,
+      79,
+      80,
+      81,
+      82,
+      84,
+      88,
+      89,
+      90,
+      91,
+      93,
+      95,
+      96,
+      98,
+      106,
+      107,
+      108,
+      109,
+      113,
+      114,
+      115,
+      119,
+      121,
+      123,
+      124,
+      127,
+      128,
+      132,
+      133,
+      134,
+      135,
+      137,
+      144,
+      146,
+      150,
+      151,
+      152,
+      156,
+      157,
+      160,
+      161,
+      162,
+      163,
+      165,
+      166,
+      168,
+      170,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      202,
+      203,
+      204,
+      206,
+      207,
+      210,
+      212,
+      214,
+      216,
+      223,
+      224,
+      227,
+      229,
+      230,
+      234,
+      235,
+      236,
+      238,
+      239,
+      246,
+      248,
+      249,
+      250,
+      251,
+      253,
+      257,
+      265,
+      267,
+      268,
+      269
+    ]
+  },
+  "firstStep": {
+    "userProbabilityAfterRestart": 0.5,
+    "linkMass": 0.5,
+    "perPositiveMovieLinkProbability": 0.003816793893129771,
+    "positiveMoviesCount": 131,
+    "sumOfMassOnPositiveMovies": 0.5,
+    "samplePositiveMovieMasses": [
+      {
+        "movieId": 1,
+        "title": "Toy Story (1995)",
+        "probability": 0.003816793893129771
+      },
+      {
+        "movieId": 3,
+        "title": "Four Rooms (1995)",
+        "probability": 0.003816793893129771
+      },
+      {
+        "movieId": 7,
+        "title": "Twelve Monkeys (1995)",
+        "probability": 0.003816793893129771
+      },
+      {
+        "movieId": 13,
+        "title": "Mighty Aphrodite (1995)",
+        "probability": 0.003816793893129771
+      },
+      {
+        "movieId": 14,
+        "title": "Postino, Il (1994)",
+        "probability": 0.003816793893129771
+      }
+    ]
+  },
+  "convergence": {
+    "manualIterations": 21,
+    "manualResidual": 9.536743163312016e-7,
+    "manualConverged": true,
+    "appIterations": 22,
+    "appResidual": 5.173628494503646e-7,
+    "appConverged": true
+  },
+  "firstRecommendedMovieScore": {
+    "movieId": 100,
+    "title": "Fargo (1996)",
+    "score": 0.000685520996303016,
+    "positiveTrainingDegree": 377,
+    "incomingContributionSum": 0.0006855209963030155,
+    "scoreEquation": "alpha * sum_{connected users u} p[u] / degree[u]",
+    "largestIncomingContributions": [
+      {
+        "userId": 558,
+        "userNode": 557,
+        "userProbability": 0.00017161004231360622,
+        "userDegree": 13,
+        "contribution": 0.000006600386242831009
+      },
+      {
+        "userId": 257,
+        "userNode": 256,
+        "userProbability": 0.0003872580248794526,
+        "userDegree": 35,
+        "contribution": 0.000005532257498277894
+      },
+      {
+        "userId": 5,
+        "userNode": 4,
+        "userProbability": 0.00038611236922256786,
+        "userDegree": 49,
+        "contribution": 0.000003939922134924162
+      },
+      {
+        "userId": 422,
+        "userNode": 421,
+        "userProbability": 0.0003204382608052591,
+        "userDegree": 42,
+        "contribution": 0.000003814741200062608
+      },
+      {
+        "userId": 132,
+        "userNode": 131,
+        "userProbability": 0.00006468621728694404,
+        "userDegree": 9,
+        "contribution": 0.0000035936787381635576
+      }
+    ],
+    "appScore": 0.0006855191895738244,
+    "absoluteDifference": 1.8067291916029626e-9
+  },
+  "testRecallAt10": {
+    "eligibleRelevantCount": 19,
+    "allPositiveTestRatingsForUser": 19,
+    "hitCount": 3,
+    "hitMovies": [
+      {
+        "movieId": 100,
+        "score": 0.000685520996303016,
+        "title": "Fargo (1996)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ]
+      },
+      {
+        "movieId": 258,
+        "score": 0.00043986742397370015,
+        "title": "Contact (1997)",
+        "genres": [
+          "Drama",
+          "Sci-Fi"
+        ]
+      },
+      {
+        "movieId": 222,
+        "score": 0.0003327864334868738,
+        "title": "Star Trek: First Contact (1996)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ]
+      }
+    ],
+    "manualRecall": 0.15789473684210525,
+    "appRelevantCount": 19,
+    "appHitCount": 3,
+    "appRecall": 0.15789473684210525
+  },
+  "appComparison": {
+    "top10MovieIdsMatch": true,
+    "maxAbsoluteScoreDifferenceTop10": 1.8067291916029626e-9
+  },
+  "strictNodeIndexCounterfactual": {
+    "argumentValue": 1,
+    "seedNodeIndex": 1,
+    "actualSeedUserId": 2,
+    "firstMovieId": 100,
+    "firstMovieTitle": "Fargo (1996)",
+    "firstMovieScore": 0.00880668503697852,
+    "top10MovieIdsWithUser1Exclusions": [
+      100,
+      286,
+      275,
+      276,
+      285,
+      303,
+      301,
+      111,
+      242,
+      283
+    ],
+    "top10MatchesApplicationForSeedUser2": true,
+    "appUser2Top10MovieIds": [
+      181,
+      9,
+      7,
+      117,
+      98,
+      121,
+      174,
+      268,
+      475,
+      15
+    ]
+  }
+}

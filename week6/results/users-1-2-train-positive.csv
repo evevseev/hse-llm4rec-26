@@ -1,0 +1,164 @@
+userId,movieId,title,genres,trainRating,timestamp
+1,168,Monty Python and the Holy Grail (1974),Comedy,5,874965478
+1,172,"Empire Strikes Back, The (1980)",Action;Adventure;Drama;Romance;Sci-Fi;War,5,874965478
+1,165,Jean de Florette (1986),Drama,5,874965518
+1,156,Reservoir Dogs (1992),Crime;Thriller,4,874965556
+1,166,Manon of the Spring (Manon des sources) (1986),Drama,5,874965677
+1,196,Dead Poets Society (1989),Drama,5,874965677
+1,187,"Godfather: Part II, The (1974)",Action;Crime;Drama,4,874965678
+1,14,"Postino, Il (1994)",Drama;Romance,5,874965706
+1,127,"Godfather, The (1972)",Action;Crime;Drama,5,874965706
+1,250,"Fifth Element, The (1997)",Action;Sci-Fi,4,874965706
+1,109,Mystery Science Theater 3000: The Movie (1996),Comedy;Sci-Fi,5,874965739
+1,181,Return of the Jedi (1983),Action;Adventure;Romance;Sci-Fi;War,5,874965739
+1,1,Toy Story (1995),Animation;Children's;Comedy,5,874965758
+1,246,Chasing Amy (1997),Drama;Romance,5,874965905
+1,50,Star Wars (1977),Action;Adventure;Romance;Sci-Fi;War,5,874965954
+1,248,Grosse Pointe Blank (1997),Comedy;Crime,4,874965954
+1,257,Men in Black (1997),Action;Adventure;Comedy;Sci-Fi,4,874965954
+1,249,Austin Powers: International Man of Mystery (1997),Comedy,4,874965970
+1,253,"Pillow Book, The (1995)",Drama;Romance,5,874965970
+1,93,Welcome to the Dollhouse (1995),Comedy;Drama,5,875071484
+1,124,Lone Star (1996),Drama;Mystery,5,875071484
+1,224,Ridicule (1996),Drama,5,875071484
+1,19,Antonia's Line (1995),Drama,5,875071515
+1,123,"Frighteners, The (1996)",Comedy;Horror,4,875071541
+1,137,Big Night (1996),Drama,5,875071541
+1,7,Twelve Monkeys (1995),Drama;Sci-Fi,4,875071561
+1,146,Unhook the Stars (1996),Drama,4,875071561
+1,235,Mars Attacks! (1996),Action;Comedy;Sci-Fi;War,5,875071589
+1,15,Mr. Holland's Opus (1995),Drama,5,875071608
+1,13,Mighty Aphrodite (1995),Comedy,5,875071805
+1,25,"Birdcage, The (1996)",Comedy,4,875071805
+1,121,Independence Day (ID4) (1996),Action;Sci-Fi;War,4,875071823
+1,251,Shall We Dance? (1996),Comedy,4,875071843
+1,236,Citizen Ruth (1996),Comedy;Drama,4,875071898
+1,47,Ed Wood (1994),Comedy;Drama,4,875072125
+1,65,What's Eating Gilbert Grape (1993),Comedy;Drama,4,875072125
+1,190,Henry V (1989),Drama;War,5,875072125
+1,28,Apollo 13 (1995),Action;Drama;Thriller,4,875072173
+1,39,Strange Days (1995),Action;Crime;Sci-Fi,4,875072173
+1,114,Wallace & Gromit: The Best of Aardman Animation (1996),Animation,5,875072173
+1,52,"Madness of King George, The (1994)",Drama,4,875072205
+1,238,Raising Arizona (1987),Comedy,4,875072235
+1,183,Alien (1979),Action;Horror;Sci-Fi;Thriller,5,875072262
+1,199,"Bridge on the River Kwai, The (1957)",Drama;War,4,875072262
+1,95,Aladdin (1992),Animation;Children's;Comedy;Musical,4,875072303
+1,161,Top Gun (1986),Action;Romance,4,875072303
+1,60,Three Colors: Blue (1993),Drama,5,875072370
+1,22,Braveheart (1995),Action;Drama;War,4,875072404
+1,64,"Shawshank Redemption, The (1994)",Drama,5,875072404
+1,98,"Silence of the Lambs, The (1991)",Drama;Thriller,4,875072404
+1,135,2001: A Space Odyssey (1968),Drama;Mystery;Sci-Fi;Thriller,4,875072404
+1,163,"Return of the Pink Panther, The (1974)",Comedy,4,875072442
+1,202,Groundhog Day (1993),Comedy;Romance,5,875072442
+1,89,Blade Runner (1982),Film-Noir;Sci-Fi,5,875072484
+1,48,Hoop Dreams (1994),Documentary,5,875072520
+1,182,GoodFellas (1990),Crime;Drama,4,875072520
+1,214,Pink Floyd - The Wall (1982),Drama;Musical;War,4,875072520
+1,160,Glengarry Glen Ross (1992),Drama,4,875072547
+1,175,Brazil (1985),Sci-Fi,5,875072547
+1,192,Raging Bull (1980),Drama,4,875072547
+1,128,Supercop (1992),Action;Thriller,4,875072573
+1,185,Psycho (1960),Horror;Romance;Thriller,4,875072631
+1,55,"Professional, The (1994)",Crime;Drama;Romance;Thriller,5,875072688
+1,68,"Crow, The (1994)",Action;Romance;Thriller,4,875072688
+1,204,Back to the Future (1985),Comedy;Sci-Fi,5,875072688
+1,56,Pulp Fiction (1994),Crime;Drama,4,875072716
+1,96,Terminator 2: Judgment Day (1991),Action;Sci-Fi;Thriller,5,875072716
+1,79,"Fugitive, The (1993)",Action;Thriller,4,875072865
+1,81,"Hudsucker Proxy, The (1994)",Comedy;Romance,5,875072865
+1,151,Willy Wonka and the Chocolate Factory (1971),Adventure;Children's;Comedy,4,875072865
+1,23,Taxi Driver (1976),Drama;Thriller,4,875072895
+1,212,"Unbearable Lightness of Being, The (1988)",Drama,4,875072895
+1,84,Robert A. Heinlein's The Puppet Masters (1994),Horror;Sci-Fi,4,875072923
+1,184,Army of Darkness (1993),Action;Adventure;Comedy;Horror;Sci-Fi,4,875072956
+1,191,Amadeus (1984),Drama;Mystery,5,875072956
+1,197,"Graduate, The (1967)",Drama;Romance,5,875072956
+1,134,Citizen Kane (1941),Drama,4,875073067
+1,207,Cyrano de Bergerac (1990),Action;Drama;Romance,5,875073067
+1,186,"Blues Brothers, The (1980)",Action;Comedy;Musical,4,875073128
+1,144,Die Hard (1988),Action;Thriller,4,875073180
+1,174,Raiders of the Lost Ark (1981),Action;Adventure,5,875073198
+1,108,Kids in the Hall: Brain Candy (1996),Comedy,5,875240920
+1,106,Diabolique (1996),Drama;Thriller,4,875241390
+1,107,Moll Flanders (1996),Drama,4,875241619
+1,45,Eat Drink Man Woman (1994),Comedy;Drama,5,875241687
+1,268,Chasing Amy (1997),Drama;Romance,5,875692927
+1,267,unknown,,4,875692955
+1,150,Swingers (1996),Comedy;Drama,5,876892196
+1,234,Jaws (1975),Action;Horror,4,876892355
+1,42,Clerks (1994),Comedy,5,876892425
+1,176,Aliens (1986),Action;Sci-Fi;Thriller;War,5,876892468
+1,91,"Nightmare Before Christmas, The (1993)",Children's;Comedy;Musical,5,876892636
+1,193,"Right Stuff, The (1983)",Drama,4,876892654
+1,177,"Good, The Bad and The Ugly, The (1966)",Action;Western,5,876892701
+1,216,When Harry Met Sally... (1989),Comedy;Romance,5,876892701
+1,194,"Sting, The (1973)",Comedy;Crime,4,876892743
+1,59,Three Colors: Red (1994),Drama,5,876892817
+1,133,Gone with the Wind (1939),Drama;Romance;War,4,876892818
+1,195,"Terminator, The (1984)",Action;Sci-Fi;Thriller,5,876892855
+1,170,Cinema Paradiso (1988),Comedy;Drama;Romance,5,876892856
+1,157,Platoon (1986),Drama;War,4,876892918
+1,223,Sling Blade (1996),Drama;Thriller,5,876892918
+1,227,Star Trek VI: The Undiscovered Country (1991),Action;Adventure;Sci-Fi,4,876892946
+1,80,Hot Shots! Part Deux (1993),Action;Comedy;War,4,876893008
+1,119,Maya Lin: A Strong Clear Vision (1994),Documentary,5,876893098
+1,77,"Firm, The (1993)",Drama;Thriller,4,876893205
+1,206,Akira (1988),Adventure;Animation;Sci-Fi;Thriller,4,876893205
+1,46,Exotica (1994),Drama,4,876893230
+1,269,"Full Monty, The (1997)",Comedy,5,877482427
+1,115,"Haunted World of Edward D. Wood Jr., The (1995)",Documentary,5,878541637
+1,173,"Princess Bride, The (1987)",Action;Adventure;Comedy;Romance,5,878541803
+1,229,Star Trek III: The Search for Spock (1984),Action;Adventure;Sci-Fi,4,878542075
+1,203,Unforgiven (1992),Western,4,878542231
+1,90,So I Married an Axe Murderer (1993),Comedy;Romance;Thriller,4,878542300
+1,61,Three Colors: White (1994),Drama,4,878542420
+1,162,On Golden Pond (1981),Drama,4,878542420
+1,230,Star Trek IV: The Voyage Home (1986),Action;Adventure;Sci-Fi,4,878542420
+1,265,"Hunt for Red October, The (1990)",Action;Thriller,4,878542441
+1,57,Priest (1994),Drama,5,878542459
+1,82,Jurassic Park (1993),Action;Adventure;Sci-Fi,5,878542589
+1,152,Sleeper (1973),Comedy;Sci-Fi,5,878542589
+1,72,"Mask, The (1994)",Comedy;Crime;Fantasy,4,878542678
+1,33,Desperado (1995),Action;Romance;Thriller,4,878542699
+1,198,Nikita (La Femme Nikita) (1990),Thriller,5,878542717
+1,113,"Horseman on the Roof, The (Hussard sur le toit, Le) (1995)",Drama,5,878542738
+1,88,Sleepless in Seattle (1993),Comedy;Romance,4,878542791
+1,239,Sneakers (1992),Crime;Drama;Sci-Fi,4,878542845
+1,43,Disclosure (1994),Drama;Thriller,4,878542869
+1,132,"Wizard of Oz, The (1939)",Adventure;Children's;Drama;Musical,4,878542889
+1,210,Indiana Jones and the Last Crusade (1989),Action;Adventure,4,878542909
+1,3,Four Rooms (1995),Thriller,4,878542960
+2,286,"English Patient, The (1996)",Drama;Romance;War,4,888549960
+2,301,In & Out (1997),Comedy,4,888550631
+2,269,"Full Monty, The (1997)",Comedy,4,888550774
+2,292,Rosewood (1997),Drama,4,888550774
+2,299,Hoodlum (1997),Crime;Drama;Film-Noir,4,888550774
+2,303,Ulee's Gold (1997),Drama,4,888550774
+2,306,"Mrs. Brown (Her Majesty, Mrs. Brown) (1997)",Drama;Romance,4,888550774
+2,1,Toy Story (1995),Animation;Children's;Comedy,4,888550871
+2,297,Ulee's Gold (1997),Drama,4,888550871
+2,275,Sense and Sensibility (1995),Drama;Romance,5,888550939
+2,293,Donnie Brasco (1997),Crime;Drama,4,888550939
+2,257,Men in Black (1997),Action;Adventure;Comedy;Sci-Fi,4,888551062
+2,295,Breakdown (1997),Action;Thriller,4,888551164
+2,277,Restoration (1995),Drama,4,888551174
+2,255,My Best Friend's Wedding (1997),Comedy;Romance,4,888551341
+2,276,Leaving Las Vegas (1995),Drama;Romance,4,888551552
+2,273,Heat (1995),Action;Crime;Thriller,4,888551647
+2,25,"Birdcage, The (1996)",Comedy,4,888551648
+2,279,Once Upon a Time... When We Were Colored (1995),Drama,4,888551745
+2,14,"Postino, Il (1994)",Drama;Romance,4,888551853
+2,111,"Truth About Cats & Dogs, The (1996)",Comedy;Romance,4,888551853
+2,13,Mighty Aphrodite (1995),Comedy,4,888551922
+2,282,"Time to Kill, A (1996)",Drama,4,888551922
+2,237,Jerry Maguire (1996),Drama;Romance,4,888552017
+2,284,Tin Cup (1996),Comedy;Romance,4,888552017
+2,50,Star Wars (1977),Action;Adventure;Romance;Sci-Fi;War,5,888552084
+2,100,Fargo (1996),Crime;Drama;Thriller,5,888552084
+2,127,"Godfather, The (1972)",Action;Crime;Drama,5,888552084
+2,242,Kolya (1996),Comedy,5,888552084
+2,251,Shall We Dance? (1996),Comedy,5,888552084
+2,283,Emma (1996),Drama;Romance,5,888552084
+2,285,Secrets & Lies (1996),Drama,5,888552084

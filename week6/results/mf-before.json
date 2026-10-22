@@ -1,0 +1,228 @@
+{
+  "phase": "before MF regularization fix",
+  "testRecallAt10": 0.021137488852036153,
+  "cohortSize": 861,
+  "checkpoint": 1,
+  "validationRMSE": 1.18299447679238,
+  "meanOnlyValidationRMSE": 1.1829947710600353,
+  "trainGlobalMean": 3.5806026199776437,
+  "training": {
+    "epochs": 30,
+    "identicalTrainAndValidationMetricsEveryEpoch": true,
+    "userFactorRms": 0.000009276183598281754,
+    "itemFactorRms": 0.000009207664621648447,
+    "user1UniqueCandidateScores": 1,
+    "user2UniqueCandidateScores": 1,
+    "user1Score": 3.5806026458740234,
+    "user2Score": 3.5806026458740234
+  },
+  "top10": {
+    "user1": [
+      {
+        "movieId": 5,
+        "title": "Copycat (1995)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 28
+      },
+      {
+        "movieId": 6,
+        "title": "Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 12
+      },
+      {
+        "movieId": 18,
+        "title": "White Balloon, The (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 1
+      },
+      {
+        "movieId": 20,
+        "title": "Angels and Insects (1995)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 31
+      },
+      {
+        "movieId": 32,
+        "title": "Crumb (1994)",
+        "genres": [
+          "Documentary"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 46
+      },
+      {
+        "movieId": 74,
+        "title": "Faster Pussycat! Kill! Kill! (1965)",
+        "genres": [
+          "Action",
+          "Comedy",
+          "Drama"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 2
+      },
+      {
+        "movieId": 100,
+        "title": "Fargo (1996)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 377
+      },
+      {
+        "movieId": 102,
+        "title": "Aristocats, The (1970)",
+        "genres": [
+          "Animation",
+          "Children's"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 18
+      },
+      {
+        "movieId": 111,
+        "title": "Truth About Cats & Dogs, The (1996)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 131
+      },
+      {
+        "movieId": 129,
+        "title": "Bound (1996)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Romance",
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 76
+      }
+    ],
+    "user2": [
+      {
+        "movieId": 2,
+        "title": "GoldenEye (1995)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 41
+      },
+      {
+        "movieId": 3,
+        "title": "Four Rooms (1995)",
+        "genres": [
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 27
+      },
+      {
+        "movieId": 4,
+        "title": "Get Shorty (1995)",
+        "genres": [
+          "Action",
+          "Comedy",
+          "Drama"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 96
+      },
+      {
+        "movieId": 5,
+        "title": "Copycat (1995)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 28
+      },
+      {
+        "movieId": 6,
+        "title": "Shanghai Triad (Yao a yao yao dao waipo qiao) (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 12
+      },
+      {
+        "movieId": 7,
+        "title": "Twelve Monkeys (1995)",
+        "genres": [
+          "Drama",
+          "Sci-Fi"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 234
+      },
+      {
+        "movieId": 8,
+        "title": "Babe (1995)",
+        "genres": [
+          "Children's",
+          "Comedy",
+          "Drama"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 137
+      },
+      {
+        "movieId": 9,
+        "title": "Dead Man Walking (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 182
+      },
+      {
+        "movieId": 11,
+        "title": "Seven (Se7en) (1995)",
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 152
+      },
+      {
+        "movieId": 12,
+        "title": "Usual Suspects, The (1995)",
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "score": 3.5806026458740234,
+        "popularity": 205
+      }
+    ]
+  }
+}

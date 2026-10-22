@@ -1,0 +1,12 @@
+{
+  "executionEnvironment": "Node VM worker shim; not a live browser run",
+  "backend": "wasm",
+  "userId": 1,
+  "relevant": 19,
+  "hit": 3,
+  "recall": 0.15789473684210525,
+  "appRecall": 0.15789473684210525,
+  "top10MovieIdsMatch": true,
+  "maxAbsoluteScoreDifference": 0,
+  "workerMessages": 3
+}

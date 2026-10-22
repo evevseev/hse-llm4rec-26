@@ -1,0 +1,31 @@
+{
+  "alpha": 0.5,
+  "baseline": "single-process, single-thread TF.js WASM",
+  "accelerated": "8 independent Node processes, one TF.js WASM thread each",
+  "comparisons": [
+    {
+      "userId": 1,
+      "availableInSharedTestCohort": true,
+      "iterationsMatch": true,
+      "convergedMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 2,
+      "availableInSharedTestCohort": true,
+      "iterationsMatch": true,
+      "convergedMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 3,
+      "availableInSharedTestCohort": true,
+      "iterationsMatch": true,
+      "convergedMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "label": "Single-thread baseline timing estimate; not the final experiment run",
+  "backend": "wasm",
+  "threads": 1,
+  "logicalCpus": 12,
+  "startupAndDataSetupMs": null,
+  "validationCohortSize": 846,
+  "sampleUsers": 16,
+  "perAlpha": [
+    {
+      "alpha": 0.5,
+      "sampleUsers": 16,
+      "totalMs": 587.9003329999999,
+      "meanMsPerUser": 36.743770812499996,
+      "meanIterations": 21.125,
+      "converged": 16,
+      "estimatedSweepSeconds": 31.085230107374993
+    },
+    {
+      "alpha": 0.7,
+      "sampleUsers": 16,
+      "totalMs": 1169.60921,
+      "meanMsPerUser": 73.100575625,
+      "meanIterations": 41.125,
+      "converged": 16,
+      "estimatedSweepSeconds": 61.84308697875001
+    },
+    {
+      "alpha": 0.85,
+      "sampleUsers": 16,
+      "totalMs": 2484.8862510000004,
+      "meanMsPerUser": 155.30539068750002,
+      "meanIterations": 89.9375,
+      "converged": 16,
+      "estimatedSweepSeconds": 131.38836052162503
+    },
+    {
+      "alpha": 0.95,
+      "sampleUsers": 16,
+      "totalMs": 7768.515834,
+      "meanMsPerUser": 485.532239625,
+      "meanIterations": 287.6875,
+      "converged": 16,
+      "estimatedSweepSeconds": 410.76027472275
+    }
+  ],
+  "globalPageRankMs": 135.94875,
+  "globalPageRankIterations": 78,
+  "timings": {
+    "alphaSweepEstimatedSeconds": 635.0769523305
+  }
+}

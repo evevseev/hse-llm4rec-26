@@ -1,0 +1,33 @@
+split train/val/test: 79619 9596 10785
+graph: users 943 movies 1611 nodes 2554 positive edges 45602
+zero-degree users 1 zero-degree movies 253
+cohort val 846 test 861
+test: relevant movies outside the training pool 13 | train users without an eligible relevant test movie 82
+global PageRank alpha 0.5: iterations 19 residual 5.651e-07 total mass 1.0000000000
+PPR val Recall@10 alpha 0.50: 0.114483
+PPR val Recall@10 alpha 0.70: 0.104797
+PPR val Recall@10 alpha 0.85: 0.090021
+PPR val Recall@10 alpha 0.95: 0.073750
+test Recall@10 popularity: 0.076023
+test Recall@10 global PageRank alpha 0.5: 0.079693
+test Recall@10 PPR alpha 0.5: 0.112189
+test Recall@10 PPR alpha 0.5, restart shifted to the next node: 0.052448
+
+user 1: node 0 degree 131
+after step 1: mass on user 1 = 0.5000, on each liked movie = 0.5/131 = 0.0038167939
+PPR iterations 21 residual 9.537e-07 total mass 1.0000000000
+   1 Fargo (1996)                                  score 0.0006855210 popularity 377 HIT
+   2 Contact (1997)                                score 0.0004398674 popularity 307 HIT
+   3 English Patient, The (1996)                   score 0.0004310200 popularity 279 
+   4 Schindler's List (1993)                       score 0.0004038179 popularity 224 
+   5 One Flew Over the Cuckoo's Nest (1975)        score 0.0003771674 popularity 202 
+   6 Casablanca (1942)                             score 0.0003596904 popularity 197 
+   7 Star Trek: First Contact (1996)               score 0.0003327864 popularity 189 HIT
+   8 Trainspotting (1996)                          score 0.0003280910 popularity 164 
+   9 Sense and Sensibility (1995)                  score 0.0003201858 popularity 178 
+  10 E.T. the Extra-Terrestrial (1982)             score 0.0003056691 popularity 167 
+user 1 Recall@10 = 3 / 19 = 0.157895
+user 1: PPR alpha 0.5 vs popularity Top-10 common 6 of 10
+user 2: PPR alpha 0.5 vs popularity Top-10 common 4 of 10
+A user 1 alpha 0.85 mean popularity 245.5 | B user 2 alpha 0.85 254.9 | C user 1 alpha 0.5 228.4
+common A-B 0, A-C 7

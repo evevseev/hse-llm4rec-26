@@ -1,0 +1,22 @@
+{
+  "alpha": 0.5,
+  "tolerance": 0.000001,
+  "maxIterations": 500,
+  "results": {
+    "globalPageRank": {
+      "iterations": 19,
+      "residual": 5.371548468247056e-7,
+      "converged": true
+    },
+    "pprUser1": {
+      "iterations": 22,
+      "residual": 5.173628494503646e-7,
+      "converged": true
+    },
+    "pprUser2": {
+      "iterations": 21,
+      "residual": 9.771175371042773e-7,
+      "converged": true
+    }
+  }
+}

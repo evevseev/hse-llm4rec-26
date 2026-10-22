@@ -1,0 +1,38 @@
+{
+  "interpretation": "raw MovieLens userId passed unchanged as a graph node index",
+  "alpha": 0.5,
+  "cohortSize": 861,
+  "recallAt10": 0.05244808819679204,
+  "appRecallAt10": 0.11218853219486066,
+  "deltaVsApplication": -0.059740443998068625,
+  "examples": [
+    {
+      "userId": 1,
+      "seedNode": 1,
+      "seedUserId": 2,
+      "relevant": 19,
+      "hit": 3
+    },
+    {
+      "userId": 2,
+      "seedNode": 2,
+      "seedUserId": 3,
+      "relevant": 2,
+      "hit": 0
+    },
+    {
+      "userId": 942,
+      "seedNode": 942,
+      "seedUserId": 943,
+      "relevant": 9,
+      "hit": 0
+    },
+    {
+      "userId": 943,
+      "seedNode": 943,
+      "seedUserId": null,
+      "relevant": 5,
+      "hit": 1
+    }
+  ]
+}

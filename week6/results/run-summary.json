@@ -1,0 +1,104 @@
+{
+  "dataset": {
+    "movieRecords": 1682,
+    "ratingRecords": 100000,
+    "splitCounts": {
+      "train": 79619,
+      "validation": 9596,
+      "test": 10785
+    },
+    "graph": {
+      "users": 943,
+      "movies": 1611,
+      "nodes": 2554,
+      "positiveEdges": 45602,
+      "directedAdjacencyEntries": 91204,
+      "zeroDegreeUsers": 1,
+      "zeroDegreeMovies": 253
+    },
+    "backend": "wasm"
+  },
+  "selectedAlpha": 0.5,
+  "validationSweep": [
+    {
+      "alpha": 0.5,
+      "recall": 0.11448315913208877,
+      "cohortSize": 846,
+      "error": null
+    },
+    {
+      "alpha": 0.7,
+      "recall": 0.1047969507641043,
+      "cohortSize": 846,
+      "error": null
+    },
+    {
+      "alpha": 0.85,
+      "recall": 0.09002077155336492,
+      "cohortSize": 846,
+      "error": null
+    },
+    {
+      "alpha": 0.95,
+      "recall": 0.07375030387909676,
+      "cohortSize": 846,
+      "error": null
+    }
+  ],
+  "testRecall": {
+    "popularity": {
+      "recall": 0.07602291343770759,
+      "candidateUsers": 943,
+      "cohortSize": 861,
+      "excludedNoPositiveEdge": 1,
+      "excludedUnseen": 13,
+      "excludedNoEligible": 82
+    },
+    "pagerank": {
+      "recall": 0.07969324149418144,
+      "candidateUsers": 943,
+      "cohortSize": 861,
+      "excludedNoPositiveEdge": 1,
+      "excludedUnseen": 13,
+      "excludedNoEligible": 82
+    },
+    "ppr": {
+      "recall": 0.11218853219486066,
+      "candidateUsers": 943,
+      "cohortSize": 861,
+      "excludedNoPositiveEdge": 1,
+      "excludedUnseen": 13,
+      "excludedNoEligible": 82
+    },
+    "mf": {
+      "recall": 0.020627376817148407,
+      "candidateUsers": 943,
+      "cohortSize": 861,
+      "excludedNoPositiveEdge": 1,
+      "excludedUnseen": 13,
+      "excludedNoEligible": 82
+    }
+  },
+  "convergence": {
+    "globalPageRank": {
+      "iterations": 19,
+      "residual": 5.371548468247056e-7,
+      "converged": true
+    },
+    "pprUser1": {
+      "iterations": 22,
+      "residual": 5.173628494503646e-7,
+      "converged": true
+    },
+    "pprUser2": {
+      "iterations": 21,
+      "residual": 9.771175371042773e-7,
+      "converged": true
+    }
+  },
+  "mf": {
+    "checkpoint": 3,
+    "validationRMSE": 0.9822882377481063,
+    "backend": "tensorflow"
+  }
+}

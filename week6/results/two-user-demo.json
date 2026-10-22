@@ -1,0 +1,2061 @@
+{
+  "backend": "wasm",
+  "alphaSettings": "A=(user 1, 0.85), B=(user 2, 0.85), C=(user 1, 0.50)",
+  "candidates": "all movie IDs observed in train; test excludes train- and validation-rated movies",
+  "scoring": "PPR walk probability; not a rating or purchase probability",
+  "lists": {
+    "A": {
+      "key": "A",
+      "userId": 1,
+      "alpha": 0.85,
+      "changedFromA": "baseline",
+      "iterations": 91,
+      "residual": 9.180134838970844e-7,
+      "converged": true,
+      "recommendations": [
+        {
+          "movieId": 100,
+          "title": "Fargo (1996)",
+          "genres": [
+            "Crime",
+            "Drama",
+            "Thriller"
+          ],
+          "score": 0.0027416825760155916,
+          "popularity": 377
+        },
+        {
+          "movieId": 258,
+          "title": "Contact (1997)",
+          "genres": [
+            "Drama",
+            "Sci-Fi"
+          ],
+          "score": 0.00200196192599833,
+          "popularity": 307
+        },
+        {
+          "movieId": 286,
+          "title": "English Patient, The (1996)",
+          "genres": [
+            "Drama",
+            "Romance",
+            "War"
+          ],
+          "score": 0.0018735382473096251,
+          "popularity": 279
+        },
+        {
+          "movieId": 318,
+          "title": "Schindler's List (1993)",
+          "genres": [
+            "Drama",
+            "War"
+          ],
+          "score": 0.001631936407648027,
+          "popularity": 224
+        },
+        {
+          "movieId": 357,
+          "title": "One Flew Over the Cuckoo's Nest (1975)",
+          "genres": [
+            "Drama"
+          ],
+          "score": 0.001493106479756534,
+          "popularity": 202
+        },
+        {
+          "movieId": 483,
+          "title": "Casablanca (1942)",
+          "genres": [
+            "Drama",
+            "Romance",
+            "War"
+          ],
+          "score": 0.0014446371933445334,
+          "popularity": 197
+        },
+        {
+          "movieId": 288,
+          "title": "Scream (1996)",
+          "genres": [
+            "Horror",
+            "Thriller"
+          ],
+          "score": 0.0014287270605564117,
+          "popularity": 226
+        },
+        {
+          "movieId": 300,
+          "title": "Air Force One (1997)",
+          "genres": [
+            "Action",
+            "Thriller"
+          ],
+          "score": 0.0014131064526736736,
+          "popularity": 235
+        },
+        {
+          "movieId": 222,
+          "title": "Star Trek: First Contact (1996)",
+          "genres": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+          ],
+          "score": 0.001352948136627674,
+          "popularity": 189
+        },
+        {
+          "movieId": 313,
+          "title": "Titanic (1997)",
+          "genres": [
+            "Action",
+            "Drama",
+            "Romance"
+          ],
+          "score": 0.0013183335540816188,
+          "popularity": 219
+        }
+      ],
+      "meanPopularity": 245.5
+    },
+    "B": {
+      "key": "B",
+      "userId": 2,
+      "alpha": 0.85,
+      "changedFromA": "seed user only",
+      "iterations": 89,
+      "residual": 9.041032171808183e-7,
+      "converged": true,
+      "recommendations": [
+        {
+          "movieId": 181,
+          "title": "Return of the Jedi (1983)",
+          "genres": [
+            "Action",
+            "Adventure",
+            "Romance",
+            "Sci-Fi",
+            "War"
+          ],
+          "score": 0.0026007501874119043,
+          "popularity": 339
+        },
+        {
+          "movieId": 98,
+          "title": "Silence of the Lambs, The (1991)",
+          "genres": [
+            "Drama",
+            "Thriller"
+          ],
+          "score": 0.0020272971596568823,
+          "popularity": 308
+        },
+        {
+          "movieId": 174,
+          "title": "Raiders of the Lost Ark (1981)",
+          "genres": [
+            "Action",
+            "Adventure"
+          ],
+          "score": 0.0019665774889290333,
+          "popularity": 312
+        },
+        {
+          "movieId": 7,
+          "title": "Twelve Monkeys (1995)",
+          "genres": [
+            "Drama",
+            "Sci-Fi"
+          ],
+          "score": 0.0017902936087921262,
+          "popularity": 234
+        },
+        {
+          "movieId": 56,
+          "title": "Pulp Fiction (1994)",
+          "genres": [
+            "Crime",
+            "Drama"
+          ],
+          "score": 0.0017448201542720199,
+          "popularity": 263
+        },
+        {
+          "movieId": 117,
+          "title": "Rock, The (1996)",
+          "genres": [
+            "Action",
+            "Adventure",
+            "Thriller"
+          ],
+          "score": 0.001684593386016786,
+          "popularity": 215
+        },
+        {
+          "movieId": 172,
+          "title": "Empire Strikes Back, The (1980)",
+          "genres": [
+            "Action",
+            "Adventure",
+            "Drama",
+            "Romance",
+            "Sci-Fi",
+            "War"
+          ],
+          "score": 0.0016606278950348496,
+          "popularity": 261
+        },
+        {
+          "movieId": 9,
+          "title": "Dead Man Walking (1995)",
+          "genres": [
+            "Drama"
+          ],
+          "score": 0.001607951708137989,
+          "popularity": 182
+        },
+        {
+          "movieId": 121,
+          "title": "Independence Day (ID4) (1996)",
+          "genres": [
+            "Action",
+            "Sci-Fi",
+            "War"
+          ],
+          "score": 0.0016027565579861403,
+          "popularity": 207
+        },
+        {
+          "movieId": 64,
+          "title": "Shawshank Redemption, The (1994)",
+          "genres": [
+            "Drama"
+          ],
+          "score": 0.0015171803534030914,
+          "popularity": 228
+        }
+      ],
+      "meanPopularity": 254.9
+    },
+    "C": {
+      "key": "C",
+      "userId": 1,
+      "alpha": 0.5,
+      "changedFromA": "alpha only",
+      "iterations": 22,
+      "residual": 5.173628494503646e-7,
+      "converged": true,
+      "recommendations": [
+        {
+          "movieId": 100,
+          "title": "Fargo (1996)",
+          "genres": [
+            "Crime",
+            "Drama",
+            "Thriller"
+          ],
+          "score": 0.0006855191895738244,
+          "popularity": 377
+        },
+        {
+          "movieId": 258,
+          "title": "Contact (1997)",
+          "genres": [
+            "Drama",
+            "Sci-Fi"
+          ],
+          "score": 0.0004398658056743443,
+          "popularity": 307
+        },
+        {
+          "movieId": 286,
+          "title": "English Patient, The (1996)",
+          "genres": [
+            "Drama",
+            "Romance",
+            "War"
+          ],
+          "score": 0.00043101841583848,
+          "popularity": 279
+        },
+        {
+          "movieId": 318,
+          "title": "Schindler's List (1993)",
+          "genres": [
+            "Drama",
+            "War"
+          ],
+          "score": 0.0004038167535327375,
+          "popularity": 224
+        },
+        {
+          "movieId": 357,
+          "title": "One Flew Over the Cuckoo's Nest (1975)",
+          "genres": [
+            "Drama"
+          ],
+          "score": 0.00037716623046435416,
+          "popularity": 202
+        },
+        {
+          "movieId": 483,
+          "title": "Casablanca (1942)",
+          "genres": [
+            "Drama",
+            "Romance",
+            "War"
+          ],
+          "score": 0.00035968932206742465,
+          "popularity": 197
+        },
+        {
+          "movieId": 222,
+          "title": "Star Trek: First Contact (1996)",
+          "genres": [
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+          ],
+          "score": 0.000332785421051085,
+          "popularity": 189
+        },
+        {
+          "movieId": 475,
+          "title": "Trainspotting (1996)",
+          "genres": [
+            "Drama"
+          ],
+          "score": 0.00032809015829116106,
+          "popularity": 164
+        },
+        {
+          "movieId": 275,
+          "title": "Sense and Sensibility (1995)",
+          "genres": [
+            "Drama",
+            "Romance"
+          ],
+          "score": 0.00032018491765484214,
+          "popularity": 178
+        },
+        {
+          "movieId": 423,
+          "title": "E.T. the Extra-Terrestrial (1982)",
+          "genres": [
+            "Children's",
+            "Drama",
+            "Fantasy",
+            "Sci-Fi"
+          ],
+          "score": 0.00030566827626898885,
+          "popularity": 167
+        }
+      ],
+      "meanPopularity": 228.4
+    }
+  },
+  "overlaps": [
+    {
+      "left": "A",
+      "right": "B",
+      "comparison": "seed user only",
+      "commonCount": 0,
+      "commonMovies": []
+    },
+    {
+      "left": "A",
+      "right": "C",
+      "comparison": "alpha only",
+      "commonCount": 7,
+      "commonMovies": [
+        {
+          "movieId": 100,
+          "title": "Fargo (1996)"
+        },
+        {
+          "movieId": 258,
+          "title": "Contact (1997)"
+        },
+        {
+          "movieId": 286,
+          "title": "English Patient, The (1996)"
+        },
+        {
+          "movieId": 318,
+          "title": "Schindler's List (1993)"
+        },
+        {
+          "movieId": 357,
+          "title": "One Flew Over the Cuckoo's Nest (1975)"
+        },
+        {
+          "movieId": 483,
+          "title": "Casablanca (1942)"
+        },
+        {
+          "movieId": 222,
+          "title": "Star Trek: First Contact (1996)"
+        }
+      ]
+    },
+    {
+      "left": "B",
+      "right": "C",
+      "comparison": "both user and alpha differ",
+      "commonCount": 0,
+      "commonMovies": []
+    }
+  ],
+  "likedInTrain": {
+    "1": [
+      {
+        "movieId": 168,
+        "title": "Monty Python and the Holy Grail (1974)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 874965478
+      },
+      {
+        "movieId": 172,
+        "title": "Empire Strikes Back, The (1980)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Drama",
+          "Romance",
+          "Sci-Fi",
+          "War"
+        ],
+        "rating": 5,
+        "timestamp": 874965478
+      },
+      {
+        "movieId": 165,
+        "title": "Jean de Florette (1986)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 874965518
+      },
+      {
+        "movieId": 156,
+        "title": "Reservoir Dogs (1992)",
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 874965556
+      },
+      {
+        "movieId": 166,
+        "title": "Manon of the Spring (Manon des sources) (1986)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 874965677
+      },
+      {
+        "movieId": 196,
+        "title": "Dead Poets Society (1989)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 874965677
+      },
+      {
+        "movieId": 187,
+        "title": "Godfather: Part II, The (1974)",
+        "genres": [
+          "Action",
+          "Crime",
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 874965678
+      },
+      {
+        "movieId": 14,
+        "title": "Postino, Il (1994)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 874965706
+      },
+      {
+        "movieId": 127,
+        "title": "Godfather, The (1972)",
+        "genres": [
+          "Action",
+          "Crime",
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 874965706
+      },
+      {
+        "movieId": 250,
+        "title": "Fifth Element, The (1997)",
+        "genres": [
+          "Action",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 874965706
+      },
+      {
+        "movieId": 109,
+        "title": "Mystery Science Theater 3000: The Movie (1996)",
+        "genres": [
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "rating": 5,
+        "timestamp": 874965739
+      },
+      {
+        "movieId": 181,
+        "title": "Return of the Jedi (1983)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Romance",
+          "Sci-Fi",
+          "War"
+        ],
+        "rating": 5,
+        "timestamp": 874965739
+      },
+      {
+        "movieId": 1,
+        "title": "Toy Story (1995)",
+        "genres": [
+          "Animation",
+          "Children's",
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 874965758
+      },
+      {
+        "movieId": 246,
+        "title": "Chasing Amy (1997)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 874965905
+      },
+      {
+        "movieId": 50,
+        "title": "Star Wars (1977)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Romance",
+          "Sci-Fi",
+          "War"
+        ],
+        "rating": 5,
+        "timestamp": 874965954
+      },
+      {
+        "movieId": 248,
+        "title": "Grosse Pointe Blank (1997)",
+        "genres": [
+          "Comedy",
+          "Crime"
+        ],
+        "rating": 4,
+        "timestamp": 874965954
+      },
+      {
+        "movieId": 257,
+        "title": "Men in Black (1997)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 874965954
+      },
+      {
+        "movieId": 249,
+        "title": "Austin Powers: International Man of Mystery (1997)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 874965970
+      },
+      {
+        "movieId": 253,
+        "title": "Pillow Book, The (1995)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 874965970
+      },
+      {
+        "movieId": 93,
+        "title": "Welcome to the Dollhouse (1995)",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875071484
+      },
+      {
+        "movieId": 124,
+        "title": "Lone Star (1996)",
+        "genres": [
+          "Drama",
+          "Mystery"
+        ],
+        "rating": 5,
+        "timestamp": 875071484
+      },
+      {
+        "movieId": 224,
+        "title": "Ridicule (1996)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875071484
+      },
+      {
+        "movieId": 19,
+        "title": "Antonia's Line (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875071515
+      },
+      {
+        "movieId": 123,
+        "title": "Frighteners, The (1996)",
+        "genres": [
+          "Comedy",
+          "Horror"
+        ],
+        "rating": 4,
+        "timestamp": 875071541
+      },
+      {
+        "movieId": 137,
+        "title": "Big Night (1996)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875071541
+      },
+      {
+        "movieId": 7,
+        "title": "Twelve Monkeys (1995)",
+        "genres": [
+          "Drama",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 875071561
+      },
+      {
+        "movieId": 146,
+        "title": "Unhook the Stars (1996)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875071561
+      },
+      {
+        "movieId": 235,
+        "title": "Mars Attacks! (1996)",
+        "genres": [
+          "Action",
+          "Comedy",
+          "Sci-Fi",
+          "War"
+        ],
+        "rating": 5,
+        "timestamp": 875071589
+      },
+      {
+        "movieId": 15,
+        "title": "Mr. Holland's Opus (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875071608
+      },
+      {
+        "movieId": 13,
+        "title": "Mighty Aphrodite (1995)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 875071805
+      },
+      {
+        "movieId": 25,
+        "title": "Birdcage, The (1996)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 875071805
+      },
+      {
+        "movieId": 121,
+        "title": "Independence Day (ID4) (1996)",
+        "genres": [
+          "Action",
+          "Sci-Fi",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 875071823
+      },
+      {
+        "movieId": 251,
+        "title": "Shall We Dance? (1996)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 875071843
+      },
+      {
+        "movieId": 236,
+        "title": "Citizen Ruth (1996)",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875071898
+      },
+      {
+        "movieId": 47,
+        "title": "Ed Wood (1994)",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072125
+      },
+      {
+        "movieId": 65,
+        "title": "What's Eating Gilbert Grape (1993)",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072125
+      },
+      {
+        "movieId": 190,
+        "title": "Henry V (1989)",
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "rating": 5,
+        "timestamp": 875072125
+      },
+      {
+        "movieId": 28,
+        "title": "Apollo 13 (1995)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072173
+      },
+      {
+        "movieId": 39,
+        "title": "Strange Days (1995)",
+        "genres": [
+          "Action",
+          "Crime",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 875072173
+      },
+      {
+        "movieId": 114,
+        "title": "Wallace & Gromit: The Best of Aardman Animation (1996)",
+        "genres": [
+          "Animation"
+        ],
+        "rating": 5,
+        "timestamp": 875072173
+      },
+      {
+        "movieId": 52,
+        "title": "Madness of King George, The (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072205
+      },
+      {
+        "movieId": 238,
+        "title": "Raising Arizona (1987)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 875072235
+      },
+      {
+        "movieId": 183,
+        "title": "Alien (1979)",
+        "genres": [
+          "Action",
+          "Horror",
+          "Sci-Fi",
+          "Thriller"
+        ],
+        "rating": 5,
+        "timestamp": 875072262
+      },
+      {
+        "movieId": 199,
+        "title": "Bridge on the River Kwai, The (1957)",
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 875072262
+      },
+      {
+        "movieId": 95,
+        "title": "Aladdin (1992)",
+        "genres": [
+          "Animation",
+          "Children's",
+          "Comedy",
+          "Musical"
+        ],
+        "rating": 4,
+        "timestamp": 875072303
+      },
+      {
+        "movieId": 161,
+        "title": "Top Gun (1986)",
+        "genres": [
+          "Action",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 875072303
+      },
+      {
+        "movieId": 60,
+        "title": "Three Colors: Blue (1993)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875072370
+      },
+      {
+        "movieId": 22,
+        "title": "Braveheart (1995)",
+        "genres": [
+          "Action",
+          "Drama",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 875072404
+      },
+      {
+        "movieId": 64,
+        "title": "Shawshank Redemption, The (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875072404
+      },
+      {
+        "movieId": 98,
+        "title": "Silence of the Lambs, The (1991)",
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072404
+      },
+      {
+        "movieId": 135,
+        "title": "2001: A Space Odyssey (1968)",
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Sci-Fi",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072404
+      },
+      {
+        "movieId": 163,
+        "title": "Return of the Pink Panther, The (1974)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 875072442
+      },
+      {
+        "movieId": 202,
+        "title": "Groundhog Day (1993)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 875072442
+      },
+      {
+        "movieId": 89,
+        "title": "Blade Runner (1982)",
+        "genres": [
+          "Film-Noir",
+          "Sci-Fi"
+        ],
+        "rating": 5,
+        "timestamp": 875072484
+      },
+      {
+        "movieId": 48,
+        "title": "Hoop Dreams (1994)",
+        "genres": [
+          "Documentary"
+        ],
+        "rating": 5,
+        "timestamp": 875072520
+      },
+      {
+        "movieId": 182,
+        "title": "GoodFellas (1990)",
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072520
+      },
+      {
+        "movieId": 214,
+        "title": "Pink Floyd - The Wall (1982)",
+        "genres": [
+          "Drama",
+          "Musical",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 875072520
+      },
+      {
+        "movieId": 160,
+        "title": "Glengarry Glen Ross (1992)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072547
+      },
+      {
+        "movieId": 175,
+        "title": "Brazil (1985)",
+        "genres": [
+          "Sci-Fi"
+        ],
+        "rating": 5,
+        "timestamp": 875072547
+      },
+      {
+        "movieId": 192,
+        "title": "Raging Bull (1980)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072547
+      },
+      {
+        "movieId": 128,
+        "title": "Supercop (1992)",
+        "genres": [
+          "Action",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072573
+      },
+      {
+        "movieId": 185,
+        "title": "Psycho (1960)",
+        "genres": [
+          "Horror",
+          "Romance",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072631
+      },
+      {
+        "movieId": 55,
+        "title": "Professional, The (1994)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Romance",
+          "Thriller"
+        ],
+        "rating": 5,
+        "timestamp": 875072688
+      },
+      {
+        "movieId": 68,
+        "title": "Crow, The (1994)",
+        "genres": [
+          "Action",
+          "Romance",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072688
+      },
+      {
+        "movieId": 204,
+        "title": "Back to the Future (1985)",
+        "genres": [
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "rating": 5,
+        "timestamp": 875072688
+      },
+      {
+        "movieId": 56,
+        "title": "Pulp Fiction (1994)",
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072716
+      },
+      {
+        "movieId": 96,
+        "title": "Terminator 2: Judgment Day (1991)",
+        "genres": [
+          "Action",
+          "Sci-Fi",
+          "Thriller"
+        ],
+        "rating": 5,
+        "timestamp": 875072716
+      },
+      {
+        "movieId": 79,
+        "title": "Fugitive, The (1993)",
+        "genres": [
+          "Action",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072865
+      },
+      {
+        "movieId": 81,
+        "title": "Hudsucker Proxy, The (1994)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 875072865
+      },
+      {
+        "movieId": 151,
+        "title": "Willy Wonka and the Chocolate Factory (1971)",
+        "genres": [
+          "Adventure",
+          "Children's",
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 875072865
+      },
+      {
+        "movieId": 23,
+        "title": "Taxi Driver (1976)",
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875072895
+      },
+      {
+        "movieId": 212,
+        "title": "Unbearable Lightness of Being, The (1988)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875072895
+      },
+      {
+        "movieId": 84,
+        "title": "Robert A. Heinlein's The Puppet Masters (1994)",
+        "genres": [
+          "Horror",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 875072923
+      },
+      {
+        "movieId": 184,
+        "title": "Army of Darkness (1993)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Horror",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 875072956
+      },
+      {
+        "movieId": 191,
+        "title": "Amadeus (1984)",
+        "genres": [
+          "Drama",
+          "Mystery"
+        ],
+        "rating": 5,
+        "timestamp": 875072956
+      },
+      {
+        "movieId": 197,
+        "title": "Graduate, The (1967)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 875072956
+      },
+      {
+        "movieId": 134,
+        "title": "Citizen Kane (1941)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875073067
+      },
+      {
+        "movieId": 207,
+        "title": "Cyrano de Bergerac (1990)",
+        "genres": [
+          "Action",
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 875073067
+      },
+      {
+        "movieId": 186,
+        "title": "Blues Brothers, The (1980)",
+        "genres": [
+          "Action",
+          "Comedy",
+          "Musical"
+        ],
+        "rating": 4,
+        "timestamp": 875073128
+      },
+      {
+        "movieId": 144,
+        "title": "Die Hard (1988)",
+        "genres": [
+          "Action",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875073180
+      },
+      {
+        "movieId": 174,
+        "title": "Raiders of the Lost Ark (1981)",
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "rating": 5,
+        "timestamp": 875073198
+      },
+      {
+        "movieId": 108,
+        "title": "Kids in the Hall: Brain Candy (1996)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 875240920
+      },
+      {
+        "movieId": 106,
+        "title": "Diabolique (1996)",
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 875241390
+      },
+      {
+        "movieId": 107,
+        "title": "Moll Flanders (1996)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 875241619
+      },
+      {
+        "movieId": 45,
+        "title": "Eat Drink Man Woman (1994)",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 875241687
+      },
+      {
+        "movieId": 268,
+        "title": "Chasing Amy (1997)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 875692927
+      },
+      {
+        "movieId": 267,
+        "title": "unknown",
+        "genres": [],
+        "rating": 4,
+        "timestamp": 875692955
+      },
+      {
+        "movieId": 150,
+        "title": "Swingers (1996)",
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 876892196
+      },
+      {
+        "movieId": 234,
+        "title": "Jaws (1975)",
+        "genres": [
+          "Action",
+          "Horror"
+        ],
+        "rating": 4,
+        "timestamp": 876892355
+      },
+      {
+        "movieId": 42,
+        "title": "Clerks (1994)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 876892425
+      },
+      {
+        "movieId": 176,
+        "title": "Aliens (1986)",
+        "genres": [
+          "Action",
+          "Sci-Fi",
+          "Thriller",
+          "War"
+        ],
+        "rating": 5,
+        "timestamp": 876892468
+      },
+      {
+        "movieId": 91,
+        "title": "Nightmare Before Christmas, The (1993)",
+        "genres": [
+          "Children's",
+          "Comedy",
+          "Musical"
+        ],
+        "rating": 5,
+        "timestamp": 876892636
+      },
+      {
+        "movieId": 193,
+        "title": "Right Stuff, The (1983)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 876892654
+      },
+      {
+        "movieId": 177,
+        "title": "Good, The Bad and The Ugly, The (1966)",
+        "genres": [
+          "Action",
+          "Western"
+        ],
+        "rating": 5,
+        "timestamp": 876892701
+      },
+      {
+        "movieId": 216,
+        "title": "When Harry Met Sally... (1989)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 876892701
+      },
+      {
+        "movieId": 194,
+        "title": "Sting, The (1973)",
+        "genres": [
+          "Comedy",
+          "Crime"
+        ],
+        "rating": 4,
+        "timestamp": 876892743
+      },
+      {
+        "movieId": 59,
+        "title": "Three Colors: Red (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 876892817
+      },
+      {
+        "movieId": 133,
+        "title": "Gone with the Wind (1939)",
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 876892818
+      },
+      {
+        "movieId": 195,
+        "title": "Terminator, The (1984)",
+        "genres": [
+          "Action",
+          "Sci-Fi",
+          "Thriller"
+        ],
+        "rating": 5,
+        "timestamp": 876892855
+      },
+      {
+        "movieId": 170,
+        "title": "Cinema Paradiso (1988)",
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 876892856
+      },
+      {
+        "movieId": 157,
+        "title": "Platoon (1986)",
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 876892918
+      },
+      {
+        "movieId": 223,
+        "title": "Sling Blade (1996)",
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 5,
+        "timestamp": 876892918
+      },
+      {
+        "movieId": 227,
+        "title": "Star Trek VI: The Undiscovered Country (1991)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 876892946
+      },
+      {
+        "movieId": 80,
+        "title": "Hot Shots! Part Deux (1993)",
+        "genres": [
+          "Action",
+          "Comedy",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 876893008
+      },
+      {
+        "movieId": 119,
+        "title": "Maya Lin: A Strong Clear Vision (1994)",
+        "genres": [
+          "Documentary"
+        ],
+        "rating": 5,
+        "timestamp": 876893098
+      },
+      {
+        "movieId": 77,
+        "title": "Firm, The (1993)",
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 876893205
+      },
+      {
+        "movieId": 206,
+        "title": "Akira (1988)",
+        "genres": [
+          "Adventure",
+          "Animation",
+          "Sci-Fi",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 876893205
+      },
+      {
+        "movieId": 46,
+        "title": "Exotica (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 876893230
+      },
+      {
+        "movieId": 269,
+        "title": "Full Monty, The (1997)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 877482427
+      },
+      {
+        "movieId": 115,
+        "title": "Haunted World of Edward D. Wood Jr., The (1995)",
+        "genres": [
+          "Documentary"
+        ],
+        "rating": 5,
+        "timestamp": 878541637
+      },
+      {
+        "movieId": 173,
+        "title": "Princess Bride, The (1987)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 878541803
+      },
+      {
+        "movieId": 229,
+        "title": "Star Trek III: The Search for Spock (1984)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 878542075
+      },
+      {
+        "movieId": 203,
+        "title": "Unforgiven (1992)",
+        "genres": [
+          "Western"
+        ],
+        "rating": 4,
+        "timestamp": 878542231
+      },
+      {
+        "movieId": 90,
+        "title": "So I Married an Axe Murderer (1993)",
+        "genres": [
+          "Comedy",
+          "Romance",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 878542300
+      },
+      {
+        "movieId": 61,
+        "title": "Three Colors: White (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 878542420
+      },
+      {
+        "movieId": 162,
+        "title": "On Golden Pond (1981)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 878542420
+      },
+      {
+        "movieId": 230,
+        "title": "Star Trek IV: The Voyage Home (1986)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 878542420
+      },
+      {
+        "movieId": 265,
+        "title": "Hunt for Red October, The (1990)",
+        "genres": [
+          "Action",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 878542441
+      },
+      {
+        "movieId": 57,
+        "title": "Priest (1994)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 878542459
+      },
+      {
+        "movieId": 82,
+        "title": "Jurassic Park (1993)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Sci-Fi"
+        ],
+        "rating": 5,
+        "timestamp": 878542589
+      },
+      {
+        "movieId": 152,
+        "title": "Sleeper (1973)",
+        "genres": [
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "rating": 5,
+        "timestamp": 878542589
+      },
+      {
+        "movieId": 72,
+        "title": "Mask, The (1994)",
+        "genres": [
+          "Comedy",
+          "Crime",
+          "Fantasy"
+        ],
+        "rating": 4,
+        "timestamp": 878542678
+      },
+      {
+        "movieId": 33,
+        "title": "Desperado (1995)",
+        "genres": [
+          "Action",
+          "Romance",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 878542699
+      },
+      {
+        "movieId": 198,
+        "title": "Nikita (La Femme Nikita) (1990)",
+        "genres": [
+          "Thriller"
+        ],
+        "rating": 5,
+        "timestamp": 878542717
+      },
+      {
+        "movieId": 113,
+        "title": "Horseman on the Roof, The (Hussard sur le toit, Le) (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 878542738
+      },
+      {
+        "movieId": 88,
+        "title": "Sleepless in Seattle (1993)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 878542791
+      },
+      {
+        "movieId": 239,
+        "title": "Sneakers (1992)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 878542845
+      },
+      {
+        "movieId": 43,
+        "title": "Disclosure (1994)",
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 878542869
+      },
+      {
+        "movieId": 132,
+        "title": "Wizard of Oz, The (1939)",
+        "genres": [
+          "Adventure",
+          "Children's",
+          "Drama",
+          "Musical"
+        ],
+        "rating": 4,
+        "timestamp": 878542889
+      },
+      {
+        "movieId": 210,
+        "title": "Indiana Jones and the Last Crusade (1989)",
+        "genres": [
+          "Action",
+          "Adventure"
+        ],
+        "rating": 4,
+        "timestamp": 878542909
+      },
+      {
+        "movieId": 3,
+        "title": "Four Rooms (1995)",
+        "genres": [
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 878542960
+      }
+    ],
+    "2": [
+      {
+        "movieId": 286,
+        "title": "English Patient, The (1996)",
+        "genres": [
+          "Drama",
+          "Romance",
+          "War"
+        ],
+        "rating": 4,
+        "timestamp": 888549960
+      },
+      {
+        "movieId": 301,
+        "title": "In & Out (1997)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 888550631
+      },
+      {
+        "movieId": 269,
+        "title": "Full Monty, The (1997)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 888550774
+      },
+      {
+        "movieId": 292,
+        "title": "Rosewood (1997)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 888550774
+      },
+      {
+        "movieId": 299,
+        "title": "Hoodlum (1997)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Film-Noir"
+        ],
+        "rating": 4,
+        "timestamp": 888550774
+      },
+      {
+        "movieId": 303,
+        "title": "Ulee's Gold (1997)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 888550774
+      },
+      {
+        "movieId": 306,
+        "title": "Mrs. Brown (Her Majesty, Mrs. Brown) (1997)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 888550774
+      },
+      {
+        "movieId": 1,
+        "title": "Toy Story (1995)",
+        "genres": [
+          "Animation",
+          "Children's",
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 888550871
+      },
+      {
+        "movieId": 297,
+        "title": "Ulee's Gold (1997)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 888550871
+      },
+      {
+        "movieId": 275,
+        "title": "Sense and Sensibility (1995)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 888550939
+      },
+      {
+        "movieId": 293,
+        "title": "Donnie Brasco (1997)",
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 888550939
+      },
+      {
+        "movieId": 257,
+        "title": "Men in Black (1997)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Comedy",
+          "Sci-Fi"
+        ],
+        "rating": 4,
+        "timestamp": 888551062
+      },
+      {
+        "movieId": 295,
+        "title": "Breakdown (1997)",
+        "genres": [
+          "Action",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 888551164
+      },
+      {
+        "movieId": 277,
+        "title": "Restoration (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 888551174
+      },
+      {
+        "movieId": 255,
+        "title": "My Best Friend's Wedding (1997)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 888551341
+      },
+      {
+        "movieId": 276,
+        "title": "Leaving Las Vegas (1995)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 888551552
+      },
+      {
+        "movieId": 273,
+        "title": "Heat (1995)",
+        "genres": [
+          "Action",
+          "Crime",
+          "Thriller"
+        ],
+        "rating": 4,
+        "timestamp": 888551647
+      },
+      {
+        "movieId": 25,
+        "title": "Birdcage, The (1996)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 888551648
+      },
+      {
+        "movieId": 279,
+        "title": "Once Upon a Time... When We Were Colored (1995)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 888551745
+      },
+      {
+        "movieId": 14,
+        "title": "Postino, Il (1994)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 888551853
+      },
+      {
+        "movieId": 111,
+        "title": "Truth About Cats & Dogs, The (1996)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 888551853
+      },
+      {
+        "movieId": 13,
+        "title": "Mighty Aphrodite (1995)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 4,
+        "timestamp": 888551922
+      },
+      {
+        "movieId": 282,
+        "title": "Time to Kill, A (1996)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 4,
+        "timestamp": 888551922
+      },
+      {
+        "movieId": 237,
+        "title": "Jerry Maguire (1996)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 888552017
+      },
+      {
+        "movieId": 284,
+        "title": "Tin Cup (1996)",
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "rating": 4,
+        "timestamp": 888552017
+      },
+      {
+        "movieId": 50,
+        "title": "Star Wars (1977)",
+        "genres": [
+          "Action",
+          "Adventure",
+          "Romance",
+          "Sci-Fi",
+          "War"
+        ],
+        "rating": 5,
+        "timestamp": 888552084
+      },
+      {
+        "movieId": 100,
+        "title": "Fargo (1996)",
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "rating": 5,
+        "timestamp": 888552084
+      },
+      {
+        "movieId": 127,
+        "title": "Godfather, The (1972)",
+        "genres": [
+          "Action",
+          "Crime",
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 888552084
+      },
+      {
+        "movieId": 242,
+        "title": "Kolya (1996)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 888552084
+      },
+      {
+        "movieId": 251,
+        "title": "Shall We Dance? (1996)",
+        "genres": [
+          "Comedy"
+        ],
+        "rating": 5,
+        "timestamp": 888552084
+      },
+      {
+        "movieId": 283,
+        "title": "Emma (1996)",
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "rating": 5,
+        "timestamp": 888552084
+      },
+      {
+        "movieId": 285,
+        "title": "Secrets & Lies (1996)",
+        "genres": [
+          "Drama"
+        ],
+        "rating": 5,
+        "timestamp": 888552084
+      }
+    ]
+  }
+}

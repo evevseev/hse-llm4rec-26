@@ -1,0 +1,204 @@
+{
+  "alpha": 0.85,
+  "users": 32,
+  "workers": 8,
+  "sequentialMs": 3875.147292,
+  "parallelCalculationMs": 806.44175,
+  "workerStartupMs": 475.579541,
+  "speedup": 3.022685597504636,
+  "allEquivalent": true,
+  "comparisons": [
+    {
+      "userId": 1,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 2,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 3,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 4,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 5,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 6,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 7,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 8,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 9,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 10,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 11,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 12,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 13,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 14,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 15,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 16,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 17,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 18,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 19,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 21,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 22,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 23,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 24,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 25,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 28,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 29,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 30,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 31,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 32,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 33,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 34,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    },
+    {
+      "userId": 36,
+      "iterationsMatch": true,
+      "maxAbsScoreDifference": 0,
+      "top10MovieIdsMatch": true
+    }
+  ]
+}
