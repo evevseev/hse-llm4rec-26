@@ -1,0 +1,80 @@
+{
+  "unique_configurations": 20,
+  "fit_runs": 24,
+  "primary_family_bests": {
+    "frequency": {
+      "id": "frequency_bonus_3",
+      "family": "frequency",
+      "bonus": 3,
+      "map_at_5": 0.3441310096441477
+    },
+    "ppr": {
+      "id": "ppr_d05_log",
+      "family": "ppr",
+      "damping": 0.5,
+      "history": "log",
+      "map_at_5": 0.33713176346710705
+    },
+    "mf": {
+      "id": "mf_f16_r10_a0",
+      "family": "mf",
+      "factors": 16,
+      "regularization": 1.0,
+      "alpha": 0.0,
+      "map_at_5": 0.332705506497236
+    },
+    "association_rules": {
+      "id": "association_rules_log",
+      "family": "association_rules",
+      "history": "log",
+      "map_at_5": 0.24210531983631273
+    },
+    "cbf": {
+      "id": "cbf_raw",
+      "family": "cbf",
+      "history": "raw",
+      "map_at_5": 0.20253242635269342
+    }
+  },
+  "primary_finalists": [
+    "frequency_bonus_3",
+    "frequency_bonus_6",
+    "ppr_d05_log",
+    "ppr_d05_raw"
+  ],
+  "secondary_ranking": [
+    {
+      "id": "frequency_bonus_3",
+      "family": "frequency",
+      "bonus": 3,
+      "map_at_5": 0.3627692969518191
+    },
+    {
+      "id": "frequency_bonus_6",
+      "family": "frequency",
+      "bonus": 6,
+      "map_at_5": 0.3595002458210423
+    },
+    {
+      "id": "ppr_d05_log",
+      "family": "ppr",
+      "damping": 0.5,
+      "history": "log",
+      "map_at_5": 0.35428711897738446
+    },
+    {
+      "id": "ppr_d05_raw",
+      "family": "ppr",
+      "damping": 0.5,
+      "history": "raw",
+      "map_at_5": 0.35273432890855455
+    }
+  ],
+  "decision": {
+    "rule": "Require positive mean MAP gain vs reference on both folds and a positive lower bound of the secondary paired 95% bootstrap interval. Among survivors maximize the smaller fold gain; tie-break by primary MAP then ID. If none, retain reference.",
+    "eligible_candidates": [],
+    "selected_config_id": "frequency_bonus_3",
+    "reason": "No finalist passed all prespecified robustness checks; retain the reference."
+  },
+  "verification_status": "passed"
+}

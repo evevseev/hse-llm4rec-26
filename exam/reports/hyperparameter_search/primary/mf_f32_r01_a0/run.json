@@ -1,0 +1,177 @@
+{
+  "config": {
+    "id": "mf_f32_r01_a0",
+    "family": "mf",
+    "factors": 32,
+    "regularization": 0.1,
+    "alpha": 0.0
+  },
+  "pid": 88611,
+  "start_epoch": 1792926194.41199,
+  "end_epoch": 1792926197.722513,
+  "fit_seconds": 2.6286652920534834,
+  "predict_and_export_seconds": 0.6061410829424858,
+  "runtime_seconds": 3.3105187080800533,
+  "diagnostics": {
+    "training_objective": [
+      {
+        "iteration": 0,
+        "stage": "initial",
+        "training_objective": 155738.9647878582
+      },
+      {
+        "iteration": 1,
+        "stage": "user_update",
+        "training_objective": 154279.94566703791
+      },
+      {
+        "iteration": 1,
+        "stage": "item_update",
+        "training_objective": 67965.46739782218
+      },
+      {
+        "iteration": 2,
+        "stage": "user_update",
+        "training_objective": 50438.91944752565
+      },
+      {
+        "iteration": 2,
+        "stage": "item_update",
+        "training_objective": 47285.574571175195
+      },
+      {
+        "iteration": 3,
+        "stage": "user_update",
+        "training_objective": 46172.04370356635
+      },
+      {
+        "iteration": 3,
+        "stage": "item_update",
+        "training_objective": 45619.044640440625
+      },
+      {
+        "iteration": 4,
+        "stage": "user_update",
+        "training_objective": 45302.9609717062
+      },
+      {
+        "iteration": 4,
+        "stage": "item_update",
+        "training_objective": 45095.8132428502
+      },
+      {
+        "iteration": 5,
+        "stage": "user_update",
+        "training_objective": 44952.85995639662
+      },
+      {
+        "iteration": 5,
+        "stage": "item_update",
+        "training_objective": 44845.13660176845
+      },
+      {
+        "iteration": 6,
+        "stage": "user_update",
+        "training_objective": 44762.562132329294
+      },
+      {
+        "iteration": 6,
+        "stage": "item_update",
+        "training_objective": 44695.31600166579
+      },
+      {
+        "iteration": 7,
+        "stage": "user_update",
+        "training_objective": 44640.72630795483
+      },
+      {
+        "iteration": 7,
+        "stage": "item_update",
+        "training_objective": 44594.42208320019
+      },
+      {
+        "iteration": 8,
+        "stage": "user_update",
+        "training_objective": 44555.698497185
+      },
+      {
+        "iteration": 8,
+        "stage": "item_update",
+        "training_objective": 44522.184164555474
+      },
+      {
+        "iteration": 9,
+        "stage": "user_update",
+        "training_objective": 44493.7258120345
+      },
+      {
+        "iteration": 9,
+        "stage": "item_update",
+        "training_objective": 44468.82963059488
+      },
+      {
+        "iteration": 10,
+        "stage": "user_update",
+        "training_objective": 44447.476135673816
+      },
+      {
+        "iteration": 10,
+        "stage": "item_update",
+        "training_objective": 44428.632866753
+      },
+      {
+        "iteration": 11,
+        "stage": "user_update",
+        "training_objective": 44412.308542089515
+      },
+      {
+        "iteration": 11,
+        "stage": "item_update",
+        "training_objective": 44397.76092469936
+      },
+      {
+        "iteration": 12,
+        "stage": "user_update",
+        "training_objective": 44385.011135932335
+      },
+      {
+        "iteration": 12,
+        "stage": "item_update",
+        "training_objective": 44373.51867795591
+      },
+      {
+        "iteration": 13,
+        "stage": "user_update",
+        "training_objective": 44363.31687270584
+      },
+      {
+        "iteration": 13,
+        "stage": "item_update",
+        "training_objective": 44354.00885426775
+      },
+      {
+        "iteration": 14,
+        "stage": "user_update",
+        "training_objective": 44345.63850870793
+      },
+      {
+        "iteration": 14,
+        "stage": "item_update",
+        "training_objective": 44337.91066745098
+      },
+      {
+        "iteration": 15,
+        "stage": "user_update",
+        "training_objective": 44330.87624435414
+      },
+      {
+        "iteration": 15,
+        "stage": "item_update",
+        "training_objective": 44324.311561430826
+      }
+    ]
+  },
+  "peak_rss_native_units": 267894784,
+  "peak_rss_units": "bytes on macOS; KiB on Linux",
+  "blas_threads": 1
+}

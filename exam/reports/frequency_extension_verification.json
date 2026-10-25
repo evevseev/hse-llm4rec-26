@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "original_artifact_hashes_unchanged": true,
+  "training_airings_reconciled_with_original_counts": 316311,
+  "variants": {
+    "recency": {
+      "prediction_rows_rebuilt": 4914,
+      "per_user_ap_recomputed": 4643,
+      "primary_map_at_5": 0.3163023787302271,
+      "outcomes_recomputed": {
+        "unchanged": 2479,
+        "improved": 779,
+        "worsened": 1385
+      },
+      "cohort_metric_rows_independently_recomputed": 16
+    },
+    "smoothed": {
+      "prediction_rows_rebuilt": 4914,
+      "per_user_ap_recomputed": 4643,
+      "primary_map_at_5": 0.3441310096441477,
+      "outcomes_recomputed": {
+        "unchanged": 3092,
+        "worsened": 559,
+        "improved": 992
+      },
+      "cohort_metric_rows_independently_recomputed": 16
+    }
+  },
+  "new_artifact_sha256": {
+    "recency_predictions.csv": "55093e601901cc5431202b2dc11a7f0d6e1803dd2ebd3f528efd18540e124739",
+    "recency_metrics.csv": "2f15df134245730827d21ab4e9a2dd34631b31de68c84a3d00d02556a75e2e66",
+    "smoothed_predictions.csv": "78e89e558bcfe26e3efd1dc53e88c1ef7e8ddf588a2893f718679c6a514bbd9d",
+    "smoothed_metrics.csv": "90705d7ebe9c8aa3ece4e0a82a25c16b231eaee3a95aa8736a24f6dd58ee4ca9"
+  }
+}

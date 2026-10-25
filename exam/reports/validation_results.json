@@ -1,0 +1,401 @@
+{
+  "parameters": {
+    "k": 5,
+    "seed": 42,
+    "popularity": "Number of distinct training viewers; ascending item ID breaks ties.",
+    "personal_frequency": "Qualified training airing counts; ties use popularity then item ID.",
+    "cbf": {
+      "category_weight": 2.0,
+      "genre_weight": 2.0,
+      "director_weight": 1.0,
+      "actor_weight": 1.0,
+      "year_decade_weight": 0.3,
+      "smooth_idf": true,
+      "item_normalization": "l2",
+      "history_weight": "log1p(qualified airing count)",
+      "profile_normalization": "l2",
+      "score": "cosine similarity",
+      "batch_size": 256
+    },
+    "association_rules": {
+      "min_pair_support_users": 3,
+      "min_confidence": 0.02,
+      "shrinkage": 10,
+      "max_consequents_per_antecedent": 100,
+      "history_weight": "log1p(qualified airing count)",
+      "score": "sum(history weight * confidence * support/(support+10))"
+    },
+    "selection": "One fixed configuration per method; no hyperparameter search on validation.",
+    "target_ties": "Descending validation qualified-airing count, then ascending item ID.",
+    "fallback": "Append unseen-in-list popularity IDs; cold users receive identical popularity top five.",
+    "repeat_policy": "Previously watched items remain eligible for every method."
+  },
+  "metrics": [
+    {
+      "segment": "all_target_users",
+      "method": "popularity",
+      "users": 4643,
+      "map_at_5": 0.2466373513293608,
+      "precision_at_5": 0.28972646995477064,
+      "recall_at_5": 0.3072259315097997,
+      "hit_rate_at_5": 0.7678225285375835
+    },
+    {
+      "segment": "all_target_users",
+      "method": "personal_frequency",
+      "users": 4643,
+      "map_at_5": 0.3339907746428315,
+      "precision_at_5": 0.3783760499676933,
+      "recall_at_5": 0.3979754469093259,
+      "hit_rate_at_5": 0.8436355804436787
+    },
+    {
+      "segment": "all_target_users",
+      "method": "cbf",
+      "users": 4643,
+      "map_at_5": 0.16175257855313854,
+      "precision_at_5": 0.2317897910833513,
+      "recall_at_5": 0.24652164548783112,
+      "hit_rate_at_5": 0.7053629119104028
+    },
+    {
+      "segment": "all_target_users",
+      "method": "association_rules",
+      "users": 4643,
+      "map_at_5": 0.24210531983631273,
+      "precision_at_5": 0.29200947663148824,
+      "recall_at_5": 0.30808744346327804,
+      "hit_rate_at_5": 0.7807452078397588
+    },
+    {
+      "segment": "five_target_users",
+      "method": "popularity",
+      "users": 4030,
+      "map_at_5": 0.2573713813068652,
+      "precision_at_5": 0.3144416873449131,
+      "recall_at_5": 0.3144416873449132,
+      "hit_rate_at_5": 0.8099255583126551
+    },
+    {
+      "segment": "five_target_users",
+      "method": "personal_frequency",
+      "users": 4030,
+      "map_at_5": 0.35238792390405294,
+      "precision_at_5": 0.414590570719603,
+      "recall_at_5": 0.41459057071960304,
+      "hit_rate_at_5": 0.8923076923076924
+    },
+    {
+      "segment": "five_target_users",
+      "method": "cbf",
+      "users": 4030,
+      "map_at_5": 0.1645624483043838,
+      "precision_at_5": 0.2512655086848635,
+      "recall_at_5": 0.2512655086848636,
+      "hit_rate_at_5": 0.7488833746898264
+    },
+    {
+      "segment": "five_target_users",
+      "method": "association_rules",
+      "users": 4030,
+      "map_at_5": 0.2557038875103391,
+      "precision_at_5": 0.3181637717121588,
+      "recall_at_5": 0.31816377171215887,
+      "hit_rate_at_5": 0.8275434243176178
+    },
+    {
+      "segment": "template_target_users",
+      "method": "popularity",
+      "users": 1238,
+      "map_at_5": 0.2696997845988153,
+      "precision_at_5": 0.3210016155088853,
+      "recall_at_5": 0.3294695745826602,
+      "hit_rate_at_5": 0.8109854604200323
+    },
+    {
+      "segment": "template_target_users",
+      "method": "personal_frequency",
+      "users": 1238,
+      "map_at_5": 0.37402441213426674,
+      "precision_at_5": 0.42988691437802906,
+      "recall_at_5": 0.4377221324717286,
+      "hit_rate_at_5": 0.8949919224555735
+    },
+    {
+      "segment": "template_target_users",
+      "method": "cbf",
+      "users": 1238,
+      "map_at_5": 0.17430645306049183,
+      "precision_at_5": 0.2578352180936995,
+      "recall_at_5": 0.2644184168012924,
+      "hit_rate_at_5": 0.7673667205169629
+    },
+    {
+      "segment": "template_target_users",
+      "method": "association_rules",
+      "users": 1238,
+      "map_at_5": 0.2695288099084545,
+      "precision_at_5": 0.3248788368336026,
+      "recall_at_5": 0.3332390953150242,
+      "hit_rate_at_5": 0.8303715670436187
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "popularity",
+      "users": 4539,
+      "map_at_5": 0.24847812783040804,
+      "precision_at_5": 0.29239920687376075,
+      "recall_at_5": 0.30877946684291696,
+      "hit_rate_at_5": 0.7726371447455387
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "personal_frequency",
+      "users": 4539,
+      "map_at_5": 0.33783303958287436,
+      "precision_at_5": 0.3830799735624587,
+      "recall_at_5": 0.4016082837629434,
+      "hit_rate_at_5": 0.850187265917603
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "cbf",
+      "users": 4539,
+      "map_at_5": 0.16164842965900467,
+      "precision_at_5": 0.2331350517735184,
+      "recall_at_5": 0.24668429169420578,
+      "hit_rate_at_5": 0.7087464199162811
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "association_rules",
+      "users": 4539,
+      "map_at_5": 0.243842256003525,
+      "precision_at_5": 0.2947345230226922,
+      "recall_at_5": 0.30966071821987223,
+      "hit_rate_at_5": 0.7858559153998678
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "popularity",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.2394230769230769,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "personal_frequency",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.2394230769230769,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "cbf",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.2394230769230769,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "association_rules",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.2394230769230769,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "popularity",
+      "users": 538,
+      "map_at_5": 0.14472841800908717,
+      "precision_at_5": 0.158364312267658,
+      "recall_at_5": 0.20619578686493184,
+      "hit_rate_at_5": 0.5446096654275093
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "personal_frequency",
+      "users": 538,
+      "map_at_5": 0.14109923585295334,
+      "precision_at_5": 0.15092936802973977,
+      "recall_at_5": 0.2006195786864932,
+      "hit_rate_at_5": 0.5446096654275093
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "cbf",
+      "users": 538,
+      "map_at_5": 0.08336947542337877,
+      "precision_at_5": 0.08847583643122676,
+      "recall_at_5": 0.11883519206939282,
+      "hit_rate_at_5": 0.34572490706319703
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "association_rules",
+      "users": 538,
+      "map_at_5": 0.12430349029326725,
+      "precision_at_5": 0.14907063197026021,
+      "recall_at_5": 0.18968401486988848,
+      "hit_rate_at_5": 0.5260223048327137
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "popularity",
+      "users": 995,
+      "map_at_5": 0.2964606365159129,
+      "precision_at_5": 0.34834170854271357,
+      "recall_at_5": 0.3493969849246232,
+      "hit_rate_at_5": 0.828140703517588
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "personal_frequency",
+      "users": 995,
+      "map_at_5": 0.4937470686767169,
+      "precision_at_5": 0.5509547738693468,
+      "recall_at_5": 0.55214405360134,
+      "hit_rate_at_5": 0.9668341708542714
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "cbf",
+      "users": 995,
+      "map_at_5": 0.18694081518704636,
+      "precision_at_5": 0.2830150753768844,
+      "recall_at_5": 0.283785594639866,
+      "hit_rate_at_5": 0.7969849246231155
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "association_rules",
+      "users": 995,
+      "map_at_5": 0.3035368509212731,
+      "precision_at_5": 0.3587939698492463,
+      "recall_at_5": 0.3597654941373535,
+      "hit_rate_at_5": 0.8683417085427135
+    }
+  ],
+  "timings": {
+    "shared_input_and_training_matrix_seconds": 0.12386583292391151,
+    "popularity_fit_and_predict_seconds": 0.00561637501232326,
+    "personal_frequency_fit_and_predict_seconds": 3.018976917024702,
+    "cbf_fit_seconds": 0.047471791971474886,
+    "cbf_predict_seconds": 1.3874602919677272,
+    "association_rules_fit_seconds": 1.450803583022207,
+    "association_rules_predict_seconds": 0.1269843749469146
+  },
+  "population": {
+    "all_log_users": 4914,
+    "training_users": 4737,
+    "evaluated_users": 4643,
+    "users_without_validation_targets_excluded": 271,
+    "template_users": 1260,
+    "template_users_without_targets": 22,
+    "target_size_distribution": {
+      "2": 153,
+      "5": 4030,
+      "1": 158,
+      "4": 168,
+      "3": 134
+    },
+    "candidate_items": 6384,
+    "training_metadata_items": 5842,
+    "candidate_items_without_training_metadata": 2391,
+    "candidate_items_without_training_views": 4511,
+    "validation_top5_items_seen_in_own_training": 11789,
+    "validation_top5_items_total": 21688
+  },
+  "model_sizes": {
+    "content_features": 11880,
+    "retained_rules": 120896
+  },
+  "recommendation_diagnostics": {
+    "popularity": {
+      "catalogue_items_recommended": 5,
+      "mean_fallback_slots": 0.0,
+      "fraction_recommendations_seen_in_training": 0.5981908248976955
+    },
+    "personal_frequency": {
+      "catalogue_items_recommended": 634,
+      "mean_fallback_slots": 0.27697609304329096,
+      "fraction_recommendations_seen_in_training": 0.9446047813913419
+    },
+    "cbf": {
+      "catalogue_items_recommended": 788,
+      "mean_fallback_slots": 0.11199655395218609,
+      "fraction_recommendations_seen_in_training": 0.5311651949170795
+    },
+    "association_rules": {
+      "catalogue_items_recommended": 16,
+      "mean_fallback_slots": 0.11199655395218609,
+      "fraction_recommendations_seen_in_training": 0.5917294852466078
+    }
+  },
+  "paired_comparisons": {
+    "personal_frequency_minus_popularity": {
+      "mean_delta": 0.0873534233134707,
+      "paired_bootstrap_95_percent_interval": [
+        0.08084308367434848,
+        0.09407764376480725
+      ],
+      "replicates": 2000,
+      "seed": 42
+    },
+    "cbf_minus_popularity": {
+      "mean_delta": -0.08488477277622226,
+      "paired_bootstrap_95_percent_interval": [
+        -0.09076014669634097,
+        -0.07860097937157491
+      ],
+      "replicates": 2000,
+      "seed": 42
+    },
+    "association_rules_minus_popularity": {
+      "mean_delta": -0.004532031493048075,
+      "paired_bootstrap_95_percent_interval": [
+        -0.006332564553569291,
+        -0.002794409744657429
+      ],
+      "replicates": 2000,
+      "seed": 42
+    },
+    "cbf_minus_personal_frequency": {
+      "mean_delta": -0.17223819608969299,
+      "paired_bootstrap_95_percent_interval": [
+        -0.1781672948524661,
+        -0.16644840500634167
+      ],
+      "replicates": 2000,
+      "seed": 42
+    },
+    "association_rules_minus_personal_frequency": {
+      "mean_delta": -0.09188545480651877,
+      "paired_bootstrap_95_percent_interval": [
+        -0.09892124793596095,
+        -0.08500744400172304
+      ],
+      "replicates": 2000,
+      "seed": 42
+    }
+  },
+  "winner_on_primary_map": "personal_frequency",
+  "runtime_seconds": 6.72,
+  "peak_rss_native_units": 284442624,
+  "peak_rss_units": "bytes on macOS; KiB on Linux",
+  "environment": {
+    "python": "3.12.11 (main, Sep  2 2025, 14:12:30) [Clang 20.1.4 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.1"
+  }
+}

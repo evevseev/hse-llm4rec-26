@@ -1,0 +1,6 @@
+{
+  "rule": "Require positive mean MAP gain vs reference on both folds and a positive lower bound of the secondary paired 95% bootstrap interval. Among survivors maximize the smaller fold gain; tie-break by primary MAP then ID. If none, retain reference.",
+  "eligible_candidates": [],
+  "selected_config_id": "frequency_bonus_3",
+  "reason": "No finalist passed all prespecified robustness checks; retain the reference."
+}

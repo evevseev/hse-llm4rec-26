@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "runtime_seconds": 0.0002881670370697975,
+  "command": ".venv/bin/python scripts/test_search_protocol.py"
+}

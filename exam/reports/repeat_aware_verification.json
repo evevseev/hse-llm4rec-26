@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "original_inputs_and_reference_hashes_unchanged": true,
+  "prediction_rows_checked": 29484,
+  "cohort_metric_rows_independently_recomputed": 48,
+  "repeated_target_and_strong_favorite_diagnostics_recomputed": true,
+  "matrix_factorizations": {
+    "als_log_counts_weighted": {
+      "all_rankings_rebuilt": 4914,
+      "dense_training_loss": 434277.9386515068,
+      "normal_equations_checked": 102,
+      "maximum_relative_residual": 1.3259666438595581e-15
+    },
+    "als_log_counts_uniform": {
+      "all_rankings_rebuilt": 4914,
+      "dense_training_loss": 44324.31156143078,
+      "normal_equations_checked": 102,
+      "maximum_relative_residual": 3.4613515668874927e-16
+    }
+  },
+  "ppr_direct_linear_solve_users": 32,
+  "ppr_exact_top5_matches": 32,
+  "ppr_max_score_difference_from_linear_solution": 4.477333781505166e-11,
+  "artifact_sha256": {
+    "repeat_aware_predictions.csv": "343db01a286679270b869575a980fa72737da317c47d29af6af1acb91710eb82",
+    "repeat_aware_metrics.csv": "6bc1b70df5d7cd63ef5edfbcf9f5f08ea6b6e8d2971a6bc89ba2446ddf7eb261",
+    "repeat_aware_results.json": "1c93cf6f4acba5489ab08297a87ed435a30d5176b8263fa9e0e8c79ef5c865f8"
+  }
+}

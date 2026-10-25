@@ -1,0 +1,12 @@
+{
+  "validation_top5_pairs_with_training_item_factors": 20406,
+  "validation_top5_pairs_without_any_training_item_view": 1282,
+  "validation_top5_pairs_total": 21688,
+  "heavy_viewer_most_repeated_item": {
+    "user_id": "10500740270951698446",
+    "tv_show_id": 12001682,
+    "training_count": 401,
+    "als_score": 1.02803766971992,
+    "highest_als_recommendation_score": 1.4665377770792027
+  }
+}

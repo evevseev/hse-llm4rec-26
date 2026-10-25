@@ -1,0 +1,160 @@
+{
+  "unique_configurations": 20,
+  "folds": {
+    "primary": {
+      "configurations_checked": 20,
+      "ranking": [
+        {
+          "config_id": "frequency_bonus_3",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.3441310096441477
+        },
+        {
+          "config_id": "frequency_bonus_6",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.34380578888170965
+        },
+        {
+          "config_id": "ppr_d05_log",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.337131763467107
+        },
+        {
+          "config_id": "ppr_d05_raw",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.33587353722449564
+        },
+        {
+          "config_id": "frequency_bonus_0",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.3339907746428315
+        },
+        {
+          "config_id": "frequency_bonus_1",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.3339907746428315
+        },
+        {
+          "config_id": "mf_f16_r10_a0",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.332705506497236
+        },
+        {
+          "config_id": "mf_f16_r01_a0",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.33228719458204703
+        },
+        {
+          "config_id": "ppr_d085_raw",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.3321507286955273
+        },
+        {
+          "config_id": "mf_f32_r10_a0",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.33168724722999976
+        },
+        {
+          "config_id": "mf_f32_r01_a0",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.33086390504223806
+        },
+        {
+          "config_id": "mf_f32_r10_a20",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.3273521669418719
+        },
+        {
+          "config_id": "mf_f32_r01_a20",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.326812764735444
+        },
+        {
+          "config_id": "mf_f16_r10_a20",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.32140755498121426
+        },
+        {
+          "config_id": "mf_f16_r01_a20",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.321069172230598
+        },
+        {
+          "config_id": "ppr_d085_log",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.3166806064086917
+        },
+        {
+          "config_id": "association_rules_log",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.24210531983631273
+        },
+        {
+          "config_id": "association_rules_raw",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.2203668006796372
+        },
+        {
+          "config_id": "cbf_raw",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.20253242635269342
+        },
+        {
+          "config_id": "cbf_log",
+          "rankings_checked": 4914,
+          "evaluated_users": 4643,
+          "map_at_5": 0.16175257855313854
+        }
+      ]
+    },
+    "secondary": {
+      "configurations_checked": 4,
+      "ranking": [
+        {
+          "config_id": "frequency_bonus_3",
+          "rankings_checked": 4876,
+          "evaluated_users": 4520,
+          "map_at_5": 0.3627692969518191
+        },
+        {
+          "config_id": "frequency_bonus_6",
+          "rankings_checked": 4876,
+          "evaluated_users": 4520,
+          "map_at_5": 0.3595002458210423
+        },
+        {
+          "config_id": "ppr_d05_log",
+          "rankings_checked": 4876,
+          "evaluated_users": 4520,
+          "map_at_5": 0.35428711897738446
+        },
+        {
+          "config_id": "ppr_d05_raw",
+          "rankings_checked": 4876,
+          "evaluated_users": 4520,
+          "map_at_5": 0.35273432890855455
+        }
+      ]
+    }
+  },
+  "selected_config_id": "frequency_bonus_3"
+}

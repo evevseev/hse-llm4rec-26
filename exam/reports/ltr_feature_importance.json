@@ -1,0 +1,130 @@
+[
+  {
+    "feature": "baseline_rank_reciprocal",
+    "normalized_gain": 0.18707825243473053
+  },
+  {
+    "feature": "user_training_airings",
+    "normalized_gain": 0.1595727801322937
+  },
+  {
+    "feature": "baseline_score",
+    "normalized_gain": 0.1421467512845993
+  },
+  {
+    "feature": "personal_rank_reciprocal",
+    "normalized_gain": 0.10966218262910843
+  },
+  {
+    "feature": "future_airings_per_week",
+    "normalized_gain": 0.07212763279676437
+  },
+  {
+    "feature": "schedule_channel_affinity",
+    "normalized_gain": 0.07011546194553375
+  },
+  {
+    "feature": "recent_14day_count",
+    "normalized_gain": 0.04536205157637596
+  },
+  {
+    "feature": "future_first_airing_position",
+    "normalized_gain": 0.0403139665722847
+  },
+  {
+    "feature": "days_since_last_item_watch",
+    "normalized_gain": 0.03139025717973709
+  },
+  {
+    "feature": "personal_weekly_rate",
+    "normalized_gain": 0.02643834426999092
+  },
+  {
+    "feature": "global_viewers",
+    "normalized_gain": 0.026125706732273102
+  },
+  {
+    "feature": "personal_share",
+    "normalized_gain": 0.020729992538690567
+  },
+  {
+    "feature": "global_weekly_airings",
+    "normalized_gain": 0.016197750344872475
+  },
+  {
+    "feature": "personal_count",
+    "normalized_gain": 0.01566064916551113
+  },
+  {
+    "feature": "future_mean_duration_minutes",
+    "normalized_gain": 0.013939752243459225
+  },
+  {
+    "feature": "global_qualified_airings",
+    "normalized_gain": 0.011987229809165001
+  },
+  {
+    "feature": "history_calendar_days",
+    "normalized_gain": 0.008956633508205414
+  },
+  {
+    "feature": "schedule_start_time_affinity",
+    "normalized_gain": 0.0021945666521787643
+  },
+  {
+    "feature": "future_airing_start_day_fraction",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "future_distinct_channels",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "future_last_airing_position",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "global_item_known",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "global_viewer_fraction",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "log_global_viewers",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "log_personal_count",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "personal_item_known",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "previous_14day_count",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "recent_trend",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "user_channel_concentration",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "user_distinct_items",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "user_favorite_share",
+    "normalized_gain": 0.0
+  },
+  {
+    "feature": "user_recent_fraction",
+    "normalized_gain": 0.0
+  }
+]

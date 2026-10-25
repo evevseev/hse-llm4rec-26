@@ -1,0 +1,17 @@
+[
+  {
+    "file": "submission_frequency_bonus3.csv",
+    "rows": 1260,
+    "sha256": "04e9c1047cd0d5bb95485c2df914330a01f2eeb8f70c8118463c0fbce60c29db"
+  },
+  {
+    "file": "submission_ppr.csv",
+    "rows": 1260,
+    "sha256": "27272ed27edf601cf2ab40022811728910284baac7130ff408c1b40cf08dfaaf"
+  },
+  {
+    "file": "submission_frequency_bonus6.csv",
+    "rows": 1260,
+    "sha256": "c517490f524c04604656be0bbd8bf0c1c445b142c2144d5f4dd1ccfc5e073c35"
+  }
+]

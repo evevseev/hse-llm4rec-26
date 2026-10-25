@@ -1,0 +1,168 @@
+{
+  "configurations": [
+    {
+      "id": "frequency_bonus_0",
+      "family": "frequency",
+      "bonus": 0
+    },
+    {
+      "id": "frequency_bonus_1",
+      "family": "frequency",
+      "bonus": 1
+    },
+    {
+      "id": "frequency_bonus_3",
+      "family": "frequency",
+      "bonus": 3
+    },
+    {
+      "id": "frequency_bonus_6",
+      "family": "frequency",
+      "bonus": 6
+    },
+    {
+      "id": "ppr_d05_raw",
+      "family": "ppr",
+      "damping": 0.5,
+      "history": "raw"
+    },
+    {
+      "id": "ppr_d05_log",
+      "family": "ppr",
+      "damping": 0.5,
+      "history": "log"
+    },
+    {
+      "id": "ppr_d085_raw",
+      "family": "ppr",
+      "damping": 0.85,
+      "history": "raw"
+    },
+    {
+      "id": "ppr_d085_log",
+      "family": "ppr",
+      "damping": 0.85,
+      "history": "log"
+    },
+    {
+      "id": "mf_f16_r01_a0",
+      "family": "mf",
+      "factors": 16,
+      "regularization": 0.1,
+      "alpha": 0.0
+    },
+    {
+      "id": "mf_f16_r01_a20",
+      "family": "mf",
+      "factors": 16,
+      "regularization": 0.1,
+      "alpha": 20.0
+    },
+    {
+      "id": "mf_f16_r10_a0",
+      "family": "mf",
+      "factors": 16,
+      "regularization": 1.0,
+      "alpha": 0.0
+    },
+    {
+      "id": "mf_f16_r10_a20",
+      "family": "mf",
+      "factors": 16,
+      "regularization": 1.0,
+      "alpha": 20.0
+    },
+    {
+      "id": "mf_f32_r01_a0",
+      "family": "mf",
+      "factors": 32,
+      "regularization": 0.1,
+      "alpha": 0.0
+    },
+    {
+      "id": "mf_f32_r01_a20",
+      "family": "mf",
+      "factors": 32,
+      "regularization": 0.1,
+      "alpha": 20.0
+    },
+    {
+      "id": "mf_f32_r10_a0",
+      "family": "mf",
+      "factors": 32,
+      "regularization": 1.0,
+      "alpha": 0.0
+    },
+    {
+      "id": "mf_f32_r10_a20",
+      "family": "mf",
+      "factors": 32,
+      "regularization": 1.0,
+      "alpha": 20.0
+    },
+    {
+      "id": "cbf_raw",
+      "family": "cbf",
+      "history": "raw"
+    },
+    {
+      "id": "cbf_log",
+      "family": "cbf",
+      "history": "log"
+    },
+    {
+      "id": "association_rules_raw",
+      "family": "association_rules",
+      "history": "raw"
+    },
+    {
+      "id": "association_rules_log",
+      "family": "association_rules",
+      "history": "log"
+    }
+  ],
+  "unique_configuration_limit": 20,
+  "reference_config_id": "frequency_bonus_3",
+  "max_parallel_workers": 4,
+  "blas_threads_per_worker": 1,
+  "seed": 42,
+  "metric": "MAP@5 over users with at least one target",
+  "fixed_parameters": {
+    "mf_target": "log1p(qualified airing count)",
+    "mf_iterations": 15,
+    "ppr_neighbors": 50,
+    "ppr_min_pair_users": 3,
+    "ppr_max_iterations": 100,
+    "ppr_tolerance": 1e-08,
+    "cbf_fields_and_weights": "Original category/genre=2, actor/director=1, decade=0.3; training-only TF-IDF.",
+    "rules": "Original pair support>=3, confidence>=0.02, shrinkage=10, top 100 consequents.",
+    "ranking": "Positive scores; training popularity then ID breaks ties; common popularity fallback; repeats allowed."
+  },
+  "folds": {
+    "primary": {
+      "begin": "2020-03-09 00:00:00",
+      "cutoff": "2020-05-18 00:00:00",
+      "end": "2020-07-27 00:00:00",
+      "train_weeks": "11-20",
+      "validation_weeks": "21-30",
+      "data_dir": "data/processed"
+    },
+    "secondary": {
+      "begin": "2020-03-09 00:00:00",
+      "cutoff": "2020-04-20 00:00:00",
+      "end": "2020-05-18 00:00:00",
+      "train_weeks": "11-16",
+      "validation_weeks": "17-20",
+      "data_dir": "data/processed/search_secondary"
+    }
+  },
+  "finalist_rule": "Freeze the top four primary MAP configurations (ID breaks ties) before secondary evaluation; add reference bonus=3 if absent.",
+  "decision_rule": "Require positive mean MAP gain vs reference on both folds and a positive lower bound of the secondary paired 95% bootstrap interval. Among survivors maximize the smaller fold gain; tie-break by primary MAP then ID. If none, retain reference.",
+  "uncertainty": "Report paired 2000-user-bootstrap intervals with seed 42; conditional on these folds, not corrected for model selection.",
+  "limitations": [
+    "Validation periods do not overlap, but users and history do.",
+    "Secondary validation is earlier and lies within primary training; it is a temporal robustness check, not an independent future test.",
+    "Validation horizons differ: ten weeks primary and four weeks secondary.",
+    "Secondary results are examined only for the frozen finalists and reference; no grid expansion."
+  ]
+}

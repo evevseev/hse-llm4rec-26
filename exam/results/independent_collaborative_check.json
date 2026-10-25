@@ -1,0 +1,64 @@
+{
+  "rankings_checked": {
+    "smoothed_personal_frequency": 4914,
+    "personalized_pagerank": 4914,
+    "implicit_als": 4914
+  },
+  "maximum_per_user_ap_difference": 0.0,
+  "metrics": [
+    {
+      "segment": "all_target_users",
+      "method": "implicit_als",
+      "users": 4643,
+      "map_at_5": 0.1741121042429465
+    },
+    {
+      "segment": "all_target_users",
+      "method": "personalized_pagerank",
+      "users": 4643,
+      "map_at_5": 0.31668060640868856
+    },
+    {
+      "segment": "all_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 4643,
+      "map_at_5": 0.34413100964414484
+    },
+    {
+      "segment": "five_target_users",
+      "method": "implicit_als",
+      "users": 4030,
+      "map_at_5": 0.17255334987593057
+    },
+    {
+      "segment": "five_target_users",
+      "method": "personalized_pagerank",
+      "users": 4030,
+      "map_at_5": 0.3320669975186073
+    },
+    {
+      "segment": "five_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 4030,
+      "map_at_5": 0.36298014888337193
+    },
+    {
+      "segment": "template_target_users",
+      "method": "implicit_als",
+      "users": 1238,
+      "map_at_5": 0.1770849039669717
+    },
+    {
+      "segment": "template_target_users",
+      "method": "personalized_pagerank",
+      "users": 1238,
+      "map_at_5": 0.348468632202477
+    },
+    {
+      "segment": "template_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 1238,
+      "map_at_5": 0.38484091725004466
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "rankings_checked": {
+    "history_schedule_ranker": 4914
+  },
+  "per_user_ap_comparisons": 0,
+  "maximum_per_user_ap_difference": null,
+  "metrics": [
+    {
+      "segment": "all_target_users",
+      "method": "history_schedule_ranker",
+      "users": 4643,
+      "map_at_5": 0.3428598008950122
+    },
+    {
+      "segment": "five_target_users",
+      "method": "history_schedule_ranker",
+      "users": 4030,
+      "map_at_5": 0.362327543424315
+    },
+    {
+      "segment": "template_target_users",
+      "method": "history_schedule_ranker",
+      "users": 1238,
+      "map_at_5": 0.38326602046311203
+    }
+  ]
+}

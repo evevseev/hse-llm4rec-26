@@ -1,0 +1,142 @@
+[
+  {
+    "id": "frequency_bonus_3",
+    "family": "frequency",
+    "bonus": 3,
+    "map_at_5": 0.3441310096441477
+  },
+  {
+    "id": "frequency_bonus_6",
+    "family": "frequency",
+    "bonus": 6,
+    "map_at_5": 0.34380578888170965
+  },
+  {
+    "id": "ppr_d05_log",
+    "family": "ppr",
+    "damping": 0.5,
+    "history": "log",
+    "map_at_5": 0.33713176346710705
+  },
+  {
+    "id": "ppr_d05_raw",
+    "family": "ppr",
+    "damping": 0.5,
+    "history": "raw",
+    "map_at_5": 0.33587353722449564
+  },
+  {
+    "id": "frequency_bonus_0",
+    "family": "frequency",
+    "bonus": 0,
+    "map_at_5": 0.3339907746428315
+  },
+  {
+    "id": "frequency_bonus_1",
+    "family": "frequency",
+    "bonus": 1,
+    "map_at_5": 0.3339907746428315
+  },
+  {
+    "id": "mf_f16_r10_a0",
+    "family": "mf",
+    "factors": 16,
+    "regularization": 1.0,
+    "alpha": 0.0,
+    "map_at_5": 0.332705506497236
+  },
+  {
+    "id": "mf_f16_r01_a0",
+    "family": "mf",
+    "factors": 16,
+    "regularization": 0.1,
+    "alpha": 0.0,
+    "map_at_5": 0.33228719458204703
+  },
+  {
+    "id": "ppr_d085_raw",
+    "family": "ppr",
+    "damping": 0.85,
+    "history": "raw",
+    "map_at_5": 0.3321507286955273
+  },
+  {
+    "id": "mf_f32_r10_a0",
+    "family": "mf",
+    "factors": 32,
+    "regularization": 1.0,
+    "alpha": 0.0,
+    "map_at_5": 0.33168724722999976
+  },
+  {
+    "id": "mf_f32_r01_a0",
+    "family": "mf",
+    "factors": 32,
+    "regularization": 0.1,
+    "alpha": 0.0,
+    "map_at_5": 0.330863905042238
+  },
+  {
+    "id": "mf_f32_r10_a20",
+    "family": "mf",
+    "factors": 32,
+    "regularization": 1.0,
+    "alpha": 20.0,
+    "map_at_5": 0.3273521669418719
+  },
+  {
+    "id": "mf_f32_r01_a20",
+    "family": "mf",
+    "factors": 32,
+    "regularization": 0.1,
+    "alpha": 20.0,
+    "map_at_5": 0.326812764735444
+  },
+  {
+    "id": "mf_f16_r10_a20",
+    "family": "mf",
+    "factors": 16,
+    "regularization": 1.0,
+    "alpha": 20.0,
+    "map_at_5": 0.32140755498121426
+  },
+  {
+    "id": "mf_f16_r01_a20",
+    "family": "mf",
+    "factors": 16,
+    "regularization": 0.1,
+    "alpha": 20.0,
+    "map_at_5": 0.321069172230598
+  },
+  {
+    "id": "ppr_d085_log",
+    "family": "ppr",
+    "damping": 0.85,
+    "history": "log",
+    "map_at_5": 0.3166806064086917
+  },
+  {
+    "id": "association_rules_log",
+    "family": "association_rules",
+    "history": "log",
+    "map_at_5": 0.24210531983631273
+  },
+  {
+    "id": "association_rules_raw",
+    "family": "association_rules",
+    "history": "raw",
+    "map_at_5": 0.2203668006796372
+  },
+  {
+    "id": "cbf_raw",
+    "family": "cbf",
+    "history": "raw",
+    "map_at_5": 0.20253242635269342
+  },
+  {
+    "id": "cbf_log",
+    "family": "cbf",
+    "history": "log",
+    "map_at_5": 0.16175257855313854
+  }
+]

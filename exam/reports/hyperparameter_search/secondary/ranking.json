@@ -1,0 +1,28 @@
+[
+  {
+    "id": "frequency_bonus_3",
+    "family": "frequency",
+    "bonus": 3,
+    "map_at_5": 0.3627692969518191
+  },
+  {
+    "id": "frequency_bonus_6",
+    "family": "frequency",
+    "bonus": 6,
+    "map_at_5": 0.3595002458210423
+  },
+  {
+    "id": "ppr_d05_log",
+    "family": "ppr",
+    "damping": 0.5,
+    "history": "log",
+    "map_at_5": 0.35428711897738446
+  },
+  {
+    "id": "ppr_d05_raw",
+    "family": "ppr",
+    "damping": 0.5,
+    "history": "raw",
+    "map_at_5": 0.35273432890855455
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "prediction_rows_checked": 19656,
+  "target_users_checked": 4643,
+  "metric_rows_independently_recomputed": 28,
+  "association_rules_checked_for_constraints": 120896,
+  "association_rules_independently_recomputed": 100,
+  "sampling_seed": 42,
+  "checks": [
+    "Exactly five distinct nonzero candidate IDs per user and method.",
+    "Targets reconstructed from held-out counts.",
+    "All per-user AP values independently recomputed.",
+    "All segment MAP values independently recomputed.",
+    "Identical cold-start fallback.",
+    "All popularity and personal-frequency rankings independently recomputed.",
+    "Sampled rule supports and weights recomputed from training user sets."
+  ],
+  "artifact_sha256": {
+    "validation_predictions.csv": "de0038993b459aae49abc8c58f90792b66df2748aa52b5e648847791af060c03",
+    "validation_targets.csv": "b454a4e9d14514873d95e361fea011794f024cb7f4194d2f8386498e1d3b13e0",
+    "validation_metrics.csv": "86416134d794ba2fad9124e6e301d52a9f2e0d97bd2e8e442c51f24d3e423d86",
+    "association_rules.csv": "0e31a74afaee6d129cecb7cd5a3921839cc90d7cba825e7a129aec19c9b918a9"
+  }
+}

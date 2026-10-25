@@ -1,0 +1,128 @@
+{
+  "generated_with": "Generated with an AI assistant",
+  "status": "passed",
+  "submitted_to_kaggle": false,
+  "files": {
+    "submission_frequency_bonus3.csv": {
+      "status": "passed",
+      "rows": 1260,
+      "original_user_order": true,
+      "five_distinct_nonzero_available_ids_per_row": true,
+      "sha256": "04e9c1047cd0d5bb95485c2df914330a01f2eeb8f70c8118463c0fbce60c29db"
+    },
+    "submission_ppr.csv": {
+      "status": "passed",
+      "rows": 1260,
+      "original_user_order": true,
+      "five_distinct_nonzero_available_ids_per_row": true,
+      "sha256": "27272ed27edf601cf2ab40022811728910284baac7130ff408c1b40cf08dfaaf"
+    },
+    "submission_frequency_bonus6.csv": {
+      "status": "passed",
+      "rows": 1260,
+      "original_user_order": true,
+      "five_distinct_nonzero_available_ids_per_row": true,
+      "sha256": "c517490f524c04604656be0bbd8bf0c1c445b142c2144d5f4dd1ccfc5e073c35"
+    }
+  },
+  "parameters": {
+    "training_weeks": "11\u201330",
+    "training_begin": "2020-03-09 00:00:00 Europe/Kyiv",
+    "training_end_exclusive": "2020-07-27 00:00:00 Europe/Kyiv",
+    "join": "Same channel; positive half-open interval overlap; interval union per user-airing.",
+    "watched": "Merged overlap >=80% of the full airing; boundary-crossing airings excluded.",
+    "candidates": "Nonzero IDs with positive-duration airings in the weeks 31\u201342 schedule.",
+    "popularity": "Distinct training viewers per item, including all training users, not just template users.",
+    "frequency_score": "personal qualified-airing count + bonus * popularity / maximum candidate popularity",
+    "bonuses": [
+      3,
+      6
+    ],
+    "repeat_recommendations": true,
+    "ppr": {
+      "damping": 0.5,
+      "personalization": "Normalized log1p personal counts",
+      "graph": "Refit the same binary-viewer cosine graph on weeks 11\u201330; support>=3, top 50 outgoing neighbors, no self edges.",
+      "dangling": "Return mass to personal seed distribution",
+      "tolerance_l1": 1e-08,
+      "max_iterations": 100
+    },
+    "ties": "Descending training popularity, then ascending item ID.",
+    "fallback": "Append popularity-ranked available IDs without duplicates; cold users get popularity top five."
+  },
+  "candidate_ids": 6636,
+  "training_users_with_qualified_history": 4841,
+  "template_users_without_qualified_history": 4,
+  "graph_edges": 150841,
+  "ppr_convergence": [
+    {
+      "iterations": 20,
+      "last_step_l1": 7.0473478352082945e-09,
+      "max_stationary_residual_l1": 2.90771083350388e-09,
+      "converged": true
+    },
+    {
+      "iterations": 20,
+      "last_step_l1": 8.469147257581674e-09,
+      "max_stationary_residual_l1": 3.509374312964764e-09,
+      "converged": true
+    },
+    {
+      "iterations": 20,
+      "last_step_l1": 7.478232802815704e-09,
+      "max_stationary_residual_l1": 3.094932916753179e-09,
+      "converged": true
+    },
+    {
+      "iterations": 20,
+      "last_step_l1": 4.379757688310308e-09,
+      "max_stationary_residual_l1": 1.8022294713664645e-09,
+      "converged": true
+    },
+    {
+      "iterations": 20,
+      "last_step_l1": 6.0870577636225095e-09,
+      "max_stationary_residual_l1": 2.502361870094667e-09,
+      "converged": true
+    },
+    {
+      "iterations": 20,
+      "last_step_l1": 8.942780443252153e-09,
+      "max_stationary_residual_l1": 3.7038105859678277e-09,
+      "converged": true
+    },
+    {
+      "iterations": 20,
+      "last_step_l1": 6.561855719055018e-09,
+      "max_stationary_residual_l1": 2.723591340088534e-09,
+      "converged": true
+    },
+    {
+      "iterations": 21,
+      "last_step_l1": 4.522684602798199e-09,
+      "max_stationary_residual_l1": 1.8748327080378487e-09,
+      "converged": true
+    },
+    {
+      "iterations": 21,
+      "last_step_l1": 4.1940208300799666e-09,
+      "max_stationary_residual_l1": 1.741811341365879e-09,
+      "converged": true
+    },
+    {
+      "iterations": 20,
+      "last_step_l1": 7.797421949916023e-09,
+      "max_stationary_residual_l1": 3.197680388929298e-09,
+      "converged": true
+    }
+  ],
+  "input_sha256": {
+    "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+    "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+    "export_arh_21-30-final.csv": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4",
+    "export_arh_31-42-final.csv": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088",
+    "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+  },
+  "training_interactions_sha256": "e51fb3c504ce701346792804abce6b25dd58c6ea800e23a8dcb0f21877d8ce54",
+  "runtime_seconds": 43.874581875046715
+}

@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "prediction_rows_checked": 14742,
+  "metric_rows_independently_recomputed": 21,
+  "original_reference_hash_unchanged": true,
+  "als_rankings_rebuilt_from_saved_factors": 4914,
+  "als_dense_objective": 501674.2262024579,
+  "als_item_normal_equations_checked": 105,
+  "als_max_relative_normal_equation_residual": 8.492484773821208e-16,
+  "ppr_graph_rows_independently_rebuilt": 62,
+  "ppr_users_checked_by_linear_solve": 32,
+  "ppr_exact_top5_rank_matches": 32,
+  "ppr_max_saved_score_vs_linear_solution_difference": 1.6421674783884121e-10,
+  "artifact_sha256": {
+    "collaborative_predictions.csv": "aee6dbb7ad760c165c0bb8d97d46625350f76897a288a7d69387e94f08cbbb83",
+    "collaborative_metrics.csv": "4c2a0d476731700b19b753752d3cbb4cdf4cf4fbb73a9e9215ccd9dfc5c0e96b",
+    "collaborative_results.json": "550ee01db91649a370b49470fe98b6bc3052bbe7d366db9709921ef1b2afd7cf"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "top_four_primary_ids": [
+    "frequency_bonus_3",
+    "frequency_bonus_6",
+    "ppr_d05_log",
+    "ppr_d05_raw"
+  ],
+  "confirmation_ids": [
+    "frequency_bonus_3",
+    "frequency_bonus_6",
+    "ppr_d05_log",
+    "ppr_d05_raw"
+  ],
+  "primary_ranking_sha256": "906d577f21aa9a402b9a3bf011de6ed44c2a95dd0646514a24f46e5007d136f5",
+  "plan_sha256": "c3209876e51fa00d76cfeb6ebc44cb3c1253f71f9d6f8d1ae3cafb60f30c4a76",
+  "frozen_at_epoch": 1792926204.133547,
+  "selection_used_secondary_scores": false
+}

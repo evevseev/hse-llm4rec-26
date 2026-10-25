@@ -1,0 +1,62 @@
+{
+  "baseline_predictions_verified": {
+    "popularity": 4914,
+    "personal_frequency": 4914
+  },
+  "maximum_per_user_ap_difference": 0.0,
+  "metrics": [
+    {
+      "segment": "all_target_users",
+      "method": "association_rules",
+      "users": 4643,
+      "map_at_5": 0.2421053198363122
+    },
+    {
+      "segment": "all_target_users",
+      "method": "cbf",
+      "users": 4643,
+      "map_at_5": 0.16175257855314068
+    },
+    {
+      "segment": "all_target_users",
+      "method": "personal_frequency",
+      "users": 4643,
+      "map_at_5": 0.33399077464282884
+    },
+    {
+      "segment": "all_target_users",
+      "method": "popularity",
+      "users": 4643,
+      "map_at_5": 0.246637351329361
+    },
+    {
+      "segment": "five_target_users",
+      "method": "association_rules",
+      "users": 4030,
+      "map_at_5": 0.255703887510339
+    },
+    {
+      "segment": "five_target_users",
+      "method": "cbf",
+      "users": 4030,
+      "map_at_5": 0.16456244830438524
+    },
+    {
+      "segment": "five_target_users",
+      "method": "personal_frequency",
+      "users": 4030,
+      "map_at_5": 0.3523879239040502
+    },
+    {
+      "segment": "five_target_users",
+      "method": "popularity",
+      "users": 4030,
+      "map_at_5": 0.2573713813068655
+    }
+  ],
+  "smoothing": {
+    "rankings_verified": 4914,
+    "evaluated_users": 4643,
+    "map_at_5": 0.3441310096441477
+  }
+}

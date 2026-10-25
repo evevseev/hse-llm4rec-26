@@ -1,0 +1,19 @@
+{
+  "config": {
+    "id": "cbf_raw",
+    "family": "cbf",
+    "history": "raw"
+  },
+  "pid": 88611,
+  "start_epoch": 1792926197.723001,
+  "end_epoch": 1792926199.659033,
+  "fit_seconds": 0.06660416605882347,
+  "predict_and_export_seconds": 1.86941112508066,
+  "runtime_seconds": 1.936029333039187,
+  "diagnostics": {
+    "content_features": 11880
+  },
+  "peak_rss_native_units": 278233088,
+  "peak_rss_units": "bytes on macOS; KiB on Linux",
+  "blas_threads": 1
+}

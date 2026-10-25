@@ -1,0 +1,17 @@
+{
+  "config": {
+    "id": "frequency_bonus_0",
+    "family": "frequency",
+    "bonus": 0
+  },
+  "pid": 88602,
+  "start_epoch": 1792926188.153978,
+  "end_epoch": 1792926188.242591,
+  "fit_seconds": 0.013454709085635841,
+  "predict_and_export_seconds": 0.07514287496451288,
+  "runtime_seconds": 0.08861158404033631,
+  "diagnostics": {},
+  "peak_rss_native_units": 165838848,
+  "peak_rss_units": "bytes on macOS; KiB on Linux",
+  "blas_threads": 1
+}

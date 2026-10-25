@@ -1,0 +1,36 @@
+{
+  "baseline_slots_by_personal_count": {
+    "3\u20135": {
+      "slots": 5778,
+      "target_hits": 1893,
+      "target_hit_fraction": 0.3276220145379024
+    },
+    "1\u20132": {
+      "slots": 7470,
+      "target_hits": 1288,
+      "target_hit_fraction": 0.17242302543507362
+    },
+    "6\u201310": {
+      "slots": 3969,
+      "target_hits": 1948,
+      "target_hit_fraction": 0.490803728898967
+    },
+    ">10": {
+      "slots": 4712,
+      "target_hits": 3444,
+      "target_hit_fraction": 0.730899830220713
+    },
+    "0 (fallback)": {
+      "slots": 1286,
+      "target_hits": 211,
+      "target_hit_fraction": 0.1640746500777605
+    }
+  },
+  "smoothed_added_targets": {
+    "previously_observed": 295,
+    "no_qualified_training_view": 314
+  },
+  "smoothed_removed_targets": {
+    "previously_observed": 363
+  }
+}

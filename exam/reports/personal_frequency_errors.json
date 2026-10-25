@@ -1,0 +1,66 @@
+{
+  "evaluated_users": 4643,
+  "hits_per_user_distribution": {
+    "0": 726,
+    "1": 1098,
+    "2": 1270,
+    "3": 1096,
+    "4": 407,
+    "5": 46
+  },
+  "missed_target_categories": {
+    "no_qualified_training_view": 9688,
+    "known_item_below_top5": 3216
+  },
+  "false_positive_categories": {
+    "no_qualified_validation_watch": 11247,
+    "watched_but_outside_validation_top5": 3184
+  },
+  "recommendation_recency": {
+    "last_seen_over_28_days_ago": {
+      "recommended_slots": 6708,
+      "top5_hits": 1370,
+      "any_validation_watch": 1983,
+      "top5_hit_fraction": 0.20423375074537864,
+      "any_validation_watch_fraction": 0.2956171735241503
+    },
+    "last_seen_within_28_days": {
+      "recommended_slots": 15221,
+      "top5_hits": 7203,
+      "any_validation_watch": 9732,
+      "top5_hit_fraction": 0.473227777412785,
+      "any_validation_watch_fraction": 0.6393798042178569
+    },
+    "popularity_fallback": {
+      "recommended_slots": 1286,
+      "top5_hits": 211,
+      "any_validation_watch": 253,
+      "top5_hit_fraction": 0.1640746500777605,
+      "any_validation_watch_fraction": 0.19673405909797823
+    }
+  },
+  "users_with_stale_recommendations": 3139,
+  "map_for_users_with_stale_recommendations": 0.2952545927577785,
+  "hypothesis": "Old favourites may displace recently watched items; association is diagnostic, not causal evidence.",
+  "one_proposed_improvement": {
+    "name": "recency_weighted_personal_frequency",
+    "half_life_days": 28,
+    "score": "sum(2 ** (-(cutoff_epoch - airing_end_epoch) / (28 * 86400))) over qualified training airings",
+    "reason": "Four-week half-life retains weekly habits while reducing older evidence.",
+    "selection": "One manually fixed setting after baseline error analysis; no half-life grid search.",
+    "unchanged": [
+      "Split",
+      "Targets",
+      "Candidate IDs",
+      "Repeat policy",
+      "Training-popularity fallback",
+      "Tie breakers"
+    ]
+  },
+  "input_sha256": {
+    "train_interactions.csv": "ee4025bf0a5e3b35af98a54db6a0c0a107e470def851705645fb506a2b3ecab0",
+    "validation_interactions.csv": "2049155ef4c22ff581a161fb60ff02d1ab961c38ad79397b09baaac0475e389f",
+    "validation_candidates.json": "b6237325348cb1d3f09233cf00fd90b3863934d93a5637b3318e70bf23eb8c1f",
+    "training_airings.csv": "28dfee390ba3239df5cf0b3ba5df1f1006098c2ab44531016f6dfa3a57139d01"
+  }
+}

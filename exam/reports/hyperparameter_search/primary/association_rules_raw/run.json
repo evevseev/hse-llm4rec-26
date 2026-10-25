@@ -1,0 +1,19 @@
+{
+  "config": {
+    "id": "association_rules_raw",
+    "family": "association_rules",
+    "history": "raw"
+  },
+  "pid": 88611,
+  "start_epoch": 1792926199.6595042,
+  "end_epoch": 1792926201.136585,
+  "fit_seconds": 1.3378978749969974,
+  "predict_and_export_seconds": 0.13916591694578528,
+  "runtime_seconds": 1.4770788330351934,
+  "diagnostics": {
+    "rules": 120896
+  },
+  "peak_rss_native_units": 278233088,
+  "peak_rss_units": "bytes on macOS; KiB on Linux",
+  "blas_threads": 1
+}

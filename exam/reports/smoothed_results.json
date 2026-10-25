@@ -1,0 +1,194 @@
+{
+  "change": "Add up to three pseudo-views proportional to training item popularity to raw personal frequency.",
+  "parameters": {
+    "popularity_bonus_maximum": 3,
+    "score": "personal_airing_count + 3 * item_training_viewers / maximum_candidate_training_viewers",
+    "parameter_selection": "Fixed maximum three-view bonus after the unsuccessful recency experiment; no coefficient grid search."
+  },
+  "split_and_label_policy": "Identical to the original validation experiment.",
+  "known_holdout_warning": "Error analysis and improvement choice use the known hold-out. This is model-selection evidence, not an untouched final estimate.",
+  "metrics": [
+    {
+      "segment": "all_target_users",
+      "method": "personal_frequency",
+      "users": 4643,
+      "map_at_5": 0.3339907746428315,
+      "precision_at_5": 0.3783760499676933,
+      "recall_at_5": 0.39797544690932585,
+      "hit_rate_at_5": 0.8436355804436787
+    },
+    {
+      "segment": "all_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 4643,
+      "map_at_5": 0.3441310096441477,
+      "precision_at_5": 0.38897264699547707,
+      "recall_at_5": 0.40912125780745207,
+      "hit_rate_at_5": 0.8593581735946586
+    },
+    {
+      "segment": "five_target_users",
+      "method": "personal_frequency",
+      "users": 4030,
+      "map_at_5": 0.352387923904053,
+      "precision_at_5": 0.414590570719603,
+      "recall_at_5": 0.414590570719603,
+      "hit_rate_at_5": 0.8923076923076924
+    },
+    {
+      "segment": "five_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 4030,
+      "map_at_5": 0.36298014888337465,
+      "precision_at_5": 0.42550868486352356,
+      "recall_at_5": 0.42550868486352356,
+      "hit_rate_at_5": 0.9057071960297767
+    },
+    {
+      "segment": "template_target_users",
+      "method": "personal_frequency",
+      "users": 1238,
+      "map_at_5": 0.37402441213426674,
+      "precision_at_5": 0.42988691437802906,
+      "recall_at_5": 0.4377221324717286,
+      "hit_rate_at_5": 0.8949919224555735
+    },
+    {
+      "segment": "template_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 1238,
+      "map_at_5": 0.3848409172500449,
+      "precision_at_5": 0.43893376413570273,
+      "recall_at_5": 0.44719978459881526,
+      "hit_rate_at_5": 0.9030694668820679
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "personal_frequency",
+      "users": 4539,
+      "map_at_5": 0.33783303958287436,
+      "precision_at_5": 0.3830799735624587,
+      "recall_at_5": 0.4016082837629434,
+      "hit_rate_at_5": 0.850187265917603
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 4539,
+      "map_at_5": 0.3482056130816871,
+      "precision_at_5": 0.3939193654990086,
+      "recall_at_5": 0.41300947345230227,
+      "hit_rate_at_5": 0.8662701035470368
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "personal_frequency",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.23942307692307693,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.23942307692307693,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "personal_frequency",
+      "users": 538,
+      "map_at_5": 0.14109923585295334,
+      "precision_at_5": 0.15092936802973977,
+      "recall_at_5": 0.2006195786864932,
+      "hit_rate_at_5": 0.5446096654275093
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 538,
+      "map_at_5": 0.16301115241635689,
+      "precision_at_5": 0.17174721189591077,
+      "recall_at_5": 0.22292441140024785,
+      "hit_rate_at_5": 0.5780669144981413
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "personal_frequency",
+      "users": 995,
+      "map_at_5": 0.4937470686767169,
+      "precision_at_5": 0.5509547738693468,
+      "recall_at_5": 0.55214405360134,
+      "hit_rate_at_5": 0.9668341708542714
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "smoothed_personal_frequency",
+      "users": 995,
+      "map_at_5": 0.4978015075376884,
+      "precision_at_5": 0.5551758793969849,
+      "recall_at_5": 0.5563651591289782,
+      "hit_rate_at_5": 0.9688442211055276
+    },
+    {
+      "segment": "baseline_has_stale_recommendation",
+      "method": "personal_frequency",
+      "users": 3139,
+      "map_at_5": 0.2952545927577785,
+      "precision_at_5": 0.3367314431347563,
+      "recall_at_5": 0.35941382605925454,
+      "hit_rate_at_5": 0.8200063714558776
+    },
+    {
+      "segment": "baseline_has_stale_recommendation",
+      "method": "smoothed_personal_frequency",
+      "users": 3139,
+      "map_at_5": 0.30782078510495203,
+      "precision_at_5": 0.3497929276839758,
+      "recall_at_5": 0.37323988531379415,
+      "hit_rate_at_5": 0.8375278751194648
+    }
+  ],
+  "primary_comparison": {
+    "mean_delta": 0.0101402350013162,
+    "paired_bootstrap_95_percent_interval": [
+      0.00800533808361452,
+      0.012161511056070067
+    ],
+    "replicates": 2000,
+    "seed": 42,
+    "baseline_map_at_5": 0.3339907746428315,
+    "smoothed_map_at_5": 0.3441310096441477,
+    "relative_map_change": 0.030360823625024125
+  },
+  "user_outcomes": {
+    "unchanged": 3092,
+    "worsened": 559,
+    "improved": 992
+  },
+  "target_items_added_to_lists": 609,
+  "target_items_removed_from_lists": 363,
+  "stale_recommended_slots_before": 6708,
+  "stale_recommended_slots_after": 5487,
+  "unchanged_membership_users": 2310,
+  "unchanged_ordered_lists_users": 1567,
+  "fixed_inputs_sha256": {
+    "validation_targets.csv": "b454a4e9d14514873d95e361fea011794f024cb7f4194d2f8386498e1d3b13e0",
+    "validation_predictions.csv": "de0038993b459aae49abc8c58f90792b66df2748aa52b5e648847791af060c03",
+    "validation_metrics.csv": "86416134d794ba2fad9124e6e301d52a9f2e0d97bd2e8e442c51f24d3e423d86"
+  },
+  "training_events_sha256": "28dfee390ba3239df5cf0b3ba5df1f1006098c2ab44531016f6dfa3a57139d01",
+  "fit_seconds": 0.4920341660035774,
+  "predict_seconds": 9.910194166004658,
+  "runtime_seconds": 10.754476249916479,
+  "peak_rss_native_units": 208863232,
+  "peak_rss_units": "bytes on macOS; KiB on Linux",
+  "environment": {
+    "python": "3.12.11 (main, Sep  2 2025, 14:12:30) [Clang 20.1.4 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  }
+}

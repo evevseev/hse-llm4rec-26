@@ -1,0 +1,163 @@
+{
+  "timezone": "Europe/Kyiv",
+  "begin": "2020-03-09 00:00:00",
+  "cutoff": "2020-05-18 00:00:00",
+  "end": "2020-05-18 00:00:00",
+  "watch_fraction_threshold": 0.8,
+  "boundary_rule": "Exclude airings not fully contained in one window.",
+  "aggregation": "Union viewing fragments per user and airing, then count qualified airings per user-item.",
+  "candidate_rule": "Nonzero IDs with a positive-duration airing overlapping the validation window.",
+  "training_metadata_rule": "Only airings starting before the cutoff; no validation metadata used for features.",
+  "source_sha256": {
+    "export_arh_11-20-final.csv": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c",
+    "dataset11-30.csv": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b",
+    "submission.csv": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+  },
+  "statistics": {
+    "schedule_rows": 1074235,
+    "zero_id_schedule_rows_excluded": 958622,
+    "train_eligible_airings": 115243,
+    "boundary_crossing_labelled_airings_excluded": 370,
+    "schedule_preparation_seconds": 2.123,
+    "log_rows": 5821987,
+    "reported_duration_mismatches_after_timezone": 0,
+    "overlap_pairs": 2380930,
+    "log_rows_outside_fold_excluded": 1876814,
+    "log_join_seconds": 17.419,
+    "train_user_airings_with_overlap": 1821968,
+    "train_qualified_user_airings": 316311,
+    "train_qualified_only_after_fragment_merging": 34018,
+    "train_user_item_pairs": 114752,
+    "train_users_with_history": 4737,
+    "validation_user_item_pairs": 0,
+    "validation_users_with_history": 0,
+    "fragment_merge_seconds": 4.884
+  },
+  "fragment_merge_examples": [
+    {
+      "user_id": "3398461054087191302",
+      "tv_show_id": 2400480,
+      "period": "train",
+      "airing_start_epoch": 1586277000,
+      "airing_end_epoch": 1586281500,
+      "duration_seconds": 4500,
+      "union_seconds": 3976,
+      "fragments_epoch": [
+        [
+          1586277000,
+          1586277629
+        ],
+        [
+          1586277636,
+          1586280983
+        ]
+      ]
+    },
+    {
+      "user_id": "17226860011138219284",
+      "tv_show_id": 90082508,
+      "period": "train",
+      "airing_start_epoch": 1583777700,
+      "airing_end_epoch": 1583791800,
+      "duration_seconds": 14100,
+      "union_seconds": 11686,
+      "fragments_epoch": [
+        [
+          1583778447,
+          1583779447
+        ],
+        [
+          1583779552,
+          1583782898
+        ],
+        [
+          1583783423,
+          1583786713
+        ],
+        [
+          1583787089,
+          1583789013
+        ],
+        [
+          1583789371,
+          1583790616
+        ],
+        [
+          1583790919,
+          1583791800
+        ]
+      ]
+    },
+    {
+      "user_id": "17226860011138219284",
+      "tv_show_id": 200352,
+      "period": "train",
+      "airing_start_epoch": 1586025000,
+      "airing_end_epoch": 1586031600,
+      "duration_seconds": 6600,
+      "union_seconds": 6367,
+      "fragments_epoch": [
+        [
+          1586025000,
+          1586027219
+        ],
+        [
+          1586027219,
+          1586027359
+        ],
+        [
+          1586027374,
+          1586031382
+        ]
+      ]
+    },
+    {
+      "user_id": "17226860011138219284",
+      "tv_show_id": 1100411,
+      "period": "train",
+      "airing_start_epoch": 1583866500,
+      "airing_end_epoch": 1583870400,
+      "duration_seconds": 3900,
+      "union_seconds": 3885,
+      "fragments_epoch": [
+        [
+          1583866500,
+          1583868084
+        ],
+        [
+          1583868099,
+          1583870400
+        ]
+      ]
+    },
+    {
+      "user_id": "17226860011138219284",
+      "tv_show_id": 5200303,
+      "period": "train",
+      "airing_start_epoch": 1584734400,
+      "airing_end_epoch": 1584740700,
+      "duration_seconds": 6300,
+      "union_seconds": 5196,
+      "fragments_epoch": [
+        [
+          1584735006,
+          1584735850
+        ],
+        [
+          1584736273,
+          1584736446
+        ],
+        [
+          1584736521,
+          1584740700
+        ]
+      ]
+    }
+  ],
+  "validation_candidates": 0,
+  "python": "3.12.11 (main, Sep  2 2025, 14:12:30) [Clang 20.1.4 ]",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "runtime_seconds": 24.739,
+  "peak_rss_native_units": 152420352,
+  "peak_rss_units": "bytes on macOS; KiB on Linux"
+}

@@ -1,0 +1,13 @@
+{
+  "predictions_frozen_at_epoch": 1792941213.259061,
+  "model_sha256": "e84962f61d8eb9950d668addb8607d259143c4988a5b966a7a1fb539611f5863",
+  "prediction_sha256": "b4e0f12782ea442c7407d1c0875c07c411c6c57980b225aaaca937591e36585f",
+  "evaluation_features_sha256": "de01025814a4376c8cec612848337fe6bdfffcc4871e946770d7ffbb1c07c8da",
+  "history_cutoff_epoch": 1589749200,
+  "maximum_history_event_end": 1589749200,
+  "held_out_viewing_counts_loaded": false,
+  "injected_outer_positives": 0,
+  "candidates_per_user": 100,
+  "evaluation_script_attempts": 2,
+  "same_predictions_as_previous_attempt": true
+}

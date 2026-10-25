@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "qualified_history_airings_reconciled": 316311,
+  "all_supervised_labels_end_before_outer_validation": true,
+  "training_windows": [
+    {
+      "window": "weeks_15_16",
+      "queries_checked": 4081,
+      "maximum_history_end": 1586120400,
+      "label_end": 1587330000
+    },
+    {
+      "window": "weeks_17_18",
+      "queries_checked": 4132,
+      "maximum_history_end": 1587330000,
+      "label_end": 1588539600
+    },
+    {
+      "window": "weeks_19_20",
+      "queries_checked": 4170,
+      "maximum_history_end": 1588539300,
+      "label_end": 1589749200
+    }
+  ],
+  "training_feature_rows_regenerated": 1246446,
+  "training_positive_labels_rebuilt": 49779,
+  "outer_feature_rows_regenerated_without_labels": 491400,
+  "outer_candidates_per_user": 100,
+  "outer_positive_injection": 0,
+  "model_margin_rows_replayed": 491400,
+  "all_ranker_top5_lists_rebuilt": 4914,
+  "reference_top5_in_candidates_for_every_user": true,
+  "direct_count_feature_sample_users": 32,
+  "cohort_metric_rows_recomputed": 21,
+  "frozen_original_inputs_and_reference_hashes_match": true,
+  "artifact_retry_preserved_model_and_predictions": true,
+  "artifact_sha256": {
+    "ltr_predictions.csv": "b4e0f12782ea442c7407d1c0875c07c411c6c57980b225aaaca937591e36585f",
+    "ltr_metrics.csv": "58a38e51f169774f41dda434918c7b4cca837aa72b18072cf111c75acbaa17c0",
+    "ltr_results.json": "925abd6094debf47d3f9387309f481a7d3c04cb2d3b13c110c068516ccd0496e",
+    "ltr_training_results.json": "e417741ca258612e70effada84bda985f8070d89d045a707fed59a223c9c7b11"
+  }
+}

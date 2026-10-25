@@ -1,0 +1,488 @@
+{
+  "environment": {
+    "python": "3.12.11 (main, Sep  2 2025, 14:12:30) [Clang 20.1.4 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  },
+  "scope": "Full-file audit; join statistics are per log-row/airing pair, not aggregated user-airing labels.",
+  "files": {
+    "dataset11-30.csv": {
+      "bytes": 396216555,
+      "sha256": "8c9e5f058157041e5c33f13e64dc1625a5177cc6d5e434ba18cd8a69afafb53b"
+    },
+    "export_arh_11-20-final.csv": {
+      "bytes": 153322643,
+      "sha256": "7888aa00c20db3db23f95000c721eccf2878e5f58bf5383bb25b99f078b1033c"
+    },
+    "export_arh_21-30-final.csv": {
+      "bytes": 154366907,
+      "sha256": "bdc9fa9850239aaed608bece9cdb200011e690300470fe85b980457d8c0cb2d4"
+    },
+    "export_arh_31-42-final.csv": {
+      "bytes": 185952991,
+      "sha256": "5cc01f4619bd94886d83744f00bbc15cc5fa23384d297244a7dc2207450c4088"
+    },
+    "submission.csv": {
+      "bytes": 38348,
+      "sha256": "d8c209dce3c7c9d815d8e2a6226e1be63052ee7afa7e8ba8b75dc2f703967a02"
+    }
+  },
+  "schedule": {
+    "export_arh_11-20-final.csv": {
+      "rows": 1074235,
+      "zero_rows": 958622,
+      "nonpositive_duration": 1,
+      "labelled_rows": 115613,
+      "columns": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "channels": 400,
+      "distinct_nonzero_ids": 5847,
+      "categories": [
+        "Детям",
+        "Другое",
+        "Инфо",
+        "Музыка",
+        "Познавательное",
+        "Развлечения",
+        "Сериалы",
+        "Спорт",
+        "Фильмы"
+      ],
+      "min_start": "2020-03-08 23:00:00",
+      "max_end": "2020-05-18 12:00:00",
+      "duplicate_labelled_airing_keys": 0,
+      "missing_fields_labelled": {
+        "tv_show_category": 0,
+        "tv_show_genre_1": 5375,
+        "tv_show_genre_2": 47084,
+        "tv_show_genre_3": 95437,
+        "year_of_production": 878,
+        "director": 15428,
+        "actors": 15239
+      },
+      "nonpositive_duration_examples": [
+        {
+          "line": 486477,
+          "channel_id": "644",
+          "channel_title": "Da Vinci Learning Europe",
+          "start_time": "29.03.2020 04:00:00",
+          "duration": "0",
+          "tv_show_title": "Заражено! Жизнь с паразитами.",
+          "tv_show_id": "0",
+          "tv_show_category": "Познавательное",
+          "tv_show_genre_1": "познание",
+          "tv_show_genre_2": "",
+          "tv_show_genre_3": "",
+          "year_of_production": "",
+          "director": "",
+          "actors": ""
+        }
+      ]
+    },
+    "export_arh_21-30-final.csv": {
+      "rows": 1074394,
+      "labelled_rows": 121505,
+      "nonpositive_duration": 0,
+      "zero_rows": 952889,
+      "columns": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "channels": 403,
+      "distinct_nonzero_ids": 6363,
+      "categories": [
+        "Детям",
+        "Другое",
+        "Инфо",
+        "Музыка",
+        "Познавательное",
+        "Развлечения",
+        "Сериалы",
+        "Спорт",
+        "Фильмы"
+      ],
+      "min_start": "2020-05-18 00:00:00",
+      "max_end": "2020-07-27 12:00:00",
+      "duplicate_labelled_airing_keys": 0,
+      "missing_fields_labelled": {
+        "tv_show_category": 0,
+        "tv_show_genre_1": 5412,
+        "tv_show_genre_2": 48677,
+        "tv_show_genre_3": 97779,
+        "year_of_production": 1493,
+        "director": 16598,
+        "actors": 15945
+      },
+      "nonpositive_duration_examples": []
+    },
+    "export_arh_31-42-final.csv": {
+      "rows": 1295378,
+      "labelled_rows": 144774,
+      "nonpositive_duration": 0,
+      "zero_rows": 1150604,
+      "columns": [
+        "channel_id",
+        "channel_title",
+        "start_time",
+        "duration",
+        "tv_show_title",
+        "tv_show_id",
+        "tv_show_category",
+        "tv_show_genre_1",
+        "tv_show_genre_2",
+        "tv_show_genre_3",
+        "year_of_production",
+        "director",
+        "actors"
+      ],
+      "channels": 404,
+      "distinct_nonzero_ids": 6636,
+      "categories": [
+        "Детям",
+        "Другое",
+        "Инфо",
+        "Музыка",
+        "Познавательное",
+        "Развлечения",
+        "Сериалы",
+        "Спорт",
+        "Фильмы"
+      ],
+      "min_start": "2020-07-27 00:00:00",
+      "max_end": "2020-10-19 12:00:00",
+      "duplicate_labelled_airing_keys": 0,
+      "missing_fields_labelled": {
+        "tv_show_category": 0,
+        "tv_show_genre_1": 5695,
+        "tv_show_genre_2": 56910,
+        "tv_show_genre_3": 116017,
+        "year_of_production": 1102,
+        "director": 19585,
+        "actors": 18915
+      },
+      "nonpositive_duration_examples": []
+    }
+  },
+  "training_schedule_index": {
+    "labelled_airings": 237118,
+    "airings_starting_before_prior_airings_end": 0
+  },
+  "candidate_coverage": {
+    "training_ids": 8234,
+    "future_ids": 6636,
+    "future_ids_absent_from_training_schedule": 1437
+  },
+  "template": {
+    "columns": [
+      "user_id",
+      "tv_show_id"
+    ],
+    "rows": 1260,
+    "unique_users": 1260,
+    "all_five_zeros": true
+  },
+  "log_columns": [
+    "user_id",
+    "vsetv_id",
+    "start_time",
+    "stop_time",
+    "duraton"
+  ],
+  "log": {
+    "rows": 5821987,
+    "duration_mismatch": 117,
+    "nonpositive_interval": 0,
+    "labelled_overlap_pairs": 3847696,
+    "qualified_pairs_80_percent": 570588,
+    "log_rows_touching_labelled_airing": 2964346,
+    "log_rows_with_qualified_pair": 337779,
+    "users": 4914,
+    "channels": 202,
+    "min_start": "2020-03-09 00:00:02",
+    "max_end": "2020-07-26 23:59:58",
+    "rows_by_iso_week": {
+      "11": 407493,
+      "12": 452314,
+      "13": 465318,
+      "14": 428820,
+      "15": 412698,
+      "16": 406317,
+      "17": 417854,
+      "18": 385637,
+      "19": 336042,
+      "20": 232680,
+      "21": 182044,
+      "22": 192998,
+      "23": 162882,
+      "24": 156928,
+      "25": 138807,
+      "26": 126940,
+      "27": 105223,
+      "28": 271172,
+      "29": 261698,
+      "30": 278122
+    },
+    "duration_seconds": {
+      "0": 61,
+      "0.25": 133,
+      "0.5": 396,
+      "0.75": 1452,
+      "0.9": 3911,
+      "0.99": 14079,
+      "1": 342145
+    },
+    "users_touching_labelled_airing": 4895,
+    "users_with_qualified_pair": 4834,
+    "template_users_absent_from_log": 0,
+    "template_users_without_labelled_overlap": 2,
+    "template_users_without_qualified_pair": 5
+  },
+  "examples": {
+    "unlabelled_airtime": [
+      {
+        "user_id": "15166841293414410417",
+        "log_file": "dataset11-30.csv",
+        "log_line": 105,
+        "channel_id": 945,
+        "channel_title": "Трофей",
+        "view_start": "2020-03-09 00:02:58",
+        "view_end": "2020-03-09 00:06:41",
+        "view_seconds": 223,
+        "schedule_file": "export_arh_11-20-final.csv",
+        "schedule_line": 754442,
+        "tv_show_id": 0,
+        "title": "Календарь рыболова.",
+        "category": "Познавательное",
+        "airing_start": "2020-03-09 00:02:00",
+        "airing_end": "2020-03-09 00:09:00",
+        "airing_seconds": 420,
+        "overlap_seconds": 223,
+        "fraction": 0.530952380952381,
+        "qualifies_80_percent": false
+      }
+    ],
+    "below_threshold": [
+      {
+        "user_id": "7981779138282146703",
+        "log_file": "dataset11-30.csv",
+        "log_line": 1517,
+        "channel_id": 1495,
+        "channel_title": "NickToons",
+        "view_start": "2020-03-09 00:40:50",
+        "view_end": "2020-03-09 02:28:55",
+        "view_seconds": 6485,
+        "schedule_file": "export_arh_11-20-final.csv",
+        "schedule_line": 1062944,
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "airing_start": "2020-03-09 02:24:00",
+        "airing_end": "2020-03-09 02:47:00",
+        "airing_seconds": 1380,
+        "overlap_seconds": 295,
+        "fraction": 0.213768115942029,
+        "qualifies_80_percent": false
+      }
+    ],
+    "qualified": [
+      {
+        "user_id": "7981779138282146703",
+        "log_file": "dataset11-30.csv",
+        "log_line": 1517,
+        "channel_id": 1495,
+        "channel_title": "NickToons",
+        "view_start": "2020-03-09 00:40:50",
+        "view_end": "2020-03-09 02:28:55",
+        "view_seconds": 6485,
+        "schedule_file": "export_arh_11-20-final.csv",
+        "schedule_line": 1062943,
+        "tv_show_id": 12002856,
+        "title": "М/с 'Элвиннн!!! и бурундуки'.",
+        "category": "Детям",
+        "airing_start": "2020-03-09 02:12:00",
+        "airing_end": "2020-03-09 02:24:00",
+        "airing_seconds": 720,
+        "overlap_seconds": 720,
+        "fraction": 1.0,
+        "qualifies_80_percent": true
+      }
+    ],
+    "multiple_airings": [
+      {
+        "user_id": "7981779138282146703",
+        "log_file": "dataset11-30.csv",
+        "log_line": 1517,
+        "channel_id": 1495,
+        "channel_title": "NickToons",
+        "view_start": "2020-03-09 00:40:50",
+        "view_end": "2020-03-09 02:28:55",
+        "view_seconds": 6485,
+        "schedule_file": "export_arh_11-20-final.csv",
+        "schedule_line": 1062940,
+        "tv_show_id": 12001732,
+        "title": "М/с 'Пингвины из 'Мадагаскара'.",
+        "category": "Детям",
+        "airing_start": "2020-03-09 01:16:00",
+        "airing_end": "2020-03-09 01:39:00",
+        "airing_seconds": 1380,
+        "overlap_seconds": 1380,
+        "fraction": 1.0,
+        "qualifies_80_percent": true
+      },
+      {
+        "user_id": "7981779138282146703",
+        "log_file": "dataset11-30.csv",
+        "log_line": 1517,
+        "channel_id": 1495,
+        "channel_title": "NickToons",
+        "view_start": "2020-03-09 00:40:50",
+        "view_end": "2020-03-09 02:28:55",
+        "view_seconds": 6485,
+        "schedule_file": "export_arh_11-20-final.csv",
+        "schedule_line": 1062942,
+        "tv_show_id": 12002856,
+        "title": "М/с 'Элвиннн!!! и бурундуки'.",
+        "category": "Детям",
+        "airing_start": "2020-03-09 02:01:00",
+        "airing_end": "2020-03-09 02:12:00",
+        "airing_seconds": 660,
+        "overlap_seconds": 660,
+        "fraction": 1.0,
+        "qualifies_80_percent": true
+      },
+      {
+        "user_id": "7981779138282146703",
+        "log_file": "dataset11-30.csv",
+        "log_line": 1517,
+        "channel_id": 1495,
+        "channel_title": "NickToons",
+        "view_start": "2020-03-09 00:40:50",
+        "view_end": "2020-03-09 02:28:55",
+        "view_seconds": 6485,
+        "schedule_file": "export_arh_11-20-final.csv",
+        "schedule_line": 1062943,
+        "tv_show_id": 12002856,
+        "title": "М/с 'Элвиннн!!! и бурундуки'.",
+        "category": "Детям",
+        "airing_start": "2020-03-09 02:12:00",
+        "airing_end": "2020-03-09 02:24:00",
+        "airing_seconds": 720,
+        "overlap_seconds": 720,
+        "fraction": 1.0,
+        "qualifies_80_percent": true
+      },
+      {
+        "user_id": "7981779138282146703",
+        "log_file": "dataset11-30.csv",
+        "log_line": 1517,
+        "channel_id": 1495,
+        "channel_title": "NickToons",
+        "view_start": "2020-03-09 00:40:50",
+        "view_end": "2020-03-09 02:28:55",
+        "view_seconds": 6485,
+        "schedule_file": "export_arh_11-20-final.csv",
+        "schedule_line": 1062944,
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "airing_start": "2020-03-09 02:24:00",
+        "airing_end": "2020-03-09 02:47:00",
+        "airing_seconds": 1380,
+        "overlap_seconds": 295,
+        "fraction": 0.213768115942029,
+        "qualifies_80_percent": false
+      }
+    ]
+  },
+  "duration_mismatch_examples": [
+    {
+      "line": 1250165,
+      "computed_seconds": 123303,
+      "user_id": "12466582247545246052",
+      "vsetv_id": "1521",
+      "start_time": "2020-03-28 22:47:45",
+      "stop_time": "2020-03-30 09:02:48",
+      "duraton": "119703"
+    },
+    {
+      "line": 1250741,
+      "computed_seconds": 18896,
+      "user_id": "10059425067810734795",
+      "vsetv_id": "7",
+      "start_time": "2020-03-28 22:56:59",
+      "stop_time": "2020-03-29 04:11:55",
+      "duraton": "15296"
+    },
+    {
+      "line": 1254658,
+      "computed_seconds": 13817,
+      "user_id": "12246241194532024321",
+      "vsetv_id": "921",
+      "start_time": "2020-03-29 00:15:15",
+      "stop_time": "2020-03-29 04:05:32",
+      "duraton": "10217"
+    },
+    {
+      "line": 1255008,
+      "computed_seconds": 13135,
+      "user_id": "6266399139997320035",
+      "vsetv_id": "1521",
+      "start_time": "2020-03-29 00:27:30",
+      "stop_time": "2020-03-29 04:06:25",
+      "duraton": "9535"
+    },
+    {
+      "line": 1255487,
+      "computed_seconds": 13774,
+      "user_id": "5842699175950256892",
+      "vsetv_id": "3",
+      "start_time": "2020-03-29 00:46:06",
+      "stop_time": "2020-03-29 04:35:40",
+      "duraton": "10174"
+    }
+  ],
+  "duration_mismatch_deltas_reported_minus_computed": {
+    "-3600": 117
+  },
+  "timezone_diagnostic": {
+    "mismatches_explained_by_Europe_Kyiv_DST": 117
+  },
+  "independent_join_checks": [
+    {
+      "log_line": 105,
+      "labelled_matches": 0,
+      "indexed_equals_linear_scan": true
+    },
+    {
+      "log_line": 1517,
+      "labelled_matches": 4,
+      "indexed_equals_linear_scan": true
+    }
+  ],
+  "runtime_seconds": 27.071,
+  "peak_rss_native_units": 198574080,
+  "peak_rss_units": "bytes on macOS; KiB on Linux"
+}

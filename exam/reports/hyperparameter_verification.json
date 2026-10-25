@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "unique_configurations": 20,
+  "total_fit_runs": 24,
+  "secondary_shortlist_frozen_before_runs": true,
+  "original_inputs_unchanged": true,
+  "secondary_counts_rebuilt_from_original_training_events": true,
+  "secondary_qualified_training_airings_reconciled": 182529,
+  "secondary_qualified_validation_airings_reconciled": 133694,
+  "secondary_metadata_and_candidates_independently_rebuilt": true,
+  "validation_periods_disjoint": true,
+  "stages": {
+    "primary": {
+      "configuration_runs": 20,
+      "prediction_rows_checked": 98280,
+      "cohort_metric_rows_recomputed": 147,
+      "max_concurrent_runs_verified": 4,
+      "distinct_worker_pids": 4
+    },
+    "secondary": {
+      "configuration_runs": 4,
+      "prediction_rows_checked": 19504,
+      "cohort_metric_rows_recomputed": 35,
+      "max_concurrent_runs_verified": 4,
+      "distinct_worker_pids": 4
+    }
+  },
+  "previous_configurations_reproduced_exactly": [
+    "association_rules_log",
+    "cbf_log",
+    "frequency_bonus_0",
+    "frequency_bonus_3",
+    "mf_f32_r01_a0",
+    "mf_f32_r01_a20",
+    "ppr_d085_log",
+    "ppr_d085_raw"
+  ],
+  "bonus_0_and_1_predictions_identical": true,
+  "selected_config_id_independently_verified": "frequency_bonus_3",
+  "artifact_sha256": {
+    "primary/ranking.json": "906d577f21aa9a402b9a3bf011de6ed44c2a95dd0646514a24f46e5007d136f5",
+    "secondary/ranking.json": "b676aa1be4c511778241965b3710556d596cc1d3d32bdc0f48b555cc4a2459ff",
+    "finalists.json": "7e45c3398a5ce427ed64facc7c79ed386e3347d3c7a5082337382daa8ebcb8a0",
+    "decision.json": "2de50f268be53bcd4334562dbc2b87237d2e35872b291fe9e11742be50bc61d9"
+  }
+}

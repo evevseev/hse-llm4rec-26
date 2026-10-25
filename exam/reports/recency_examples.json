@@ -1,0 +1,578 @@
+[
+  {
+    "label": "heavy",
+    "user_id": "10500740270951698446",
+    "selection": "Previously fixed training-volume example.",
+    "baseline_ap_at_5": 0.76,
+    "recency_ap_at_5": 0.8,
+    "ap_delta": 0.040000000000000036,
+    "targets": [
+      {
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "training_count": 401,
+        "recency_score": 173.54082047607852,
+        "days_since_last_qualified_training_airing": 0.052083333333333336,
+        "validation_count": 198,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12002856,
+        "title": "М/с 'Элвин и бурундуки'.",
+        "category": "Детям",
+        "training_count": 68,
+        "recency_score": 37.382241370782246,
+        "days_since_last_qualified_training_airing": 2.0243055555555554,
+        "validation_count": 55,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12001697,
+        "title": "М/с 'Аватар: Легенда об Аанге', 56 с. 'Южные захватчики'.",
+        "category": "Детям",
+        "training_count": 54,
+        "recency_score": 26.354675818682605,
+        "days_since_last_qualified_training_airing": 2.0659722222222223,
+        "validation_count": 43,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 62,
+        "recency_score": 25.97822495810681,
+        "days_since_last_qualified_training_airing": 4.135416666666667,
+        "validation_count": 36,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12002355,
+        "title": "М/с 'Кунг-фу панда: Удивительные легенды'.",
+        "category": "Детям",
+        "training_count": 16,
+        "recency_score": 10.7725567396033,
+        "days_since_last_qualified_training_airing": 2.0347222222222223,
+        "validation_count": 36,
+        "validation_top5_hit": true
+      }
+    ],
+    "baseline_top5": [
+      {
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "training_count": 401,
+        "recency_score": 173.54082047607852,
+        "days_since_last_qualified_training_airing": 0.052083333333333336,
+        "validation_count": 198,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12002856,
+        "title": "М/с 'Элвин и бурундуки'.",
+        "category": "Детям",
+        "training_count": 68,
+        "recency_score": 37.382241370782246,
+        "days_since_last_qualified_training_airing": 2.0243055555555554,
+        "validation_count": 55,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 62,
+        "recency_score": 25.97822495810681,
+        "days_since_last_qualified_training_airing": 4.135416666666667,
+        "validation_count": 36,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12001734,
+        "title": "М/с 'Волшебные покровители', 154 с. 'Хочу это вырезать / Мэрский день'.",
+        "category": "Детям",
+        "training_count": 54,
+        "recency_score": 22.31372195855149,
+        "days_since_last_qualified_training_airing": 0.10416666666666667,
+        "validation_count": 18,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 12001697,
+        "title": "М/с 'Аватар: Легенда об Аанге', 56 с. 'Южные захватчики'.",
+        "category": "Детям",
+        "training_count": 54,
+        "recency_score": 26.354675818682605,
+        "days_since_last_qualified_training_airing": 2.0659722222222223,
+        "validation_count": 43,
+        "validation_top5_hit": true
+      }
+    ],
+    "recency_top5": [
+      {
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "training_count": 401,
+        "recency_score": 173.54082047607852,
+        "days_since_last_qualified_training_airing": 0.052083333333333336,
+        "validation_count": 198,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12002856,
+        "title": "М/с 'Элвин и бурундуки'.",
+        "category": "Детям",
+        "training_count": 68,
+        "recency_score": 37.382241370782246,
+        "days_since_last_qualified_training_airing": 2.0243055555555554,
+        "validation_count": 55,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12001697,
+        "title": "М/с 'Аватар: Легенда об Аанге', 56 с. 'Южные захватчики'.",
+        "category": "Детям",
+        "training_count": 54,
+        "recency_score": 26.354675818682605,
+        "days_since_last_qualified_training_airing": 2.0659722222222223,
+        "validation_count": 43,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 62,
+        "recency_score": 25.97822495810681,
+        "days_since_last_qualified_training_airing": 4.135416666666667,
+        "validation_count": 36,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12001734,
+        "title": "М/с 'Волшебные покровители', 154 с. 'Хочу это вырезать / Мэрский день'.",
+        "category": "Детям",
+        "training_count": 54,
+        "recency_score": 22.31372195855149,
+        "days_since_last_qualified_training_airing": 0.10416666666666667,
+        "validation_count": 18,
+        "validation_top5_hit": false
+      }
+    ]
+  },
+  {
+    "label": "light",
+    "user_id": "12453026253397466416",
+    "selection": "Previously fixed training-volume example.",
+    "baseline_ap_at_5": 0.6,
+    "recency_ap_at_5": 0.6,
+    "ap_delta": 0.0,
+    "targets": [
+      {
+        "tv_show_id": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 9,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 3,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 5200303,
+        "title": "'Следствие вели...' с Леонидом Каневским.",
+        "category": "Познавательное",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 3,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 20088,
+        "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+        "category": "Развлечения",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 2,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 200337,
+        "title": "'Утро с 'Интером'.",
+        "category": "Развлечения",
+        "training_count": 1,
+        "recency_score": 0.2523316109777677,
+        "days_since_last_qualified_training_airing": 55.625,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      }
+    ],
+    "baseline_top5": [
+      {
+        "tv_show_id": 200337,
+        "title": "'Утро с 'Интером'.",
+        "category": "Развлечения",
+        "training_count": 1,
+        "recency_score": 0.2523316109777677,
+        "days_since_last_qualified_training_airing": 55.625,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 3,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 9,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400467,
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 200344,
+        "title": "'Чистоnews'.",
+        "category": "Развлечения",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      }
+    ],
+    "recency_top5": [
+      {
+        "tv_show_id": 200337,
+        "title": "'Утро с 'Интером'.",
+        "category": "Развлечения",
+        "training_count": 1,
+        "recency_score": 0.2523316109777677,
+        "days_since_last_qualified_training_airing": 55.625,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 3,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 9,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400467,
+        "title": "'Викна-Новости'.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 200344,
+        "title": "'Чистоnews'.",
+        "category": "Развлечения",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      }
+    ]
+  },
+  {
+    "label": "largest_gain",
+    "user_id": "6466211710679029165",
+    "selection": "Outcome-selected diagnostic: largest AP gain; not a representative sample.",
+    "baseline_ap_at_5": 0.5,
+    "recency_ap_at_5": 1.0,
+    "ap_delta": 0.5,
+    "targets": [
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 2,
+        "recency_score": 1.0484990845829536,
+        "days_since_last_qualified_training_airing": 14.125,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      }
+    ],
+    "baseline_top5": [
+      {
+        "tv_show_id": 10002810,
+        "title": "Т/с 'Бруклин 9-9', 5 сезон, 11 с.",
+        "category": "Сериалы",
+        "training_count": 3,
+        "recency_score": 1.0293144746887741,
+        "days_since_last_qualified_training_airing": 43.19444444444444,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 2,
+        "recency_score": 1.0484990845829536,
+        "days_since_last_qualified_training_airing": 14.125,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "training_count": 2,
+        "recency_score": 0.8410369077897295,
+        "days_since_last_qualified_training_airing": 30.19097222222222,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 10002514,
+        "title": "Т/с 'Кухня', 1 сезон, 1-4 с.",
+        "category": "Сериалы",
+        "training_count": 1,
+        "recency_score": 0.5370210687800488,
+        "days_since_last_qualified_training_airing": 25.114583333333332,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 6200371,
+        "title": "'ДжеДАИ'.",
+        "category": "Познавательное",
+        "training_count": 1,
+        "recency_score": 0.30077177045868275,
+        "days_since_last_qualified_training_airing": 48.53125,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      }
+    ],
+    "recency_top5": [
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 2,
+        "recency_score": 1.0484990845829536,
+        "days_since_last_qualified_training_airing": 14.125,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 10002810,
+        "title": "Т/с 'Бруклин 9-9', 5 сезон, 11 с.",
+        "category": "Сериалы",
+        "training_count": 3,
+        "recency_score": 1.0293144746887741,
+        "days_since_last_qualified_training_airing": 43.19444444444444,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "training_count": 2,
+        "recency_score": 0.8410369077897295,
+        "days_since_last_qualified_training_airing": 30.19097222222222,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 90021390,
+        "title": "Х/ф 'Тутси'.",
+        "category": "Фильмы",
+        "training_count": 1,
+        "recency_score": 0.6722563270029897,
+        "days_since_last_qualified_training_airing": 16.041666666666668,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 10002514,
+        "title": "Т/с 'Кухня', 1 сезон, 1-4 с.",
+        "category": "Сериалы",
+        "training_count": 1,
+        "recency_score": 0.5370210687800488,
+        "days_since_last_qualified_training_airing": 25.114583333333332,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      }
+    ]
+  },
+  {
+    "label": "largest_loss",
+    "user_id": "11296074554820850929",
+    "selection": "Outcome-selected diagnostic: largest AP loss; not a representative sample.",
+    "baseline_ap_at_5": 1.0,
+    "recency_ap_at_5": 0.25,
+    "ap_delta": -0.75,
+    "targets": [
+      {
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "training_count": 1,
+        "recency_score": 0.3445529510391964,
+        "days_since_last_qualified_training_airing": 43.041666666666664,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      }
+    ],
+    "baseline_top5": [
+      {
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "training_count": 1,
+        "recency_score": 0.3445529510391964,
+        "days_since_last_qualified_training_airing": 43.041666666666664,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 12001732,
+        "title": "М/с 'Пингвины из 'Мадагаскара'.",
+        "category": "Детям",
+        "training_count": 1,
+        "recency_score": 0.4848065685308237,
+        "days_since_last_qualified_training_airing": 29.24652777777778,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 90043424,
+        "title": "Х/ф 'Королевство кривых зеркал'.",
+        "category": "Фильмы",
+        "training_count": 1,
+        "recency_score": 0.40992095833848025,
+        "days_since_last_qualified_training_airing": 36.02430555555556,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 90042851,
+        "title": "Х/ф 'Фантазии Веснухина'.",
+        "category": "Фильмы",
+        "training_count": 1,
+        "recency_score": 0.49503933855612037,
+        "days_since_last_qualified_training_airing": 28.40277777777778,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      }
+    ],
+    "recency_top5": [
+      {
+        "tv_show_id": 90042851,
+        "title": "Х/ф 'Фантазии Веснухина'.",
+        "category": "Фильмы",
+        "training_count": 1,
+        "recency_score": 0.49503933855612037,
+        "days_since_last_qualified_training_airing": 28.40277777777778,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 12001732,
+        "title": "М/с 'Пингвины из 'Мадагаскара'.",
+        "category": "Детям",
+        "training_count": 1,
+        "recency_score": 0.4848065685308237,
+        "days_since_last_qualified_training_airing": 29.24652777777778,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 90043424,
+        "title": "Х/ф 'Королевство кривых зеркал'.",
+        "category": "Фильмы",
+        "training_count": 1,
+        "recency_score": 0.40992095833848025,
+        "days_since_last_qualified_training_airing": 36.02430555555556,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      },
+      {
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "training_count": 1,
+        "recency_score": 0.3445529510391964,
+        "days_since_last_qualified_training_airing": 43.041666666666664,
+        "validation_count": 1,
+        "validation_top5_hit": true
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "training_count": 0,
+        "recency_score": 0.0,
+        "days_since_last_qualified_training_airing": null,
+        "validation_count": 0,
+        "validation_top5_hit": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "model": "XGBoost pairwise learning to rank",
+  "parameters": {
+    "objective": "rank:pairwise",
+    "eval_metric": "map@5",
+    "n_estimators": 120,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_child_weight": 20,
+    "reg_lambda": 1.0,
+    "subsample": 1.0,
+    "colsample_bytree": 1.0,
+    "tree_method": "hist",
+    "max_bin": 64,
+    "lambdarank_pair_method": "topk",
+    "lambdarank_num_pair_per_sample": 5,
+    "random_state": 42,
+    "n_jobs": 4
+  },
+  "features": [
+    "personal_count",
+    "log_personal_count",
+    "personal_share",
+    "personal_weekly_rate",
+    "recent_14day_count",
+    "previous_14day_count",
+    "recent_trend",
+    "days_since_last_item_watch",
+    "personal_rank_reciprocal",
+    "global_viewers",
+    "log_global_viewers",
+    "global_viewer_fraction",
+    "global_qualified_airings",
+    "global_weekly_airings",
+    "baseline_score",
+    "baseline_rank_reciprocal",
+    "user_training_airings",
+    "user_distinct_items",
+    "history_calendar_days",
+    "user_recent_fraction",
+    "future_airings_per_week",
+    "future_airing_start_day_fraction",
+    "future_distinct_channels",
+    "future_first_airing_position",
+    "future_last_airing_position",
+    "schedule_channel_affinity",
+    "schedule_start_time_affinity",
+    "future_mean_duration_minutes",
+    "personal_item_known",
+    "global_item_known",
+    "user_favorite_share",
+    "user_channel_concentration"
+  ],
+  "training_windows": [
+    {
+      "name": "weeks_15_16",
+      "history_cutoff_epoch": 1586120400,
+      "label_end_epoch": 1587330000
+    },
+    {
+      "name": "weeks_17_18",
+      "history_cutoff_epoch": 1587330000,
+      "label_end_epoch": 1588539600
+    },
+    {
+      "name": "weeks_19_20",
+      "history_cutoff_epoch": 1588539600,
+      "label_end_epoch": 1589749200
+    }
+  ],
+  "outer_history_cutoff_epoch": 1589749200,
+  "candidate_generation": "Up to 100: top 50 baseline score, top 30 channel-affinity*log1p(weekly future airings), top 20 weekly future airings; deduplicate and fill by baseline.",
+  "training_labels": "Binary membership in each user top five qualified-airing frequencies in the next two weeks; item ID breaks count ties.",
+  "training_positive_injection": "Append missing positive IDs only during training, never during outer prediction. Injection status is not a feature.",
+  "training_population": "Warm users with at least one supervised target in each earlier window.",
+  "model_selection": "One fixed configuration, all three windows used for fitting. No outer-label selection or early stopping.",
+  "outer_evaluation": "Original weeks 21\u201330 and original MAP@5 population/labels. Load behaviour only after prediction artifacts are frozen.",
+  "future_schedule_use": "Only ID, channel, start and duration. No future titles, categories, genre or viewer information.",
+  "cold_policy": "Same training popularity top five as every previous method.",
+  "score_policy": "Rank raw margins; equivalently sigmoid margins are strictly positive monotone scores, not calibrated viewing probabilities."
+}

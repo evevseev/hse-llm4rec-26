@@ -1,0 +1,193 @@
+{
+  "change": "Exponential recency weighting of qualified personal training airings only.",
+  "parameters": {
+    "half_life_days": 28,
+    "parameter_selection": "Fixed 28-day half-life; no half-life grid search."
+  },
+  "split_and_label_policy": "Identical to the original validation experiment.",
+  "known_holdout_warning": "Error analysis and improvement choice use the known hold-out. This is model-selection evidence, not an untouched final estimate.",
+  "metrics": [
+    {
+      "segment": "all_target_users",
+      "method": "personal_frequency",
+      "users": 4643,
+      "map_at_5": 0.3339907746428315,
+      "precision_at_5": 0.3783760499676933,
+      "recall_at_5": 0.39797544690932585,
+      "hit_rate_at_5": 0.8436355804436787
+    },
+    {
+      "segment": "all_target_users",
+      "method": "recency_personal_frequency",
+      "users": 4643,
+      "map_at_5": 0.3163023787302271,
+      "precision_at_5": 0.35830282145164766,
+      "recall_at_5": 0.3768540455165482,
+      "hit_rate_at_5": 0.8205901356881327
+    },
+    {
+      "segment": "five_target_users",
+      "method": "personal_frequency",
+      "users": 4030,
+      "map_at_5": 0.352387923904053,
+      "precision_at_5": 0.414590570719603,
+      "recall_at_5": 0.414590570719603,
+      "hit_rate_at_5": 0.8923076923076924
+    },
+    {
+      "segment": "five_target_users",
+      "method": "recency_personal_frequency",
+      "users": 4030,
+      "map_at_5": 0.33357154673283707,
+      "precision_at_5": 0.39240694789081887,
+      "recall_at_5": 0.39240694789081887,
+      "hit_rate_at_5": 0.8687344913151365
+    },
+    {
+      "segment": "template_target_users",
+      "method": "personal_frequency",
+      "users": 1238,
+      "map_at_5": 0.37402441213426674,
+      "precision_at_5": 0.42988691437802906,
+      "recall_at_5": 0.4377221324717286,
+      "hit_rate_at_5": 0.8949919224555735
+    },
+    {
+      "segment": "template_target_users",
+      "method": "recency_personal_frequency",
+      "users": 1238,
+      "map_at_5": 0.35841164063902353,
+      "precision_at_5": 0.40920840064620356,
+      "recall_at_5": 0.41650511577813676,
+      "hit_rate_at_5": 0.8739903069466882
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "personal_frequency",
+      "users": 4539,
+      "map_at_5": 0.33783303958287436,
+      "precision_at_5": 0.3830799735624587,
+      "recall_at_5": 0.4016082837629434,
+      "hit_rate_at_5": 0.850187265917603
+    },
+    {
+      "segment": "warm_target_users",
+      "method": "recency_personal_frequency",
+      "users": 4539,
+      "map_at_5": 0.319739357665663,
+      "precision_at_5": 0.36254681647940074,
+      "recall_at_5": 0.38000293750458985,
+      "hit_rate_at_5": 0.8266137915840494
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "personal_frequency",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.23942307692307693,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "cold_target_users",
+      "method": "recency_personal_frequency",
+      "users": 104,
+      "map_at_5": 0.16629807692307694,
+      "precision_at_5": 0.17307692307692307,
+      "recall_at_5": 0.23942307692307693,
+      "hit_rate_at_5": 0.5576923076923077
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "personal_frequency",
+      "users": 538,
+      "map_at_5": 0.14109923585295334,
+      "precision_at_5": 0.15092936802973977,
+      "recall_at_5": 0.2006195786864932,
+      "hit_rate_at_5": 0.5446096654275093
+    },
+    {
+      "segment": "light_history_target_users",
+      "method": "recency_personal_frequency",
+      "users": 538,
+      "map_at_5": 0.11895084675753821,
+      "precision_at_5": 0.14312267657992564,
+      "recall_at_5": 0.19144981412639406,
+      "hit_rate_at_5": 0.5315985130111525
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "personal_frequency",
+      "users": 995,
+      "map_at_5": 0.4937470686767169,
+      "precision_at_5": 0.5509547738693468,
+      "recall_at_5": 0.55214405360134,
+      "hit_rate_at_5": 0.9668341708542714
+    },
+    {
+      "segment": "heavy_history_target_users",
+      "method": "recency_personal_frequency",
+      "users": 995,
+      "map_at_5": 0.49411334450027916,
+      "precision_at_5": 0.5481407035175879,
+      "recall_at_5": 0.5493299832495813,
+      "hit_rate_at_5": 0.9678391959798995
+    },
+    {
+      "segment": "baseline_has_stale_recommendation",
+      "method": "personal_frequency",
+      "users": 3139,
+      "map_at_5": 0.2952545927577785,
+      "precision_at_5": 0.3367314431347563,
+      "recall_at_5": 0.35941382605925454,
+      "hit_rate_at_5": 0.8200063714558776
+    },
+    {
+      "segment": "baseline_has_stale_recommendation",
+      "method": "recency_personal_frequency",
+      "users": 3139,
+      "map_at_5": 0.2742059573112456,
+      "precision_at_5": 0.3132207709461612,
+      "recall_at_5": 0.3343527662737602,
+      "hit_rate_at_5": 0.7881490920675375
+    }
+  ],
+  "primary_comparison": {
+    "mean_delta": -0.0176883959126044,
+    "paired_bootstrap_95_percent_interval": [
+      -0.02017091888625649,
+      -0.015048235695311942
+    ],
+    "replicates": 2000,
+    "seed": 42,
+    "baseline_map_at_5": 0.3339907746428315,
+    "recency_map_at_5": 0.3163023787302271,
+    "relative_map_change": -0.05296073201878193
+  },
+  "user_outcomes": {
+    "unchanged": 2479,
+    "improved": 779,
+    "worsened": 1385
+  },
+  "target_items_added_to_lists": 415,
+  "target_items_removed_from_lists": 881,
+  "stale_recommended_slots_before": 6708,
+  "stale_recommended_slots_after": 3809,
+  "unchanged_membership_users": 1612,
+  "unchanged_ordered_lists_users": 594,
+  "fixed_inputs_sha256": {
+    "validation_targets.csv": "b454a4e9d14514873d95e361fea011794f024cb7f4194d2f8386498e1d3b13e0",
+    "validation_predictions.csv": "de0038993b459aae49abc8c58f90792b66df2748aa52b5e648847791af060c03",
+    "validation_metrics.csv": "86416134d794ba2fad9124e6e301d52a9f2e0d97bd2e8e442c51f24d3e423d86"
+  },
+  "training_events_sha256": "28dfee390ba3239df5cf0b3ba5df1f1006098c2ab44531016f6dfa3a57139d01",
+  "fit_seconds": 0.5310807499336079,
+  "predict_seconds": 6.444229291984811,
+  "runtime_seconds": 7.353051665937528,
+  "peak_rss_native_units": 218431488,
+  "peak_rss_units": "bytes on macOS; KiB on Linux",
+  "environment": {
+    "python": "3.12.11 (main, Sep  2 2025, 14:12:30) [Clang 20.1.4 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit"
+  }
+}

@@ -1,0 +1,524 @@
+[
+  {
+    "label": "heavy",
+    "user_id": "10500740270951698446",
+    "selection": "Maximum/minimum positive training airing count among template users with validation targets; user ID breaks ties. No method performance is used.",
+    "training_qualified_airings": 904,
+    "training_distinct_items": 97,
+    "validation_targets": [
+      {
+        "tv_show_id": 12001682,
+        "title": "М/с 'Губка Боб Квадратные Штаны'.",
+        "category": "Детям",
+        "count": 198
+      },
+      {
+        "tv_show_id": 12002856,
+        "title": "М/с 'Элвин и бурундуки'.",
+        "category": "Детям",
+        "count": 55
+      },
+      {
+        "tv_show_id": 12001697,
+        "title": "М/с 'Аватар: Легенда об Аанге', 56 с. 'Южные захватчики'.",
+        "category": "Детям",
+        "count": 43
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "count": 36
+      },
+      {
+        "tv_show_id": 12002355,
+        "title": "М/с 'Кунг-фу панда: Удивительные легенды'.",
+        "category": "Детям",
+        "count": 36
+      }
+    ],
+    "methods": {
+      "popularity": {
+        "ap_at_5": 0.2,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 2400480,
+            "title": "'ТСН. Неделя'.",
+            "category": "Инфо",
+            "method_score": 3714.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 36,
+            "qualified_training_airings": 62
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 3399.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 14,
+            "qualified_training_airings": 32
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 2492.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 3,
+            "qualified_training_airings": 7
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 200344,
+            "title": "'Чистоnews'.",
+            "category": "Развлечения",
+            "method_score": 2303.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 2,
+            "qualified_training_airings": 8
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 2276.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 23,
+            "qualified_training_airings": 12
+          }
+        ]
+      },
+      "personal_frequency": {
+        "ap_at_5": 0.76,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 12001682,
+            "title": "М/с 'Губка Боб Квадратные Штаны'.",
+            "category": "Детям",
+            "method_score": 401.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 198,
+            "qualified_training_airings": 401
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 12002856,
+            "title": "М/с 'Элвин и бурундуки'.",
+            "category": "Детям",
+            "method_score": 68.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 55,
+            "qualified_training_airings": 68
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 2400480,
+            "title": "'ТСН. Неделя'.",
+            "category": "Инфо",
+            "method_score": 62.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 36,
+            "qualified_training_airings": 62
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 12001734,
+            "title": "М/с 'Волшебные покровители', 154 с. 'Хочу это вырезать / Мэрский день'.",
+            "category": "Детям",
+            "method_score": 54.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 18,
+            "qualified_training_airings": 54
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 12001697,
+            "title": "М/с 'Аватар: Легенда об Аанге', 56 с. 'Южные захватчики'.",
+            "category": "Детям",
+            "method_score": 54.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 43,
+            "qualified_training_airings": 54
+          }
+        ]
+      },
+      "cbf": {
+        "ap_at_5": 0.06666666666666667,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 0.46846611888188816,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 3,
+            "qualified_training_airings": 7
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 5900347,
+            "title": "'Деньги'.",
+            "category": "Инфо",
+            "method_score": 0.45921525982538214,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 1,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 2400480,
+            "title": "'ТСН. Неделя'.",
+            "category": "Инфо",
+            "method_score": 0.4589577962301152,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 36,
+            "qualified_training_airings": 62
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 0.45791213047139845,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 14,
+            "qualified_training_airings": 32
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 2500261,
+            "title": "'Подробности недели'.",
+            "category": "Инфо",
+            "method_score": 0.45791213047139845,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          }
+        ]
+      },
+      "association_rules": {
+        "ap_at_5": 0.2,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 2400480,
+            "title": "'ТСН. Неделя'.",
+            "category": "Инфо",
+            "method_score": 93.27139163004526,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 36,
+            "qualified_training_airings": 62
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 88.25934111279325,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 14,
+            "qualified_training_airings": 32
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 70.3911441661813,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 3,
+            "qualified_training_airings": 7
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 65.60841875814664,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 23,
+            "qualified_training_airings": 12
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 200344,
+            "title": "'Чистоnews'.",
+            "category": "Развлечения",
+            "method_score": 64.14848987342305,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 2,
+            "qualified_training_airings": 8
+          }
+        ]
+      }
+    }
+  },
+  {
+    "label": "light",
+    "user_id": "12453026253397466416",
+    "selection": "Maximum/minimum positive training airing count among template users with validation targets; user ID breaks ties. No method performance is used.",
+    "training_qualified_airings": 1,
+    "training_distinct_items": 1,
+    "validation_targets": [
+      {
+        "tv_show_id": 240081,
+        "title": "Факты. День.",
+        "category": "Инфо",
+        "count": 9
+      },
+      {
+        "tv_show_id": 2400480,
+        "title": "'ТСН. Неделя'.",
+        "category": "Инфо",
+        "count": 3
+      },
+      {
+        "tv_show_id": 5200303,
+        "title": "'Следствие вели...' с Леонидом Каневским.",
+        "category": "Познавательное",
+        "count": 3
+      },
+      {
+        "tv_show_id": 20088,
+        "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+        "category": "Развлечения",
+        "count": 2
+      },
+      {
+        "tv_show_id": 200337,
+        "title": "'Утро с 'Интером'.",
+        "category": "Развлечения",
+        "count": 1
+      }
+    ],
+    "methods": {
+      "popularity": {
+        "ap_at_5": 0.4,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 2400480,
+            "title": "'ТСН. Неделя'.",
+            "category": "Инфо",
+            "method_score": 3714.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 3,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 3399.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 9,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 2492.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 200344,
+            "title": "'Чистоnews'.",
+            "category": "Развлечения",
+            "method_score": 2303.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 2276.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 1,
+            "qualified_training_airings": 0
+          }
+        ]
+      },
+      "personal_frequency": {
+        "ap_at_5": 0.6,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 200337,
+            "title": "'Утро с 'Интером'.",
+            "category": "Развлечения",
+            "method_score": 1.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 1,
+            "qualified_training_airings": 1
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 2400480,
+            "title": "'ТСН. Неделя'.",
+            "category": "Инфо",
+            "method_score": 0.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 3,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 0.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 9,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 0.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 200344,
+            "title": "'Чистоnews'.",
+            "category": "Развлечения",
+            "method_score": 0.0,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          }
+        ]
+      },
+      "cbf": {
+        "ap_at_5": 0.3333333333333333,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 200337,
+            "title": "'Утро с 'Интером'.",
+            "category": "Развлечения",
+            "method_score": 1.0,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 1,
+            "qualified_training_airings": 1
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 200477,
+            "title": "'Завтрак. Выходной'.",
+            "category": "Развлечения",
+            "method_score": 0.9988481492285055,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "method_score": 0.9977481977081437,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 2,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 5900275,
+            "title": "'Утро России'.",
+            "category": "Инфо",
+            "method_score": 0.5848325825951142,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 0.5846313467994905,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 1,
+            "qualified_training_airings": 0
+          }
+        ]
+      },
+      "association_rules": {
+        "ap_at_5": 0.52,
+        "recommendations": [
+          {
+            "rank": 1,
+            "tv_show_id": 2400480,
+            "title": "'ТСН. Неделя'.",
+            "category": "Инфо",
+            "method_score": 0.64250467549365,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 3,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 2,
+            "tv_show_id": 240081,
+            "title": "Факты. День.",
+            "category": "Инфо",
+            "method_score": 0.6199659911038082,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 9,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 3,
+            "tv_show_id": 2400508,
+            "title": "Сегодня. Итоги с Олегом Панютой.",
+            "category": "Инфо",
+            "method_score": 0.5206576119644347,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 1,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 4,
+            "tv_show_id": 2400467,
+            "title": "'Викна-Новости'.",
+            "category": "Инфо",
+            "method_score": 0.4910774980662824,
+            "in_validation_top5": false,
+            "qualified_validation_airings": 0,
+            "qualified_training_airings": 0
+          },
+          {
+            "rank": 5,
+            "tv_show_id": 20088,
+            "title": "'Завтрак с 1+1'. Информационно-развлекательная программа.",
+            "category": "Развлечения",
+            "method_score": 0.4699492522556821,
+            "in_validation_top5": true,
+            "qualified_validation_airings": 2,
+            "qualified_training_airings": 0
+          }
+        ]
+      }
+    }
+  }
+]
