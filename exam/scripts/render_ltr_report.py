@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Render the English history/schedule learning-to-rank experiment report."""
 import json
 from pathlib import Path

@@ -6,6 +6,25 @@ matrix factorization, including repeat-aware variants. Documentation and code ar
 in English. Original programme titles, categories, names and other source data
 remain in their original language.
 
+## Final prediction files
+
+- [submission_frequency_bonus3.csv](submission_frequency_bonus3.csv): personal frequencies plus popularity bonus 3.
+- [submission_ppr.csv](submission_ppr.csv): PPR with damping 0.5 and log1p personalization.
+- [submission_frequency_bonus6.csv](submission_frequency_bonus6.csv): popularity bonus 6 alternative.
+
+All three use weeks 11–30, weeks 31–42 schedule availability, and the original
+1,260-user template order. Reproduction command:
+
+```sh
+.venv/bin/python scripts/final_predict.py
+```
+
+Parameters, row/ID checks and SHA-256 hashes:
+[final_prediction_checks.json](reports/final_prediction_checks.json).
+Documentation-only AST and unchanged-CSV checks:
+[final_documentation_checks.json](reports/final_documentation_checks.json).
+No files have been submitted to Kaggle.
+
 ## Current result
 
 Training: ISO weeks 11–20 of 2020. Validation: weeks 21–30.
@@ -314,8 +333,8 @@ with identical model/prediction hashes; it was not a second model experiment.
 
 Source data and intermediate data are ignored by `.gitignore`. The report and
 implementation are ready to track in a repository; this workspace is not yet
-a Git repository. No final model refit, Kaggle upload or exam PDF was performed
-in this experiment.
+a Git repository. Final prediction CSV files have been generated and verified.
+No Kaggle upload or exam PDF was performed.
 
 ## Sources and implementation disclosure
 

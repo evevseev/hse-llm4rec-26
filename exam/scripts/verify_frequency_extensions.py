@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Independently rebuild all extension ranks and MAP values using standard Python.
 
 Does not import either modelling or evaluation implementation.

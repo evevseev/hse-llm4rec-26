@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Create temporal interaction counts without using test-period behaviour.
 
 Run: .venv/bin/python scripts/prepare_validation.py

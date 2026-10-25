@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Hand-computed checks for the two transparently recorded extensions."""
 import json
 import time

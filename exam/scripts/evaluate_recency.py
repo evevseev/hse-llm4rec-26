@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Shared evaluation runner for recency weighting and popularity pseudo-counts.
 
 Training uses only qualified training airings. All other policies are unchanged.

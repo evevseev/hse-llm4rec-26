@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Train one fixed pairwise ranker using supervised labels no later than week 20.
 
 This script never reads validation_interactions.csv or weeks 21–30 schedules.

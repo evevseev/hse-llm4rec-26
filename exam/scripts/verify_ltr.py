@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Audit temporal supervision, cached features, model replay and held-out metrics.
 
 Labels and numeric count checks are rebuilt without importing training/evaluation

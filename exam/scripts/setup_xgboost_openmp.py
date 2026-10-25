@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Optional local OpenMP runtime for XGBoost on Apple Silicon macOS.
 
 No system installation is changed. The conda-forge package and its license are

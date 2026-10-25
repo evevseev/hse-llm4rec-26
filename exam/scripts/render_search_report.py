@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Render English search results, all 20 settings and the frozen confirmation."""
 import csv
 import json

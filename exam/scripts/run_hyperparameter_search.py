@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Run a frozen 20-configuration grid in parallel; confirm only frozen finalists.
 
 Usage: .venv/bin/python scripts/run_hyperparameter_search.py --stage primary

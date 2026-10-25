@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Render a transparent error-analysis report including the unsuccessful experiment."""
 import csv
 import json

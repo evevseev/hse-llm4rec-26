@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Compare fixed PPR and implicit ALS against the saved smoothed-frequency model.
 
 Run: .venv/bin/python scripts/evaluate_collaborative.py

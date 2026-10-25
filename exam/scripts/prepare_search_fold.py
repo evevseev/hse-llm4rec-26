@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Prepare the earlier robustness fold without touching original inputs/artifacts."""
 from pathlib import Path
 

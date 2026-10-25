@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Independent search audit: fold reconstruction, frozen shortlist and all metrics.
 
 Does not import model, preparation, search or evaluation project code.

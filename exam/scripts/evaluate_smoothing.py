@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Evaluate one fixed popularity pseudo-count extension after failed recency weighting.
 
 Score = personal qualified-airing count + 3 * training viewers / maximum viewers.

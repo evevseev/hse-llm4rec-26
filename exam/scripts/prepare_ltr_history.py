@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Export channel/time details for weeks 11–20 only; preserve existing artifacts."""
 from pathlib import Path
 

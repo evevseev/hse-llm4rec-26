@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Small transparent implementations of personalized PageRank and implicit ALS."""
 import numpy as np
 from scipy import sparse

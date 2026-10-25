@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Render the English report from measured experiment artifacts."""
 import json
 from pathlib import Path

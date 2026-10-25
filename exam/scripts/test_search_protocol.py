@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Check the grid budget, temporal separation and conservative selection rule."""
 import json
 import time

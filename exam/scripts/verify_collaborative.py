@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Independent checks: saved-factor ranks, dense implicit loss, PPR linear solve.
 
 No model/evaluation project modules are imported. Uses NumPy/SciPy only for

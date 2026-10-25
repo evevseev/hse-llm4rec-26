@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Diagnose personal-frequency failures without fitting another model.
 
 Run after prepare_validation.py, which now also exports training_airings.csv.

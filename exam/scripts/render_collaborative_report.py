@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Generate an English comparison from measured collaborative-model artifacts."""
 import csv
 import json

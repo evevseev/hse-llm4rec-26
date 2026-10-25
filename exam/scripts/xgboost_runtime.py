@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Load an optional project-local OpenMP runtime before importing XGBoost on macOS."""
 import ctypes
 import sys

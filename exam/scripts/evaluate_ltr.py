@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Freeze ranker predictions, then evaluate once on the existing weeks 21–30 labels."""
 import csv
 import hashlib

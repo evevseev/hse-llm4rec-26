@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Independent verification of frozen references, three variants and repeat diagnostics.
 
 No training/evaluation project modules are imported. Factor predictions and

@@ -1,0 +1,27 @@
+{
+  "source": "Authenticated Kaggle MCP search_competition_submissions; account owner uploaded files manually",
+  "submissions": [
+    {
+      "file": "submission_frequency_bonus3.csv",
+      "private_score": 0.40838,
+      "public_score": 0.41478,
+      "submission_id": 57634856
+    },
+    {
+      "file": "submission_ppr.csv",
+      "private_score": 0.39557,
+      "public_score": 0.41241,
+      "submission_id": 57634909
+    },
+    {
+      "file": "submission_frequency_bonus6.csv",
+      "private_score": 0.41177,
+      "public_score": 0.42197,
+      "submission_id": 57634883,
+      "screenshot": "report/kaggle_score.png"
+    }
+  ],
+  "designated_file": "submission_frequency_bonus6.csv",
+  "downloaded_submission_sha256": "c517490f524c04604656be0bbd8bf0c1c445b142c2144d5f4dd1ccfc5e073c35",
+  "downloaded_bytes_match_prepared_file": true
+}

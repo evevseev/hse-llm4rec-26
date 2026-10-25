@@ -1,4 +1,4 @@
-# Generated with an AI assistant.
+# Generated with an AI assistant
 """Build checked final CSV files without submitting anything to Kaggle."""
 import csv
 import hashlib

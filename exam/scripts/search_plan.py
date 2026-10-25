@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Frozen 20-configuration search grid and non-overlapping validation periods."""
 import json
 from itertools import product

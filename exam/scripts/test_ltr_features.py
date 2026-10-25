@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Checks that ranking features cannot read future views or training-only labels."""
 import json
 import time

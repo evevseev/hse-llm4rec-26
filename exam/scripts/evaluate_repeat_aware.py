@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Evaluate exactly three repeat-aware variants under the frozen hold-out protocol."""
 import csv
 import hashlib

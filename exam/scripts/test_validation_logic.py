@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Small, hand-computed checks for the temporal join and MAP semantics."""
 import json
 import time

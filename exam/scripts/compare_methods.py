@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Evaluate four fixed recommenders on the same temporal hold-out.
 
 Run after prepare_validation.py: .venv/bin/python scripts/compare_methods.py

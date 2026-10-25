@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Render the English analysis of exactly three repeat-aware variants."""
 import json
 import math

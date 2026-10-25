@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Independently verify saved predictions, targets, metrics and sampled rules.
 
 This script uses the standard library and does not import the modelling code.

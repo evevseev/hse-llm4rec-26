@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Hand-computed mathematical checks for PPR and implicit ALS."""
 import json
 import time

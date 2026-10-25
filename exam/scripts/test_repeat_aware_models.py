@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Dense, hand-computed checks for repeat-aware regression and personalization."""
 import json
 import time

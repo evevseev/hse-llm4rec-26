@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Data audit only: no recommender fitting or Kaggle submissions.
 
 Run from repository root: python3 scripts/audit_data.py

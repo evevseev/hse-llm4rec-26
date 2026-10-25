@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """History-only and availability-only feature snapshots for learning to rank.
 
 Future schedule fields used: programme ID, channel, start and duration only.

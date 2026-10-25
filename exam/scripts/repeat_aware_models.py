@@ -1,3 +1,4 @@
+# Generated with an AI assistant
 """Matrix factorization of log viewing counts with explicit missing-pair loss.
 
 Unlike binary-preference implicit ALS, observed regression targets retain repeat
