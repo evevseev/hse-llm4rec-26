@@ -1,0 +1,36 @@
+{
+  "check": "reproduction of the separately authored evidence-verification script",
+  "script": "eval/verify_evidence.py",
+  "script_authorship": "provided by another chat assistant; not authored or modified in this check",
+  "rerun_command": "python3 eval/verify_evidence.py --data-dir data --output <temporary-output-path>",
+  "outcome": "passed",
+  "saved_result_matches_rerun_json": true,
+  "saved_result_matches_rerun_byte_for_byte": true,
+  "current_local_csv_hashes_match_saved_hashes": true,
+  "checks_reproduced": {
+    "matching_transaction_records": 1,
+    "transaction_id": "7590224",
+    "isin": "GRS434003000",
+    "transaction_type": "Buy",
+    "released_transaction_date": "2020-03-27",
+    "cutoff": "2021-06-01",
+    "days_before_cutoff": 431,
+    "asset_name": "PPC SA",
+    "asset_metadata_date": "2018-01-02",
+    "latest_positive_price_date_before_cutoff": "2021-05-31",
+    "latest_positive_price_before_cutoff": "9.06",
+    "same_day_units_times_close": "5000.0 * 2.2 = 11000.0",
+    "rrf_example_score": 0.04765107388058208,
+    "illustrative_ndcg": 0.38685280723454163
+  },
+  "current_csv_sha256": {
+    "transactions.csv": "358871fa1311a802799df86e56c3d633513566965b01412d058e0f8fbe6cd54b",
+    "asset_information.csv": "33f9897b14087068fba53a0bc9e24a0031b096bd3ad3e977e534153f29b7a590",
+    "close_prices.csv": "6ba1fe8390b31dfb3ab4e3e824910f9e8da4684cb6074cdb82eb6422a323656d"
+  },
+  "provenance_caveats": [
+    "The released total value matches the paper's quantity-times-close estimation rule; this arithmetic does not establish the original row-level value provenance.",
+    "A close-price row on the transaction date does not prove that the released transaction date was never shifted or otherwise transformed.",
+    "The verification script checks source records and illustrative arithmetic only. It does not run the recommender, an LLM, or a ranking experiment."
+  ]
+}

@@ -1,0 +1,17 @@
+source_file,record_id,field,value,provenance_or_timestamp,planned_recommendation_use
+transactions.csv,transactionID=7590224,customerID,[ANONYMIZED],anonymized customer identifier,internal grouping only; never send to LLM
+transactions.csv,transactionID=7590224,ISIN,GRS434003000,published transaction field,join to metadata and map output alias locally; never send to LLM
+transactions.csv,transactionID=7590224,transactionID,7590224,positive ID in published row; starter excludes negative IDs as reconstructed initial positions; row-level lineage otherwise unavailable,filter only; never send to LLM
+transactions.csv,transactionID=7590224,transactionType,Buy,published event type; paper documents synthetic initial-position buys generally; this row is not flagged by starter negative-ID rule,include in past-Buy history represented by alias/count/recency/features
+transactions.csv,transactionID=7590224,timestamp,2020-03-27,published event date; same-day price does not establish whether the authors moved or transformed the date,derive recency for history and source ranking
+transactions.csv,transactionID=7590224,totalValue,11000.0,paper documents estimating transaction value as units times close price; 5000.0 * 2.2 = 11000.0,not used; never send to LLM
+transactions.csv,transactionID=7590224,units,5000.0,published quantity; paper documents stock-split quantity adjustments; row-level transformation status unavailable,not used; never send to LLM
+transactions.csv,transactionID=7590224,channel,Internet Banking,source transaction field; no transformation reported,not used by starter/ranker
+transactions.csv,transactionID=7590224,marketID,XATH,present in released file; derivation not specified in paper,not used by starter/ranker
+asset_information.csv,ISIN=GRS434003000,assetName,PPC SA,published public-source asset descriptor; row timestamp 2018-01-02,not sent to LLM; not used as a CBF token
+asset_information.csv,ISIN=GRS434003000,assetCategory,Stock,published public-source asset descriptor; row timestamp 2018-01-02,CBF input only; LLM receives rank_cbf instead
+asset_information.csv,ISIN=GRS434003000,assetSubCategory,Large Cap,published public-source asset descriptor; row timestamp 2018-01-02,CBF input only; LLM receives rank_cbf instead
+asset_information.csv,ISIN=GRS434003000,marketID,XATH,published public-source asset descriptor; row timestamp 2018-01-02,CBF input only; LLM receives rank_cbf instead
+asset_information.csv,ISIN=GRS434003000,sector,Utilities,published public-source asset descriptor; row timestamp 2018-01-02,CBF input only; LLM receives rank_cbf instead
+asset_information.csv,ISIN=GRS434003000,industry,Utilities - Renewable,published public-source asset descriptor; row timestamp 2018-01-02,CBF input only; LLM receives rank_cbf instead
+close_prices.csv,ISIN=GRS434003000,closePrice,9.06,published processed price on 2021-05-31; row-level raw/imputed status unavailable,eligibility only; never send to LLM

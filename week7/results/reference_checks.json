@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://arxiv.org/html/2407.08692v1",
+    "http_status": "200",
+    "exit_code": 0
+  },
+  {
+    "url": "https://arxiv.org/html/2305.08845v2",
+    "http_status": "200",
+    "exit_code": 0
+  },
+  {
+    "url": "https://cormack.uwaterloo.ca/cormacksigir09-rrf.pdf",
+    "http_status": "200",
+    "exit_code": 0
+  },
+  {
+    "url": "https://arxiv.org/abs/2305.00447",
+    "http_status": "200",
+    "exit_code": 0
+  },
+  {
+    "url": "https://researchdata.gla.ac.uk/1658/",
+    "http_status": "200",
+    "exit_code": 0
+  },
+  {
+    "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+    "http_status": "200",
+    "exit_code": 0
+  },
+  {
+    "url": "https://github.com/dryjins/RecSys-LLMs/tree/51337032503c56e3a28ef646a24aa016782e1bd3/project/far-trans",
+    "http_status": "200",
+    "exit_code": 0
+  },
+  {
+    "url": "https://opencode.ai/docs/cli/",
+    "http_status": "200",
+    "exit_code": 0
+  }
+]
