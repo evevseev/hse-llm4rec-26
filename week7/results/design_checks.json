@@ -1,0 +1,23 @@
+{
+  "status": "analytical design checks, not observed ranking performance",
+  "pool_ceiling_example": {
+    "eligible_relevant_items": 2,
+    "relevant_items_in_pool": 1,
+    "best_possible_hit_positions": [
+      1
+    ],
+    "maximum_dcg": 1,
+    "idcg": 1.6309297535714575,
+    "maximum_ndcg": 0.6131471927654584,
+    "reason": "A reranker cannot output the second relevant item because it is absent from the pool."
+  },
+  "call_budget": {
+    "development": 100,
+    "main_a": 100,
+    "main_b": 100,
+    "total": 300,
+    "hour_seconds": 3600,
+    "maximum_mean_seconds_per_call_ignoring_setup": 12.0,
+    "note": "Model loading and preprocessing reduce the available per-call allowance."
+  }
+}
